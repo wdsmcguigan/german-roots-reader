@@ -1,0 +1,15 @@
+Vwhat are these things to the right of my terminal?  
+
+Those are terminal tabs/sessions in your IDE. Each entry is a separate terminal session. You likely have:
+Multiple zsh sessions (shell instances)
+Cursor (npm run) — a terminal running npm run dev
+Cursor (cd /Users/gypsyadmin/ge...) — terminals that changed directory
+These can accumulate from:
+Opening new terminals
+Background commands
+Previous sessions that weren’t closed
+Since we killed the extra Vite processes, you can close unused terminal tabs. Right-click a tab and select "Kill Terminal" or click the trash icon.
+To keep it clean:
+Use one terminal for the dev server (npm run dev)
+Close any others you don’t need
+The dev server should be running on http://localhost:5176/ (as shown in your terminal output). Is the app loading correctly now?
