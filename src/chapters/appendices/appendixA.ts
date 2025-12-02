@@ -1,111 +1,84 @@
-// src/chapters/appendices/appendixB.ts
+// src/chapters/appendices/appendixA.ts
 
 import type { Chapter } from "../types";
 
-export const appendixB: Chapter = {
-  id: 102,
+export const appendixA: Chapter = {
+  id: 101,
   kind: "appendix",
-  label: "Appendix B",
-  title: "Prefix & Suffix Library",
-  subtitle: "The power-tools of meaning transformation.",
+  label: "Appendix A",
+  title: "Master Root Index",
+  subtitle: "A living catalogue of German stems with English ancestry markers.",
   summary:
-    "Prefixes and suffixes are the engineering layer of German. Once you know what they usually do, you stop guessing and start decoding — and you can build new words with confidence.",
+    "You don’t memorise this appendix like a vocabulary list. You treat it as a toolbox. Each root gives you a core meaning, English relatives, and typical compounds so you can grow whole word families from a single stem.",
   sections: [
     {
-      heading: "B.1 Prefix Function Map",
+      heading: "A.1 How to Use This Index",
       paragraphs: [
-        "German prefixes do not just ‘decorate’ verbs. They redirect meaning: inward, outward, apart, completed, wrong, achieved.",
-        "You do not need to memorise every prefix combination. You only need a clear sense of each prefix’s typical direction. Then sehen, an•sehen, über•sehen, ein•sehen, versehen stop looking random.",
-        "Use this table when a verb feels unfamiliar but the stem is clear. Often the prefix tells you exactly which version of the idea you are dealing with."
+        "This is not a list to cram before an exam. It is a reference you pull from when you need more reach from a single word.",
+        "Each root entry includes four things: the core meaning, English relatives, common compounds and derived verbs, and a small memory hook. Over time, you can add your own notes and new examples.",
+        "Think of this appendix as a workshop wall full of tools: you do not need every tool every day — but when you need one, you want it within arm’s reach.",
+        "The index is intentionally incomplete. It is designed to grow with you: every chapter you read, every conversation you hold, every book you touch can add new family members."
+      ]
+    },
+    {
+      heading: "A.2 Core Roots (Foundational 50)",
+      paragraphs: [
+        "These are high-value roots that appear everywhere in everyday German. Learn to recognise them and you suddenly understand dozens of compounds at a glance.",
+        "You can expand this table yourself inside your notebook or digital system. Add new compounds whenever you meet them in the wild."
       ],
       exampleBlocks: [
         {
-          title: "Common Verb Prefixes",
+          title: "Sample Root Families",
           rows: [
             {
-              left: "ver-",
-              right: "change, distort, complete · verlieren, verbessern, verbrennen"
+              left: "gehen — go, move",
+              right: "English: gait, gate · Compounds: Zugang, Ausgang, Vorgang, Übergang"
             },
             {
-              left: "be-",
-              right: "direct action onto an object · bekommen, bearbeiten, begleiten"
+              left: "kommen — come, arrive",
+              right: "English: come · Compounds: Willkommen, Einkommen, Auskommen"
             },
             {
-              left: "ent-",
-              right: "remove, undo, release · entfernen, entkommen, entnehmen"
+              left: "sehen — see",
+              right: "English: sight, oversee · Verbs: ansehen, einsehen, übersehen, versehen"
             },
             {
-              left: "er-",
-              right: "achieve, result in, begin · erreichen, erinnern, erleben"
+              left: "schreiben — write",
+              right: "English: scribe, script · Nouns: Beschreibung, Verschreibung · Verbs: umschreiben"
             },
             {
-              left: "zer-",
-              right: "break apart, shatter · zerreißen, zerbrechen"
+              left: "nehmen — take",
+              right: "English: nimble, numb · Verbs: annehmen, aufnehmen, entnehmen, übernehmen"
             },
             {
-              left: "um-",
-              right: "around, re-, change around · umschreiben, umziehen, umwerfen"
+              left: "geben — give",
+              right: "English: give · Verbs: vergeben, ergeben, ausgeben · Noun: Ergebnis"
             },
             {
-              left: "an-",
-              right: "onset, approach, start · anfangen, ankommen, ansehen"
+              left: "laufen — run, walk",
+              right: "English: leap (distant) · Nouns: Ablauf, Verlauf, Umlauf"
             },
             {
-              left: "auf-",
-              right: "upward, open, begin · aufstehen, aufmachen, aufbauen"
+              left: "sprechen — speak",
+              right: "English: speech · Nouns: Gespräch, Versprecher · Verb: versprechen"
             },
             {
-              left: "ab-",
-              right: "away, down, off · abfahren, abnehmen, abschneiden"
+              left: "stehen — stand",
+              right: "English: stand · Nouns: Zustand, Widerstand, Verstand · Verb: bestehen"
+            },
+            {
+              left: "bringen — bring",
+              right: "English: bring · Nouns: Verbindung, Einbringung · Verb: mitbringen"
             }
           ]
         }
       ]
     },
     {
-      heading: "B.2 Suffix Logic (Meaning from Endings)",
+      heading: "A.3 Growing Your Personal Root Map",
       paragraphs: [
-        "Suffixes signal what kind of thing a word is: concrete object, abstract state, group, small version, quality.",
-        "Once you see -ung, -heit, -keit, -schaft, -chen, -lein, -bar everywhere, you stop being surprised by new nouns. You know their job before you know their exact dictionary gloss.",
-        "Use this section as a semantic blueprint: the ending tells you roughly what kind of meaning lives inside the word."
-      ],
-      exampleBlocks: [
-        {
-          title: "Common Noun & Adjective Suffixes",
-          rows: [
-            {
-              left: "-heit / -keit",
-              right: "abstract quality · Freiheit, Höflichkeit, Krankheit, Möglichkeit"
-            },
-            {
-              left: "-ung",
-              right: "process, result, thing made by the verb · Bewegung, Lösung, Zeitung"
-            },
-            {
-              left: "-tum",
-              right: "collective, realm, status · Eigentum, Kaisertum"
-            },
-            {
-              left: "-schaft",
-              right: "group or state of being · Wissenschaft, Freundschaft, Mannschaft"
-            },
-            {
-              left: "-chen / -lein",
-              right: "diminutive, often neuter · Mädchen, Häuschen, Fräulein"
-            },
-            {
-              left: "-bar",
-              right: "capable of, possible · machbar, sichtbar, essbar"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      heading: "B.3 Combining Roots, Prefixes and Suffixes",
-      paragraphs: [
-        "A single root plus one prefix plus one suffix already gives you three layers of meaning: base action, direction, and kind of thing.",
-        "Once this becomes intuitive, you no longer fear long words. You disassemble them, read the logic, and move on."
+        "Do not wait for a teacher or a book to complete this list. Every time you see a familiar stem inside a new word, note it here.",
+        "Over months, you will feel a shift: vocabulary no longer feels like separate items. It feels like a network of roots and families — exactly how a native speaker experiences it."
       ]
     }
   ]
