@@ -62,7 +62,10 @@ export const chapter09: Chapter = {
             { left: "fast (English)", right: "quick" },
             { left: "schlimm (German)", right: "bad, terrible" },
             { left: "slim (English)", right: "thin" },
-            { left: "Traum (German)", right: "dream; often deeper, powerful" },
+            { left: "Traum (German)", right: "dream; often deeper, powerful" }
+          ],
+          moreTitle: "More Examples",
+          moreRows: [
             { left: "dream (English)", right: "neutral dream; also wish, goal" },
             { left: "brav (German)", right: "well-behaved, good" },
             { left: "brave (English)", right: "courageous, fearless" },
@@ -105,7 +108,10 @@ export const chapter09: Chapter = {
           rows: [
             { left: "Boden (German)", right: "ground, floor — physical surface" },
             { left: "ground (English)", right: "physical ground, but also basis, reason, justification" },
-            { left: "Sinn (German)", right: "sense, meaning; concrete mental orientation" },
+            { left: "Sinn (German)", right: "sense, meaning; concrete mental orientation" }
+          ],
+          moreTitle: "More Examples",
+          moreRows: [
             { left: "sense (English)", right: "sense, feeling, logical meaning — more abstract" },
             { left: "Geist (German)", right: "spirit, ghost; also mindset" },
             { left: "ghost/spirit (English)", right: "mostly supernatural or metaphorical" }

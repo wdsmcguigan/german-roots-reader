@@ -73,12 +73,15 @@ export const chapter02: Chapter = {
             { left: "kalt", right: "cold (k → c/h; final t ↔ d)" },
             { left: "Fisch", right: "fish (same root, minimal change)" },
             { left: "Milch", right: "milk (ch ↔ older k sound)" },
-            { left: "Brot", right: "bread (b ↔ br cluster; vowel drift)" },
+            { left: "Brot", right: "bread (b ↔ br cluster; vowel drift)" }
+          ],
+          moreTitle: "More Examples",
+          moreRows: [
             { left: "Vater", right: "father (v ↔ f; t ↔ th)" },
             { left: "Tochter", right: "daughter (t ↔ d/gh; ch ↔ older guttural)" },
             { left: "denken", right: "think (d → t; nk cluster retained)" },
-            { left: "Fund", right: "find / found (same ancient root)" },
-          ],
+            { left: "Fund", right: "find / found (same ancient root)" }
+          ]
         },
       ],
     },
@@ -95,12 +98,15 @@ export const chapter02: Chapter = {
             { left: "mother", right: "Mutter" },
             { left: "brother", right: "Bruder" },
             { left: "light", right: "Licht" },
-            { left: "ground", right: "Grund / Boden" },
+            { left: "ground", right: "Grund / Boden" }
+          ],
+          moreTitle: "More Examples",
+          moreRows: [
             { left: "ship", right: "Schiff" },
             { left: "foot", right: "Fuß" },
             { left: "heart", right: "Herz" },
-            { left: "stone", right: "Stein" },
-          ],
+            { left: "stone", right: "Stein" }
+          ]
         },
       ],
     },

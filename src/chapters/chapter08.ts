@@ -91,7 +91,10 @@ export const chapter08: Chapter = {
             { left: "bald", right: "soon — NOT ‘bald (no hair)’" },
             { left: "Chef", right: "boss, manager — NOT ‘chef/cook’" },
             { left: "Gift", right: "poison — NOT ‘present’" },
-            { left: "fast", right: "almost — NOT ‘fast/quick’" },
+            { left: "fast", right: "almost — NOT ‘fast/quick’" }
+          ],
+          moreTitle: "More False Friends",
+          moreRows: [
             { left: "brav", right: "well-behaved — NOT ‘brave’" },
             { left: "aktuell", right: "current, up-to-date — NOT ‘actual’" },
             { left: "eventuell", right: "possibly, maybe — NOT ‘eventually’" },

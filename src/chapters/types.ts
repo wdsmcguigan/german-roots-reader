@@ -10,6 +10,8 @@ export interface Section {
   exampleBlocks?: {
     title?: string;
     rows: { left: string; right: string }[];
+    moreRows?: { left: string; right: string }[];
+    moreTitle?: string;
   }[];
 }
 

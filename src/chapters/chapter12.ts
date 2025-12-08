@@ -45,7 +45,10 @@ export const chapter12: Chapter = {
             {
               left: "Präfixe (ver-, be-, ent-, aus-, an- …)",
               right: "shift direction and nuance of meaning"
-            },
+            }
+          ],
+          moreTitle: "More Pillars",
+          moreRows: [
             {
               left: "Komposita",
               right: "long nouns broken into parts → instant meaning unlock"

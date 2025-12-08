@@ -67,7 +67,10 @@ export const chapter11: Chapter = {
           rows: [
             { left: "I’m hungry.", right: "Ich habe Hunger. (I have hunger.)" },
             { left: "I’m cold.", right: "Mir ist kalt. (To me is cold.)" },
-            { left: "I’m bored.", right: "Mir ist langweilig. (To me is boredom.)" },
+            { left: "I’m bored.", right: "Mir ist langweilig. (To me is boredom.)" }
+          ],
+          moreTitle: "More Examples",
+          moreRows: [
             { left: "I miss you.", right: "Du fehlst mir. (You are missing to me.)" },
             { left: "I like this.", right: "Das gefällt mir. (That pleases me.)" },
             { left: "There is a problem.", right: "Es gibt ein Problem. (It gives/there is a problem.)" }

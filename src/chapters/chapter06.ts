@@ -59,7 +59,10 @@ export const chapter06: Chapter = {
             { left: "English relatives", right: "gait, gate (opening), gangway" },
             { left: "Core logic", right: "movement, transition, passage" },
             { left: "Gang", right: "‘going’ → corridor, passage, gait" },
-            { left: "Zugang", right: "zu + Gang → access, way in" },
+            { left: "Zugang", right: "zu + Gang → access, way in" }
+          ],
+          moreTitle: "Extended Family",
+          moreRows: [
             { left: "Ausgang", right: "aus + Gang → exit, way out" },
             { left: "Übergang", right: "über + Gang → crossing, transition" },
             { left: "Vorgang", right: "vor + Gang → process; what is going on" }
@@ -70,7 +73,10 @@ export const chapter06: Chapter = {
           rows: [
             { left: "English relatives", right: "scribe, script, inscription" },
             { left: "Core logic", right: "recording, marking, expressing in text" },
-            { left: "Beschreibung", right: "be + schreiben → description" },
+            { left: "Beschreibung", right: "be + schreiben → description" }
+          ],
+          moreTitle: "Extended Family",
+          moreRows: [
             { left: "Einschreiben", right: "ein + schreiben → to enrol; registered mail" },
             { left: "Umschreiben", right: "um + schreiben → to rewrite, paraphrase" },
             { left: "Verschreibung", right: "ver + schreiben → prescription" }
@@ -82,7 +88,10 @@ export const chapter06: Chapter = {
             { left: "English echoes", right: "nimble (quick to take), numb (taken feeling)" },
             { left: "Core logic", right: "acquiring, grasping, absorbing" },
             { left: "annehmen", right: "to accept; to take in" },
-            { left: "aufnehmen", right: "to record; to take up" },
+            { left: "aufnehmen", right: "to record; to take up" }
+          ],
+          moreTitle: "Extended Family",
+          moreRows: [
             { left: "entnehmen", right: "to remove; to take out" },
             { left: "übernehmen", right: "to take over; assume control" },
             { left: "vernehmen", right: "to examine, interrogate; take information" }
@@ -94,7 +103,10 @@ export const chapter06: Chapter = {
             { left: "English relatives", right: "sight, oversee, insight" },
             { left: "Core logic", right: "perception, observation" },
             { left: "ansehen", right: "to look at; to view" },
-            { left: "übersehen", right: "to overlook; to miss, ignore" },
+            { left: "übersehen", right: "to overlook; to miss, ignore" }
+          ],
+          moreTitle: "Extended Family",
+          moreRows: [
             { left: "einsehen", right: "to see into; to realise" },
             { left: "zusehen", right: "to watch; to observe passively" },
             { left: "versehen", right: "to do by mistake; mis-see → error" }

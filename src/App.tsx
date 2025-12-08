@@ -2,6 +2,7 @@
 
 import React, { useState, useEffect } from "react";
 import { chapters } from "./chapters";
+import { ExampleBlock } from "./components/ExampleBlock";
 
 const App: React.FC = () => {
   const [activeId, setActiveId] = useState<number>(1);
@@ -16,6 +17,27 @@ const App: React.FC = () => {
       return raw ? JSON.parse(raw) : {};
     } catch {
       return {};
+    }
+  });
+
+  // Sidebar visibility states
+  const [leftSidebarOpen, setLeftSidebarOpen] = useState<boolean>(() => {
+    if (typeof window === "undefined") return true;
+    try {
+      const saved = window.localStorage.getItem("grr-left-sidebar");
+      return saved ? JSON.parse(saved) : true;
+    } catch {
+      return true;
+    }
+  });
+
+  const [rightSidebarOpen, setRightSidebarOpen] = useState<boolean>(() => {
+    if (typeof window === "undefined") return true;
+    try {
+      const saved = window.localStorage.getItem("grr-right-sidebar");
+      return saved ? JSON.parse(saved) : true;
+    } catch {
+      return true;
     }
   });
 
@@ -37,11 +59,11 @@ const App: React.FC = () => {
   // Check screen size
   useEffect(() => {
     if (typeof window === "undefined") return;
-    
+
     const checkScreenSize = () => {
       setIsLargeScreen(window.innerWidth >= 1024);
     };
-    
+
     checkScreenSize();
     window.addEventListener("resize", checkScreenSize);
     return () => window.removeEventListener("resize", checkScreenSize);
@@ -65,20 +87,34 @@ const App: React.FC = () => {
     }
   }, [rightColumnWidth]);
 
+  useEffect(() => {
+    if (typeof window === "undefined") return;
+    try {
+      window.localStorage.setItem("grr-left-sidebar", JSON.stringify(leftSidebarOpen));
+    } catch {
+      // ignore
+    }
+  }, [leftSidebarOpen]);
+
+  useEffect(() => {
+    if (typeof window === "undefined") return;
+    try {
+      window.localStorage.setItem("grr-right-sidebar", JSON.stringify(rightSidebarOpen));
+    } catch {
+      // ignore
+    }
+  }, [rightSidebarOpen]);
+
   // Handle resize
   useEffect(() => {
     if (!isResizing) return;
 
     const handleMouseMove = (e: MouseEvent) => {
-      const container = document.querySelector("main");
-      if (!container) return;
-
-      const containerRect = container.getBoundingClientRect();
-      const containerRight = containerRect.right;
+      const windowWidth = window.innerWidth;
       const mouseX = e.clientX;
-      
-      // Calculate width from right edge of container
-      const newWidth = Math.max(280, Math.min(800, containerRight - mouseX));
+
+      // Calculate width from right edge of the window
+      const newWidth = Math.max(280, Math.min(windowWidth - 50, windowWidth - mouseX));
       setRightColumnWidth(newWidth);
     };
 
@@ -133,34 +169,81 @@ const App: React.FC = () => {
         }
       >
         <div className="mx-auto flex max-w-[1400px] items-center justify-between px-4 py-3 md:px-6">
-          <div>
-            <p className="text-[11px] font-semibold uppercase tracking-[0.25em] text-slate-300">
-              German Through Its Roots
-            </p>
-            <p className="text-xs text-slate-400">
-              Interactive Reader · Night-first Draft
-            </p>
+          <div className="flex items-center gap-3">
+            <button
+              className="inline-flex items-center justify-center p-2 rounded-lg transition-colors hover:bg-slate-200/50 dark:hover:bg-slate-800/50 text-slate-500 hover:text-slate-700 dark:text-slate-400 dark:hover:text-slate-200"
+              onClick={() => setLeftSidebarOpen((v) => !v)}
+              title={leftSidebarOpen ? "Collapse sidebar" : "Expand sidebar"}
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="20"
+                height="20"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="2"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+              >
+                <rect width="18" height="18" x="3" y="3" rx="2" ry="2" />
+                <line x1="9" x2="9" y1="3" y2="21" />
+              </svg>
+            </button>
+            <div>
+              <p className="text-[11px] font-semibold uppercase tracking-[0.25em] text-slate-300">
+                German Through Its Roots
+              </p>
+              <p className="text-xs text-slate-400">
+                Interactive Reader · Night-first Draft
+              </p>
+            </div>
           </div>
           <div className="flex items-center gap-2">
+
             <button
               className="rounded-full border border-slate-500/70 bg-slate-900/80 px-3 py-1.5 text-xs font-medium text-slate-100 shadow-sm transition hover:border-indigo-300/70 hover:shadow-[0_0_24px_rgba(129,140,248,0.8)]"
               onClick={() => setDarkMode((v) => !v)}
             >
               {darkMode ? "Light mode" : "Dark mode"}
             </button>
-            <button
-              className="hidden rounded-full border border-slate-500/70 bg-slate-900/80 px-3 py-1.5 text-xs font-medium text-slate-100 shadow-sm transition hover:border-indigo-300/70 hover:shadow-[0_0_24px_rgba(129,140,248,0.8)] md:inline-flex"
-              onClick={() => setShowEnglish((v) => !v)}
-            >
-              {showEnglish ? "Hide English" : "Show English"}
-            </button>
+
+            {active.module && (
+              <button
+                className="inline-flex items-center justify-center p-2 rounded-lg transition-colors hover:bg-slate-200/50 dark:hover:bg-slate-800/50 text-slate-500 hover:text-slate-700 dark:text-slate-400 dark:hover:text-slate-200"
+                onClick={() => setRightSidebarOpen((v) => !v)}
+                title={rightSidebarOpen ? "Collapse reading module" : "Show reading module"}
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="20"
+                  height="20"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                >
+                  <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z" />
+                  <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z" />
+                </svg>
+              </button>
+            )}
           </div>
         </div>
       </header>
 
       <main className="mx-auto flex max-w-[2000px] flex-col gap-6 px-4 py-6 lg:flex-row lg:px-6 lg:py-10">
         {/* Sidebar */}
-        <aside className="mb-4 w-full lg:mb-0 lg:w-60 lg:shrink-0">
+        <aside
+          className={
+            "transition-all duration-500 ease-in-out lg:shrink-0 " +
+            (leftSidebarOpen
+              ? "mb-4 w-full opacity-100 lg:mb-0 lg:w-60"
+              : "w-0 h-0 lg:h-auto overflow-hidden opacity-0 lg:w-0")
+          }
+        >
           <div
             className={
               "rounded-3xl border p-4 shadow-[0_20px_55px_rgba(15,23,42,0.45)] backdrop-blur-2xl " +
@@ -180,15 +263,14 @@ const App: React.FC = () => {
                 return (
                   <button
                     key={ch.id}
-                    className={`w-full rounded-2xl px-3 py-2 text-left text-sm transition ${
-                      activeState
-                        ? darkMode
-                          ? "bg-indigo-600/85 text-slate-50 shadow-[0_0_30px_rgba(129,140,248,0.9)] ring-1 ring-indigo-300/70"
-                          : "bg-slate-900 text-slate-50 shadow-sm"
-                        : darkMode
+                    className={`w-full rounded-2xl px-3 py-2 text-left text-sm transition ${activeState
+                      ? darkMode
+                        ? "bg-indigo-600/85 text-slate-50 shadow-[0_0_30px_rgba(129,140,248,0.9)] ring-1 ring-indigo-300/70"
+                        : "bg-slate-900 text-slate-50 shadow-sm"
+                      : darkMode
                         ? "text-slate-200 hover:bg-slate-800/80"
                         : "text-slate-700 hover:bg-slate-100/80"
-                    }`}
+                      }`}
                     onClick={() => setActiveId(ch.id)}
                   >
                     <div className="flex items-center justify-between gap-2">
@@ -197,13 +279,12 @@ const App: React.FC = () => {
                       </span>
                     </div>
                     <p
-                      className={`mt-0.5 line-clamp-2 text-[11px] ${
-                        activeState
-                          ? "text-slate-200"
-                          : darkMode
+                      className={`mt-0.5 line-clamp-2 text-[11px] ${activeState
+                        ? "text-slate-200"
+                        : darkMode
                           ? "text-slate-400"
                           : "text-slate-500"
-                      }`}
+                        }`}
                     >
                       {ch.subtitle}
                     </p>
@@ -225,15 +306,14 @@ const App: React.FC = () => {
                     return (
                       <button
                         key={ch.id}
-                        className={`w-full rounded-2xl px-3 py-2 text-left text-sm transition ${
-                          activeState
-                            ? darkMode
-                              ? "bg-indigo-600/85 text-slate-50 shadow-[0_0_30px_rgba(129,140,248,0.9)] ring-1 ring-indigo-300/70"
-                              : "bg-slate-900 text-slate-50 shadow-sm"
-                            : darkMode
+                        className={`w-full rounded-2xl px-3 py-2 text-left text-sm transition ${activeState
+                          ? darkMode
+                            ? "bg-indigo-600/85 text-slate-50 shadow-[0_0_30px_rgba(129,140,248,0.9)] ring-1 ring-indigo-300/70"
+                            : "bg-slate-900 text-slate-50 shadow-sm"
+                          : darkMode
                             ? "text-slate-200 hover:bg-slate-800/80"
                             : "text-slate-700 hover:bg-slate-100/80"
-                        }`}
+                          }`}
                         onClick={() => setActiveId(ch.id)}
                       >
                         <div className="flex items-center justify-between gap-2">
@@ -242,13 +322,12 @@ const App: React.FC = () => {
                           </span>
                         </div>
                         <p
-                          className={`mt-0.5 line-clamp-2 text-[11px] ${
-                            activeState
-                              ? "text-slate-200"
-                              : darkMode
+                          className={`mt-0.5 line-clamp-2 text-[11px] ${activeState
+                            ? "text-slate-200"
+                            : darkMode
                               ? "text-slate-400"
                               : "text-slate-500"
-                          }`}
+                            }`}
                         >
                           {ch.subtitle}
                         </p>
@@ -308,103 +387,70 @@ const App: React.FC = () => {
                 {sectionCardTitle}
               </p>
               <div className="mt-3 space-y-4">
-  {active.sections.map((section, idx) => (
-    <article key={idx} className="space-y-2">
-      <h3
-        className={`font-serif text-[24px] font-semibold ${headingText}`}
-      >
-        {section.heading}
-      </h3>
+                {active.sections.map((section, idx) => (
+                  <article key={idx} className="space-y-2">
+                    <h3
+                      className={`font-serif text-[24px] font-semibold ${headingText}`}
+                    >
+                      {section.heading}
+                    </h3>
 
-      {section.paragraphs.map((para, j) => (
-        <p
-          key={j}
-          className={`text-sm leading-relaxed ${bodyText} md:text-[14px]`}
-        >
-          {para}
-        </p>
-      ))}
+                    {section.paragraphs.map((para, j) => (
+                      <p
+                        key={j}
+                        className={`text-sm leading-relaxed ${bodyText} md:text-[14px]`}
+                      >
+                        {para}
+                      </p>
+                    ))}
 
-      {section.exampleBlocks?.map((block, k) => (
-        <div
-          key={k}
-          className={
-            "mt-2 rounded-2xl border p-3 text-xs md:text-sm " +
-            (darkMode
-              ? "border-slate-700 bg-slate-900/80"
-              : "border-slate-200 bg-slate-50")
-          }
-        >
-          {block.title && (
-            <p className="mb-1.5 text-[11px] font-semibold uppercase tracking-[0.16em] text-slate-500">
-              {block.title}
-            </p>
-          )}
-          <dl className="divide-y divide-slate-800/40 md:divide-slate-200/70">
-            {block.rows.map((row, rIdx) => (
-              <div
-                key={rIdx}
-                className="flex items-baseline justify-between gap-3 py-1.5"
-              >
-                <dt className="font-mono text-[12px] text-slate-300 md:text-[12px]">
-                  {row.left}
-                </dt>
-                <dd className="flex-1 text-right text-[12px] text-slate-200 md:text-[12px]">
-                  {row.right}
-                </dd>
+                    {section.exampleBlocks?.map((block, k) => (
+                      <ExampleBlock key={k} block={block} darkMode={darkMode} />
+                    ))}
+                  </article>
+                ))}
               </div>
-            ))}
-          </dl>
-        </div>
-      ))}
-    </article>
-  ))}
-</div>
 
             </div>
           )}
         </section>
 
-        {/* Reading module (only for normal chapters that have one) */}
-        {active.module && (
-          <>
-            {/* Resize handle */}
-            <div
-              className="hidden lg:block w-1 cursor-col-resize hover:w-2 transition-all group relative"
-              onMouseDown={(e) => {
-                e.preventDefault();
-                setIsResizing(true);
-              }}
-              style={{
-                backgroundColor: isResizing
-                  ? darkMode
-                    ? "rgba(129, 140, 248, 0.5)"
-                    : "rgba(99, 102, 241, 0.5)"
-                  : "transparent",
-              }}
-            >
-              <div
-                className={`absolute inset-y-0 left-1/2 -translate-x-1/2 w-1 ${
-                  darkMode
-                    ? "bg-slate-700 group-hover:bg-indigo-500/50"
-                    : "bg-slate-300 group-hover:bg-indigo-400/50"
-                } transition-colors`}
-              />
-            </div>
-            <aside
-              className="w-full lg:shrink-0"
-              style={{ width: isLargeScreen ? `${rightColumnWidth}px` : "100%" }}
-            >
-            <div
-              className={
-                "rounded-3xl border p-5 shadow-[0_20px_50px_rgba(15,23,42,0.07)] backdrop-blur-xl md:p-7 " +
-                (darkMode
-                  ? "border-slate-800 bg-slate-900/80"
-                  : "border-slate-200/80 bg-white/90")
-              }
-            >
-              <div className="flex flex-wrap items-center justify-between gap-3">
-                <div>
+      </main>
+
+      {/* Reading module Drawer */}
+      {active.module && (
+        <div
+          className={`fixed inset-y-0 right-0 z-50 flex h-full shadow-2xl transition-transform duration-500 ease-in-out ${rightSidebarOpen ? "translate-x-0" : "translate-x-full"
+            }`}
+          style={{ width: isLargeScreen ? rightColumnWidth : "100%", maxWidth: "100%" }}
+        >
+          {/* Resize handle (desktop only) */}
+          <div
+            className="hidden lg:block absolute left-0 top-0 bottom-0 w-1.5 cursor-col-resize hover:bg-indigo-500/50 transition-colors z-10"
+            onMouseDown={(e: React.MouseEvent) => {
+              e.preventDefault();
+              setIsResizing(true);
+            }}
+          />
+
+          <aside
+            className={
+              "h-full w-full overflow-y-auto border-l backdrop-blur-2xl " +
+              (darkMode
+                ? "border-slate-800 bg-[#050316]/95"
+                : "border-slate-200/80 bg-white/95")
+            }
+          >
+            <div className="p-5 md:p-7 pb-20">
+              <div className="sticky top-0 z-10 -mx-5 -mt-5 md:-mx-7 md:-mt-7 p-5 md:p-7 backdrop-blur-xl border-b border-inherit bg-inherit rounded-t-[inherit]">
+                <button
+                  className="absolute top-3 right-3 p-2 rounded-lg transition-colors hover:bg-slate-200/50 dark:hover:bg-slate-800/50 text-slate-500 sm:top-5 sm:right-5"
+                  onClick={() => setRightSidebarOpen(false)}
+                >
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+                </button>
+
+                <div className="pr-12">
                   <p
                     className={`text-[11px] font-semibold uppercase tracking-[0.22em] ${labelText}`}
                   >
@@ -416,15 +462,18 @@ const App: React.FC = () => {
                     {active.module.title}
                   </h2>
                 </div>
-                <button
-                  className="inline-flex rounded-full border border-slate-300/70 bg-white/80 px-3 py-1.5 text-xs font-medium text-slate-700 shadow-sm transition hover:border-slate-400 hover:shadow-md lg:hidden"
-                  onClick={() => setShowEnglish((v) => !v)}
-                >
-                  {showEnglish ? "Hide English" : "Show English"}
-                </button>
+
+                <div className="mt-3">
+                  <button
+                    className="inline-flex rounded-full border border-slate-300/70 bg-white/80 px-3 py-1.5 text-xs font-medium text-slate-700 shadow-sm transition hover:border-slate-400 hover:shadow-md"
+                    onClick={() => setShowEnglish((v) => !v)}
+                  >
+                    {showEnglish ? "Hide English" : "Show English"}
+                  </button>
+                </div>
               </div>
 
-              <div className="mt-4 space-y-5">
+              <div className="mt-6 space-y-5">
                 {/* German text */}
                 <div
                   className={
@@ -457,16 +506,14 @@ const App: React.FC = () => {
                     }
                   >
                     <p
-                      className={`text-[11px] font-semibold uppercase tracking-[0.18em] ${
-                        darkMode ? "text-slate-300" : "text-slate-400"
-                      }`}
+                      className={`text-[11px] font-semibold uppercase tracking-[0.18em] ${darkMode ? "text-slate-300" : "text-slate-400"
+                        }`}
                     >
                       English Translation
                     </p>
                     <div
-                      className={`mt-2 space-y-1.5 text-[13px] leading-relaxed italic ${
-                        darkMode ? "text-slate-200" : "text-slate-600"
-                      }`}
+                      className={`mt-2 space-y-1.5 text-[13px] leading-relaxed italic ${darkMode ? "text-slate-200" : "text-slate-600"
+                        }`}
                     >
                       {active.module.englishLines.map((line, i) => (
                         <p key={i}>{line}</p>
@@ -499,9 +546,8 @@ const App: React.FC = () => {
                           {v.german}
                         </dt>
                         <dd
-                          className={`flex-1 text-right text-xs md:text-sm ${
-                            darkMode ? "text-slate-300" : "text-slate-600"
-                          }`}
+                          className={`flex-1 text-right text-xs md:text-sm ${darkMode ? "text-slate-300" : "text-slate-600"
+                            }`}
                         >
                           {v.english}
                         </dd>
@@ -510,7 +556,7 @@ const App: React.FC = () => {
                   </dl>
                 </div>
 
-                {/* Tasks + scratch area */}
+                {/* Exercises */}
                 <div
                   className={
                     "rounded-2xl border p-4 " +
@@ -528,9 +574,8 @@ const App: React.FC = () => {
                     {active.module.tasks.map((t, i) => (
                       <li key={i} className="flex gap-2">
                         <span
-                          className={`mt-[1px] text-[11px] font-semibold ${
-                            darkMode ? "text-slate-300" : "text-slate-400"
-                          }`}
+                          className={`mt-[1px] text-[11px] font-semibold ${darkMode ? "text-slate-300" : "text-slate-400"
+                            }`}
                         >
                           {i + 1}.
                         </span>
@@ -565,9 +610,8 @@ const App: React.FC = () => {
               </div>
             </div>
           </aside>
-          </>
-        )}
-      </main>
+        </div>
+      )}
     </div>
   );
 };
