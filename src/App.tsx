@@ -46,7 +46,9 @@ const App: React.FC = () => {
     if (typeof window === "undefined") return 384; // default: w-96 = 384px
     try {
       const saved = window.localStorage.getItem("grr-right-column-width");
-      return saved ? parseInt(saved, 10) : 384;
+      if (!saved) return 384;
+      const parsed = parseInt(saved, 10);
+      return isNaN(parsed) ? 384 : parsed;
     } catch {
       return 384;
     }
