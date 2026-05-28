@@ -50,7 +50,8 @@ export const chapter01: Chapter = {
             { left: "Mutter", right: "mother" },
             { left: "Bruder", right: "brother" },
             { left: "Fisch", right: "fish" },
-            { left: "Kalt", right: "cold" }
+            { left: "Kalt", right: "cold" },
+            { left: "gern", right: "yearn — German kept the everyday adverb, English kept the longing" }
           ]
         }
       ]

@@ -69,6 +69,36 @@ export const appendixE: Chapter = {
         "3) Check whether the participle uses ge- + -t (weak) or ge- + -en (strong).",
         "This two-second scan trains your brain to see verbs as patterns, not isolated facts."
       ]
+    },
+    {
+      heading: "E.5 Auxiliary Verb Selection (Haben vs Sein)",
+      paragraphs: [
+        "Every German perfect tense needs a helper: haben or sein. The participle alone is not enough — and the wrong helper can change the meaning, sometimes drastically.",
+        "The default is haben. Reach for sein only when the verb describes motion from one place to another, or a change of state that the subject undergoes on its own.",
+        "Chapter 5.6 introduced the split. This appendix is the lookup."
+      ],
+      exampleBlocks: [
+        {
+          title: "Rules of Thumb",
+          rows: [
+            { left: "haben", right: "transitive verbs (verb takes a direct object); most everyday actions" },
+            { left: "sein", right: "motion to a destination — gehen, kommen, fahren, fliegen, reisen" },
+            { left: "sein", right: "change of state on its own — sterben, wachsen, einschlafen, aufwachen" },
+            { left: "sein", right: "the verbs sein and bleiben themselves" },
+            { left: "Either", right: "a small set flips based on meaning — see the next table" }
+          ]
+        },
+        {
+          title: "Verbs That Flip Between Haben and Sein",
+          rows: [
+            { left: "ziehen", right: "hat gezogen — pulled, drew (something) · ist gezogen — moved, migrated" },
+            { left: "brechen", right: "hat gebrochen — broke (something) · ist gebrochen — shattered on its own" },
+            { left: "schmelzen", right: "hat geschmolzen — melted (something) · ist geschmolzen — melted in the heat" },
+            { left: "reißen", right: "hat gerissen — tore (something) · ist gerissen — snapped, gave way" },
+            { left: "Quick test", right: "If you can swap in ‘relocated’ or ‘the thing changed on its own,’ use sein. Otherwise haben." }
+          ]
+        }
+      ]
     }
   ]
 };
