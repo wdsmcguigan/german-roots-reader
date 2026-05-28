@@ -21,7 +21,8 @@ export interface Module {
   germanLines: string[];
   englishLines: string[];
   vocabulary: VocabularyEntry[];
-  tasks: string[];
+  tasks: string[];           // English versions (primary authored content)
+  tasksGerman?: string[];   // German versions — shown by default when present
 }
 
 export interface Chapter {

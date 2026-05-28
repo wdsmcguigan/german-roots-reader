@@ -212,7 +212,7 @@ const App: React.FC = () => {
               <button
                 className="inline-flex items-center justify-center p-2 rounded-lg transition-colors hover:bg-slate-200/50 dark:hover:bg-slate-800/50 text-slate-500 hover:text-slate-700 dark:text-slate-400 dark:hover:text-slate-200"
                 onClick={() => setRightSidebarOpen((v) => !v)}
-                title={rightSidebarOpen ? "Collapse reading module" : "Show reading module"}
+                title={rightSidebarOpen ? "Collapse practice module" : "Show practice module"}
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -454,7 +454,7 @@ const App: React.FC = () => {
                   <p
                     className={`text-[11px] font-semibold uppercase tracking-[0.22em] ${labelText}`}
                   >
-                    Reading Module · {active.module.level}
+                    Practice Module · {active.module.level}
                   </p>
                   <h2
                     className={`mt-1 font-serif text-xl font-semibold tracking-tight ${headingText} md:text-2xl`}
@@ -486,41 +486,21 @@ const App: React.FC = () => {
                   <p
                     className={`text-[11px] font-semibold uppercase tracking-[0.18em] ${labelText}`}
                   >
-                    German Text
+                    Context Examples
                   </p>
-                  <div className={`mt-2 space-y-1.5 text-[15px] leading-relaxed ${darkMode ? "text-slate-100" : "text-slate-900"}`}>
+                  <div className={`mt-2 space-y-3 text-[15px] leading-relaxed`}>
                     {active.module.germanLines.map((line, i) => (
-                      <p key={i}>{line}</p>
+                      <div key={i}>
+                        <p className={darkMode ? "text-slate-100" : "text-slate-900"}>{line}</p>
+                        {showEnglish && active.module!.englishLines[i] && (
+                          <p className={`mt-0.5 text-[13px] italic ${darkMode ? "text-slate-400" : "text-slate-500"}`}>
+                            {active.module!.englishLines[i]}
+                          </p>
+                        )}
+                      </div>
                     ))}
                   </div>
                 </div>
-
-                {/* English text toggle */}
-                {showEnglish && (
-                  <div
-                    className={
-                      "rounded-2xl border p-4 " +
-                      (darkMode
-                        ? "border-slate-700 bg-slate-900/80"
-                        : "border-slate-200 bg-white/90")
-                    }
-                  >
-                    <p
-                      className={`text-[11px] font-semibold uppercase tracking-[0.18em] ${darkMode ? "text-slate-300" : "text-slate-400"
-                        }`}
-                    >
-                      English Translation
-                    </p>
-                    <div
-                      className={`mt-2 space-y-1.5 text-[13px] leading-relaxed italic ${darkMode ? "text-slate-200" : "text-slate-600"
-                        }`}
-                    >
-                      {active.module.englishLines.map((line, i) => (
-                        <p key={i}>{line}</p>
-                      ))}
-                    </div>
-                  </div>
-                )}
 
                 {/* Vocabulary */}
                 <div
@@ -571,17 +551,20 @@ const App: React.FC = () => {
                     Exercises
                   </p>
                   <ul className={`mt-2 space-y-1.5 text-sm ${bodyText}`}>
-                    {active.module.tasks.map((t, i) => (
-                      <li key={i} className="flex gap-2">
-                        <span
-                          className={`mt-[1px] text-[11px] font-semibold ${darkMode ? "text-slate-300" : "text-slate-400"
-                            }`}
-                        >
-                          {i + 1}.
-                        </span>
-                        <span>{t}</span>
-                      </li>
-                    ))}
+                    {active.module.tasks.map((englishTask, i) => {
+                      const germanTask = active.module!.tasksGerman?.[i];
+                      const displayTask = showEnglish ? englishTask : (germanTask ?? englishTask);
+                      return (
+                        <li key={i} className="flex gap-2">
+                          <span
+                            className={`mt-[1px] text-[11px] font-semibold ${darkMode ? "text-slate-300" : "text-slate-400"}`}
+                          >
+                            {i + 1}.
+                          </span>
+                          <span>{displayTask}</span>
+                        </li>
+                      );
+                    })}
                   </ul>
                   <div className="mt-3">
                     <label
