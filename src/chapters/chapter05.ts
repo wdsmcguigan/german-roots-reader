@@ -123,7 +123,27 @@ export const chapter05: Chapter = {
       ]
     },
     {
-      heading: "5.6 Exercises: Strong vs Weak in Your Head",
+      heading: "5.6 Haben or Sein? Two Helpers, Two Worlds",
+      paragraphs: [
+        "The ge- participle tells you when an action happened. The auxiliary tells you what kind of event you just witnessed.",
+        "German splits its perfect tense between two helpers. The rule is short: if the verb describes an action carried out on an object, it takes haben. If it describes a change of location, or a state the subject ends up in on its own, it takes sein.",
+        "Most verbs sit on one side or the other. A handful — the most interesting ones — flip depending on what they mean in a given sentence. Ziehen is the headline case: er hat die Tür gezogen (he pulled the door) and er ist nach Berlin gezogen (he moved to Berlin) share one participle but describe two different events."
+      ],
+      exampleBlocks: [
+        {
+          title: "Verbs That Flip Between Haben and Sein",
+          rows: [
+            { left: "ziehen", right: "hat gezogen → pulled, drew (something) · ist gezogen → moved, migrated" },
+            { left: "brechen", right: "hat gebrochen → broke (something) · ist gebrochen → shattered on its own" },
+            { left: "schmelzen", right: "hat geschmolzen → melted (something) · ist geschmolzen → melted in the heat" },
+            { left: "reißen", right: "hat gerissen → tore (something) · ist gerissen → snapped, gave way" },
+            { left: "Quick test", right: "If you can swap in ‘relocated’ or ‘the thing changed on its own,’ use sein. Otherwise haben." }
+          ]
+        }
+      ]
+    },
+    {
+      heading: "5.7 Exercises: Strong vs Weak in Your Head",
       paragraphs: [
         "Now test the patterns. Do not memorise — recognise.",
         "First, decide whether each verb feels weak (W) or strong (S). Then, try to guess past forms based on the vowel tribes."
@@ -162,7 +182,7 @@ export const chapter05: Chapter = {
       ]
     },
     {
-      heading: "5.7 Closing Insight for Chapter 5",
+      heading: "5.8 Closing Insight for Chapter 5",
       paragraphs: [
         "German verbs are not irregular — they are alive.",
         "They evolve through patterns: vowel tribes, prefix logic, and ge- as a time marker.",

@@ -69,6 +69,18 @@ export const appendixA: Chapter = {
             {
               left: "bringen — bring",
               right: "English: bring · Nouns: Verbindung, Einbringung · Verb: mitbringen"
+            },
+            {
+              left: "ziehen — pull, move",
+              right: "English: tug, tow, tie · Compounds: Anzug, Umzug, Erziehung, Zug · Verbs: anziehen, ausziehen, einziehen, umziehen · Hook: the wagon that became the move"
+            },
+            {
+              left: "gern — gladly, with pleasure",
+              right: "English cousin: yearn · Usage: attaches to a verb to mean ‘I like doing X’ (ich helfe gern) · Hook: when you say it, you are saying ‘yearningly’"
+            },
+            {
+              left: "gar — done, completely, at all",
+              right: "English cousins: gear, garb (from Proto-Germanic *garwaz, ‘ready, prepared’) · Two roles: culinary ‘cooked through’ (das Fleisch ist gar) and absolute intensifier (gar nicht = not at all) · Hook: ready and finished"
             }
           ]
         }

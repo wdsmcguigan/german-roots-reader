@@ -111,11 +111,50 @@ export const chapter06: Chapter = {
             { left: "zusehen", right: "to watch; to observe passively" },
             { left: "versehen", right: "to do by mistake; mis-see → error" }
           ]
+        },
+        {
+          title: "Root Family 5 — ziehen (to pull, to move)",
+          rows: [
+            { left: "English relatives", right: "tug, tow, tie (PIE *deuk-); via Latin: duct, duke" },
+            { left: "Core logic", right: "pulling — and, by extension, pulling yourself somewhere new" },
+            { left: "Anzug", right: "‘the pull-on’ → suit (the thing you pull on)" },
+            { left: "Umzug", right: "‘the pull-around’ → a move, a procession" }
+          ],
+          moreTitle: "Extended Family",
+          moreRows: [
+            { left: "anziehen", right: "to put on (clothes); to attract" },
+            { left: "ausziehen", right: "to take off (clothes); to move out" },
+            { left: "einziehen", right: "to move in" },
+            { left: "umziehen", right: "to change clothes; to relocate" },
+            { left: "Erziehung", right: "‘pulling out’ → upbringing, education" },
+            { left: "Zug", right: "a pull; a train; a draft of air" }
+          ]
         }
       ]
     },
     {
-      heading: "6.4 How to Generate New Vocabulary On Your Own",
+      heading: "6.4 A Root That Lives a Double Life",
+      paragraphs: [
+        "Of the families above, ziehen behaves differently. The others stay close to one core meaning. Ziehen split itself in half — and German grammar kept score.",
+        "Its oldest job was muscle. Pulling carts, dragging rope, towing a load. The PIE root *deuk- surfaces in English as tug, tow, tie, and gave Latin its words for leading and channeling — duct, duke.",
+        "Then the wagons happened. Before moving vans existed, relocating meant packing your life into a cart and pulling it to the next valley. Tribes and families literally said the equivalent of ‘we pulled to the next town.’ Over time, the wagons fell out of the sentence. The pulling stayed, but it meant the migration itself.",
+        "Now ziehen does both jobs. With a direct object — a door, a card, a cable — it is still old physical work, and it takes haben. Without one, it means relocating, and it takes sein. (You met this split in §5.6.) Er hat die Tür gezogen versus er ist nach Berlin gezogen: same verb, two events."
+      ],
+      exampleBlocks: [
+        {
+          title: "You’ll See This Again — A Pattern Across Germanic",
+          rows: [
+            { left: "English pack", right: "bundle → ‘pack up and leave’ — the wrapping becomes the departure" },
+            { left: "English bear / German tragen", right: "carry weight → bear a child → bear a burden — the load becomes the state" },
+            { left: "English move / German bewegen", right: "shift an object → move to a new city — the action becomes the relocation" },
+            { left: "The trick", right: "Germanic minds repeatedly took a physical-load verb and reused it for an abstract change of state or place" },
+            { left: "Note inside English", right: "bear (the animal) and bare (naked) are unrelated to bear (carry). The cognate lives in the verb sense alone." }
+          ]
+        }
+      ]
+    },
+    {
+      heading: "6.5 How to Generate New Vocabulary On Your Own",
       paragraphs: [
         "Once you understand root families, you no longer wait for a teacher or app to feed you words. You can generate them.",
         "For any new root, ask yourself:",
@@ -127,7 +166,7 @@ export const chapter06: Chapter = {
       ]
     },
     {
-      heading: "6.5 Exercises: Build and Decode Families",
+      heading: "6.6 Exercises: Build and Decode Families",
       paragraphs: [
         "Now you put the idea to work. Do not chase perfection — chase structure.",
         "These exercises work best if you write your answers down in a notebook or digital note, so you can extend each family over time."
@@ -154,7 +193,7 @@ export const chapter06: Chapter = {
       ]
     },
     {
-      heading: "6.6 Closing Insight for Chapter 6",
+      heading: "6.7 Closing Insight for Chapter 6",
       paragraphs: [
         "Vocabulary is not a flat list. It is a network.",
         "Roots are engines. Prefixes are fuel. Compounds are architecture.",
