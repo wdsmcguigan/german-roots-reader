@@ -1,6 +1,6 @@
 // src/App.tsx
 
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import { chapters } from "./chapters";
 import { ExampleBlock } from "./components/ExampleBlock";
 
@@ -55,6 +55,8 @@ const App: React.FC = () => {
   // Resize state
   const [isResizing, setIsResizing] = useState<boolean>(false);
   const [isLargeScreen, setIsLargeScreen] = useState<boolean>(false);
+  const [headerHeight, setHeaderHeight] = useState<number>(60);
+  const headerRef = useRef<HTMLElement>(null);
 
   // Check screen size
   useEffect(() => {
@@ -67,6 +69,21 @@ const App: React.FC = () => {
     checkScreenSize();
     window.addEventListener("resize", checkScreenSize);
     return () => window.removeEventListener("resize", checkScreenSize);
+  }, []);
+
+  // Measure header height for mobile overlay positioning
+  useEffect(() => {
+    if (typeof window === "undefined") return;
+
+    const measure = () => {
+      if (headerRef.current) {
+        setHeaderHeight(headerRef.current.getBoundingClientRect().height);
+      }
+    };
+
+    measure();
+    window.addEventListener("resize", measure);
+    return () => window.removeEventListener("resize", measure);
   }, []);
 
   useEffect(() => {
@@ -228,6 +245,7 @@ const App: React.FC = () => {
     <div className={rootClasses}>
       {/* Top bar */}
       <header
+        ref={headerRef}
         className={
           "border-b backdrop-blur-xl " +
           (darkMode
@@ -304,10 +322,11 @@ const App: React.FC = () => {
       {/* Mobile sidebar — fixed overlay, reveals left-to-right */}
       <div
         className={
-          "lg:hidden fixed top-[60px] left-0 bottom-0 z-40 overflow-y-auto overflow-x-hidden transition-all duration-500 ease-in-out " +
-          (darkMode ? "border-r border-slate-800 bg-[#050316]/97" : "border-r border-slate-200 bg-white/97") +
+          "lg:hidden fixed left-0 bottom-0 z-40 overflow-y-auto overflow-x-hidden transition-all duration-500 ease-in-out " +
+          (darkMode ? "border-r border-slate-800 bg-[#050316]" : "border-r border-slate-200 bg-white") +
           (leftSidebarOpen ? " w-full opacity-100" : " w-0 opacity-0")
         }
+        style={{ top: headerHeight }}
       >
         <div className="p-4">
           {sidebarNavContent}
@@ -318,10 +337,11 @@ const App: React.FC = () => {
       {!isLargeScreen && active.module && (
         <div
           className={
-            "fixed top-[60px] left-0 right-0 bottom-0 z-40 overflow-y-auto transition-all duration-500 ease-in-out " +
-            (darkMode ? "bg-[#050316]/97" : "bg-white/97") +
+            "fixed left-0 right-0 bottom-0 z-40 overflow-y-auto transition-all duration-500 ease-in-out " +
+            (darkMode ? "bg-[#050316]" : "bg-white") +
             (rightSidebarOpen ? " opacity-100 translate-x-0" : " opacity-0 translate-x-full")
           }
+          style={{ top: headerHeight }}
         >
           <div className="p-5 pb-8">
             <p className={`text-[11px] font-semibold uppercase tracking-[0.22em] ${labelText}`}>
