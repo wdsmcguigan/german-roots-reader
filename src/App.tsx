@@ -257,7 +257,11 @@ const App: React.FC = () => {
           <div className="flex items-center gap-3">
             <button
               className="inline-flex items-center justify-center p-2 rounded-lg transition-colors hover:bg-slate-200/50 dark:hover:bg-slate-800/50 text-slate-500 hover:text-slate-700 dark:text-slate-400 dark:hover:text-slate-200"
-              onClick={() => setLeftSidebarOpen((v) => !v)}
+              onClick={() => setLeftSidebarOpen((v) => {
+                const next = !v;
+                if (next && !isLargeScreen) setRightSidebarOpen(false);
+                return next;
+              })}
               title={leftSidebarOpen ? "Collapse sidebar" : "Expand sidebar"}
             >
               <svg
@@ -296,7 +300,11 @@ const App: React.FC = () => {
             {active.module && (
               <button
                 className="inline-flex items-center justify-center p-2 rounded-lg transition-colors hover:bg-slate-200/50 dark:hover:bg-slate-800/50 text-slate-500 hover:text-slate-700 dark:text-slate-400 dark:hover:text-slate-200"
-                onClick={() => setRightSidebarOpen((v) => !v)}
+                onClick={() => setRightSidebarOpen((v) => {
+                  const next = !v;
+                  if (next && !isLargeScreen) setLeftSidebarOpen(false);
+                  return next;
+                })}
                 title={rightSidebarOpen ? "Collapse practice module" : "Show practice module"}
               >
                 <svg
@@ -319,12 +327,12 @@ const App: React.FC = () => {
         </div>
       </header>
 
-      {/* Mobile sidebar — fixed overlay, reveals left-to-right */}
+      {/* Mobile sidebar — fixed overlay, slides in from left */}
       <div
         className={
-          "lg:hidden fixed left-0 bottom-0 z-40 overflow-y-auto overflow-x-hidden transition-all duration-500 ease-in-out " +
+          "lg:hidden fixed left-0 right-0 bottom-0 z-40 overflow-y-auto overflow-x-hidden transition-all duration-500 ease-in-out " +
           (darkMode ? "border-r border-slate-800 bg-[#050316]" : "border-r border-slate-200 bg-white") +
-          (leftSidebarOpen ? " w-full opacity-100" : " w-0 opacity-0")
+          (leftSidebarOpen ? " opacity-100 translate-x-0" : " opacity-0 -translate-x-full")
         }
         style={{ top: headerHeight }}
       >
