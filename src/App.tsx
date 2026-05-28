@@ -280,10 +280,10 @@ const App: React.FC = () => {
               </svg>
             </button>
             <div>
-              <p className="text-[11px] font-semibold uppercase tracking-[0.25em] text-slate-300">
+              <p className={`text-[11px] font-semibold uppercase tracking-[0.25em] ${darkMode ? "text-slate-300" : "text-slate-800"}`}>
                 German Through Its Roots
               </p>
-              <p className="text-xs text-slate-400">
+              <p className={`text-xs ${darkMode ? "text-slate-400" : "text-slate-500"}`}>
                 Interactive Reader · Night-first Draft
               </p>
             </div>
