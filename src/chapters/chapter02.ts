@@ -183,5 +183,11 @@ export const chapter02: Chapter = {
       "Write two simple German sentences that each contain at least one cognate and one sound-shift pair (for example: kalt/cold, Licht/light).",
       "In your notebook, start a ‘Sound Shift List’ with three columns: German, English, and the pattern (for example: Vater / father / t → th). Add to this list as you continue through the book.",
     ],
+    tasksGerman: [
+      "Markiere alle klaren Kognaten im deutschen Text (Vater, Wasser, Hand, Haus, usw.). Füge mindestens zwei weitere hinzu, die du selbst entdeckst.",
+      "Lies die deutschen Zeilen laut vor. Markiere jede Stelle, wo du eine Verschiebung hörst – wie p → f, t → th oder k → h zwischen Deutsch und Englisch.",
+      "Schreibe zwei einfache deutsche Sätze, die jeweils mindestens einen Kognaten und ein Lautverschiebungspaar enthalten (zum Beispiel: kalt/cold, Licht/light).",
+      "Leg in deinem Notizheft eine „Lautverschiebungsliste“ mit drei Spalten an: Deutsch, Englisch und Muster (zum Beispiel: Vater / father / t → th). Ergänze die Liste, während du weiterliest.",
+    ],
   },
 };

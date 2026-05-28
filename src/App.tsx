@@ -1,6 +1,6 @@
 // src/App.tsx
 
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import { chapters } from "./chapters";
 import { ExampleBlock } from "./components/ExampleBlock";
 
@@ -55,6 +55,8 @@ const App: React.FC = () => {
   // Resize state
   const [isResizing, setIsResizing] = useState<boolean>(false);
   const [isLargeScreen, setIsLargeScreen] = useState<boolean>(false);
+  const [headerHeight, setHeaderHeight] = useState<number>(60);
+  const headerRef = useRef<HTMLElement>(null);
 
   // Check screen size
   useEffect(() => {
@@ -67,6 +69,21 @@ const App: React.FC = () => {
     checkScreenSize();
     window.addEventListener("resize", checkScreenSize);
     return () => window.removeEventListener("resize", checkScreenSize);
+  }, []);
+
+  // Measure header height for mobile overlay positioning
+  useEffect(() => {
+    if (typeof window === "undefined") return;
+
+    const measure = () => {
+      if (headerRef.current) {
+        setHeaderHeight(headerRef.current.getBoundingClientRect().height);
+      }
+    };
+
+    measure();
+    window.addEventListener("resize", measure);
+    return () => window.removeEventListener("resize", measure);
   }, []);
 
   useEffect(() => {
@@ -157,10 +174,78 @@ const App: React.FC = () => {
   const bodyText = darkMode ? "text-slate-200" : "text-slate-700";
   const labelText = darkMode ? "text-slate-400" : "text-slate-500";
 
+  const sidebarNavContent = (
+    <>
+      <p className={`mb-3 text-[11px] font-semibold uppercase tracking-[0.22em] ${labelText}`}>
+        Chapters
+      </p>
+      <nav className="space-y-1">
+        {mainChapters.map((ch) => {
+          const activeState = ch.id === activeId;
+          return (
+            <button
+              key={ch.id}
+              className={`w-full rounded-2xl px-3 py-2 text-left text-sm transition ${activeState
+                ? darkMode
+                  ? "bg-indigo-600/85 text-slate-50 shadow-[0_0_30px_rgba(129,140,248,0.9)] ring-1 ring-indigo-300/70"
+                  : "bg-slate-900 text-slate-50 shadow-sm"
+                : darkMode
+                  ? "text-slate-200 hover:bg-slate-800/80"
+                  : "text-slate-700 hover:bg-slate-100/80"
+                }`}
+              onClick={() => { setActiveId(ch.id); if (!isLargeScreen) setLeftSidebarOpen(false); }}
+            >
+              <div className="flex items-center justify-between gap-2">
+                <span className="truncate">{ch.id}. {ch.title}</span>
+              </div>
+              <p className={`mt-0.5 line-clamp-2 text-[11px] ${activeState ? "text-slate-200" : darkMode ? "text-slate-400" : "text-slate-500"}`}>
+                {ch.subtitle}
+              </p>
+            </button>
+          );
+        })}
+      </nav>
+      {appendixChapters.length > 0 && (
+        <>
+          <p className={`mt-5 mb-2 text-[11px] font-semibold uppercase tracking-[0.22em] ${labelText}`}>
+            Appendices
+          </p>
+          <nav className="space-y-1">
+            {appendixChapters.map((ch) => {
+              const activeState = ch.id === activeId;
+              return (
+                <button
+                  key={ch.id}
+                  className={`w-full rounded-2xl px-3 py-2 text-left text-sm transition ${activeState
+                    ? darkMode
+                      ? "bg-indigo-600/85 text-slate-50 shadow-[0_0_30px_rgba(129,140,248,0.9)] ring-1 ring-indigo-300/70"
+                      : "bg-slate-900 text-slate-50 shadow-sm"
+                    : darkMode
+                      ? "text-slate-200 hover:bg-slate-800/80"
+                      : "text-slate-700 hover:bg-slate-100/80"
+                    }`}
+                  onClick={() => { setActiveId(ch.id); if (!isLargeScreen) setLeftSidebarOpen(false); }}
+                >
+                  <div className="flex items-center justify-between gap-2">
+                    <span className="truncate">{ch.label ?? "Appendix"}: {ch.title}</span>
+                  </div>
+                  <p className={`mt-0.5 line-clamp-2 text-[11px] ${activeState ? "text-slate-200" : darkMode ? "text-slate-400" : "text-slate-500"}`}>
+                    {ch.subtitle}
+                  </p>
+                </button>
+              );
+            })}
+          </nav>
+        </>
+      )}
+    </>
+  );
+
   return (
     <div className={rootClasses}>
       {/* Top bar */}
       <header
+        ref={headerRef}
         className={
           "border-b backdrop-blur-xl " +
           (darkMode
@@ -172,7 +257,11 @@ const App: React.FC = () => {
           <div className="flex items-center gap-3">
             <button
               className="inline-flex items-center justify-center p-2 rounded-lg transition-colors hover:bg-slate-200/50 dark:hover:bg-slate-800/50 text-slate-500 hover:text-slate-700 dark:text-slate-400 dark:hover:text-slate-200"
-              onClick={() => setLeftSidebarOpen((v) => !v)}
+              onClick={() => setLeftSidebarOpen((v) => {
+                const next = !v;
+                if (next && !isLargeScreen) setRightSidebarOpen(false);
+                return next;
+              })}
               title={leftSidebarOpen ? "Collapse sidebar" : "Expand sidebar"}
             >
               <svg
@@ -191,10 +280,10 @@ const App: React.FC = () => {
               </svg>
             </button>
             <div>
-              <p className="text-[11px] font-semibold uppercase tracking-[0.25em] text-slate-300">
+              <p className={`text-[11px] font-semibold uppercase tracking-[0.25em] ${darkMode ? "text-slate-300" : "text-slate-800"}`}>
                 German Through Its Roots
               </p>
-              <p className="text-xs text-slate-400">
+              <p className={`text-xs ${darkMode ? "text-slate-400" : "text-slate-500"}`}>
                 Interactive Reader · Night-first Draft
               </p>
             </div>
@@ -211,8 +300,12 @@ const App: React.FC = () => {
             {active.module && (
               <button
                 className="inline-flex items-center justify-center p-2 rounded-lg transition-colors hover:bg-slate-200/50 dark:hover:bg-slate-800/50 text-slate-500 hover:text-slate-700 dark:text-slate-400 dark:hover:text-slate-200"
-                onClick={() => setRightSidebarOpen((v) => !v)}
-                title={rightSidebarOpen ? "Collapse reading module" : "Show reading module"}
+                onClick={() => setRightSidebarOpen((v) => {
+                  const next = !v;
+                  if (next && !isLargeScreen) setLeftSidebarOpen(false);
+                  return next;
+                })}
+                title={rightSidebarOpen ? "Collapse practice module" : "Show practice module"}
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -234,14 +327,105 @@ const App: React.FC = () => {
         </div>
       </header>
 
+      {/* Mobile sidebar — fixed overlay, slides in from left */}
+      <div
+        className={
+          "lg:hidden fixed left-0 right-0 bottom-0 z-40 overflow-y-auto overflow-x-hidden transition-all duration-500 ease-in-out " +
+          (darkMode ? "border-r border-slate-800 bg-[#050316]" : "border-r border-slate-200 bg-white") +
+          (leftSidebarOpen ? " opacity-100 translate-x-0" : " opacity-0 -translate-x-full")
+        }
+        style={{ top: headerHeight }}
+      >
+        <div className="p-4">
+          {sidebarNavContent}
+        </div>
+      </div>
+
+      {/* Mobile practice module — fixed overlay, slides in from right */}
+      {!isLargeScreen && active.module && (
+        <div
+          className={
+            "fixed left-0 right-0 bottom-0 z-40 overflow-y-auto transition-all duration-500 ease-in-out " +
+            (darkMode ? "bg-[#050316]" : "bg-white") +
+            (rightSidebarOpen ? " opacity-100 translate-x-0" : " opacity-0 translate-x-full")
+          }
+          style={{ top: headerHeight }}
+        >
+          <div className="p-5 pb-8">
+            <p className={`text-[11px] font-semibold uppercase tracking-[0.22em] ${labelText}`}>
+              Practice Module · {active.module.level}
+            </p>
+            <h2 className={`mt-1 font-serif text-xl font-semibold tracking-tight ${headingText}`}>
+              {active.module.title}
+            </h2>
+            <div className="mt-3">
+              <button
+                className="inline-flex rounded-full border border-slate-300/70 bg-white/80 px-3 py-1.5 text-xs font-medium text-slate-700 shadow-sm transition hover:border-slate-400 hover:shadow-md"
+                onClick={() => setShowEnglish((v) => !v)}
+              >
+                {showEnglish ? "Hide English" : "Show English"}
+              </button>
+            </div>
+            <div className="mt-5 space-y-5">
+              <div className={"rounded-2xl border p-4 " + (darkMode ? "border-slate-700 bg-slate-900/80" : "border-slate-200 bg-slate-50/70")}>
+                <p className={`text-[11px] font-semibold uppercase tracking-[0.18em] ${labelText}`}>Context Examples</p>
+                <div className="mt-2 space-y-3 text-[15px] leading-relaxed">
+                  {active.module.germanLines.map((line, i) => (
+                    <div key={i}>
+                      <p className={darkMode ? "text-slate-100" : "text-slate-900"}>{line}</p>
+                      {showEnglish && active.module!.englishLines[i] && (
+                        <p className={`mt-0.5 text-[13px] italic ${darkMode ? "text-slate-400" : "text-slate-500"}`}>{active.module!.englishLines[i]}</p>
+                      )}
+                    </div>
+                  ))}
+                </div>
+              </div>
+              <div className={"rounded-2xl border p-4 " + (darkMode ? "border-slate-700 bg-slate-900/80" : "border-slate-200 bg-white/80")}>
+                <p className={`text-[11px] font-semibold uppercase tracking-[0.18em] ${labelText}`}>Vocabulary</p>
+                <dl className="mt-2 space-y-1.5 text-sm">
+                  {active.module.vocabulary.map((v, i) => (
+                    <div key={i} className="flex items-baseline justify-between gap-3">
+                      <dt className={`font-medium ${darkMode ? "text-slate-100" : "text-slate-900"}`}>{v.german}</dt>
+                      <dd className={`flex-1 text-right text-xs ${darkMode ? "text-slate-300" : "text-slate-600"}`}>{v.english}</dd>
+                    </div>
+                  ))}
+                </dl>
+              </div>
+              <div className={"rounded-2xl border p-4 " + (darkMode ? "border-slate-700 bg-slate-900/80" : "border-slate-200 bg-white/90")}>
+                <p className={`text-[11px] font-semibold uppercase tracking-[0.18em] ${labelText}`}>Exercises</p>
+                <ul className={`mt-2 space-y-1.5 text-sm ${bodyText}`}>
+                  {active.module.tasks.map((englishTask, i) => {
+                    const germanTask = active.module!.tasksGerman?.[i];
+                    const displayTask = showEnglish ? englishTask : (germanTask ?? englishTask);
+                    return (
+                      <li key={i} className="flex gap-2">
+                        <span className={`mt-[1px] text-[11px] font-semibold ${darkMode ? "text-slate-300" : "text-slate-400"}`}>{i + 1}.</span>
+                        <span>{displayTask}</span>
+                      </li>
+                    );
+                  })}
+                </ul>
+                <div className="mt-3">
+                  <label className={`text-xs font-medium ${labelText}`}>Your rewrite / notes (saved per chapter):</label>
+                  <textarea
+                    value={notes[active.id] ?? ""}
+                    onChange={(e) => setNotes((prev) => ({ ...prev, [active.id]: e.target.value }))}
+                    className={"mt-1 h-28 w-full resize-none rounded-2xl border px-3 py-2 text-sm outline-none ring-0 focus:ring-2 " + (darkMode ? "border-slate-700 bg-slate-900/70 text-slate-100 focus:border-slate-500 focus:ring-slate-600" : "border-slate-200 bg-slate-50/70 text-slate-800 focus:border-slate-400 focus:bg-white focus:ring-slate-200")}
+                    placeholder="Rewrite a sentence in your own words, or answer one of the tasks in German…"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      )}
+
       <main className="mx-auto flex max-w-[2000px] flex-col gap-6 px-4 py-6 lg:flex-row lg:px-6 lg:py-10">
-        {/* Sidebar */}
+        {/* Desktop sidebar — in-flow flex child (mobile handled by fixed overlay above) */}
         <aside
           className={
-            "transition-all duration-500 ease-in-out lg:shrink-0 " +
-            (leftSidebarOpen
-              ? "mb-4 w-full opacity-100 lg:mb-0 lg:w-60"
-              : "w-0 h-0 lg:h-auto overflow-hidden opacity-0 lg:w-0")
+            "hidden lg:block shrink-0 transition-all duration-500 ease-in-out " +
+            (leftSidebarOpen ? "w-60 opacity-100" : "w-0 overflow-hidden opacity-0")
           }
         >
           <div
@@ -252,91 +436,7 @@ const App: React.FC = () => {
                 : "border-slate-200 bg-white/80")
             }
           >
-            <p
-              className={`mb-3 text-[11px] font-semibold uppercase tracking-[0.22em] ${labelText}`}
-            >
-              Chapters
-            </p>
-            <nav className="space-y-1">
-              {mainChapters.map((ch) => {
-                const activeState = ch.id === activeId;
-                return (
-                  <button
-                    key={ch.id}
-                    className={`w-full rounded-2xl px-3 py-2 text-left text-sm transition ${activeState
-                      ? darkMode
-                        ? "bg-indigo-600/85 text-slate-50 shadow-[0_0_30px_rgba(129,140,248,0.9)] ring-1 ring-indigo-300/70"
-                        : "bg-slate-900 text-slate-50 shadow-sm"
-                      : darkMode
-                        ? "text-slate-200 hover:bg-slate-800/80"
-                        : "text-slate-700 hover:bg-slate-100/80"
-                      }`}
-                    onClick={() => setActiveId(ch.id)}
-                  >
-                    <div className="flex items-center justify-between gap-2">
-                      <span className="truncate">
-                        {ch.id}. {ch.title}
-                      </span>
-                    </div>
-                    <p
-                      className={`mt-0.5 line-clamp-2 text-[11px] ${activeState
-                        ? "text-slate-200"
-                        : darkMode
-                          ? "text-slate-400"
-                          : "text-slate-500"
-                        }`}
-                    >
-                      {ch.subtitle}
-                    </p>
-                  </button>
-                );
-              })}
-            </nav>
-
-            {appendixChapters.length > 0 && (
-              <>
-                <p
-                  className={`mt-5 mb-2 text-[11px] font-semibold uppercase tracking-[0.22em] ${labelText}`}
-                >
-                  Appendices
-                </p>
-                <nav className="space-y-1">
-                  {appendixChapters.map((ch) => {
-                    const activeState = ch.id === activeId;
-                    return (
-                      <button
-                        key={ch.id}
-                        className={`w-full rounded-2xl px-3 py-2 text-left text-sm transition ${activeState
-                          ? darkMode
-                            ? "bg-indigo-600/85 text-slate-50 shadow-[0_0_30px_rgba(129,140,248,0.9)] ring-1 ring-indigo-300/70"
-                            : "bg-slate-900 text-slate-50 shadow-sm"
-                          : darkMode
-                            ? "text-slate-200 hover:bg-slate-800/80"
-                            : "text-slate-700 hover:bg-slate-100/80"
-                          }`}
-                        onClick={() => setActiveId(ch.id)}
-                      >
-                        <div className="flex items-center justify-between gap-2">
-                          <span className="truncate">
-                            {ch.label ?? "Appendix"}: {ch.title}
-                          </span>
-                        </div>
-                        <p
-                          className={`mt-0.5 line-clamp-2 text-[11px] ${activeState
-                            ? "text-slate-200"
-                            : darkMode
-                              ? "text-slate-400"
-                              : "text-slate-500"
-                            }`}
-                        >
-                          {ch.subtitle}
-                        </p>
-                      </button>
-                    );
-                  })}
-                </nav>
-              </>
-            )}
+            {sidebarNavContent}
           </div>
         </aside>
 
@@ -417,12 +517,11 @@ const App: React.FC = () => {
 
       </main>
 
-      {/* Reading module Drawer */}
-      {active.module && (
+      {/* Desktop: Practice Module — fixed right drawer */}
+      {isLargeScreen && active.module && (
         <div
-          className={`fixed inset-y-0 right-0 z-50 flex h-full shadow-2xl transition-transform duration-500 ease-in-out ${rightSidebarOpen ? "translate-x-0" : "translate-x-full"
-            }`}
-          style={{ width: isLargeScreen ? rightColumnWidth : "100%", maxWidth: "100%" }}
+          className={`fixed inset-y-0 right-0 z-50 flex h-full shadow-2xl transition-transform duration-500 ease-in-out ${rightSidebarOpen ? "translate-x-0" : "translate-x-full"}`}
+          style={{ width: rightColumnWidth }}
         >
           {/* Resize handle (desktop only) */}
           <div
@@ -454,7 +553,7 @@ const App: React.FC = () => {
                   <p
                     className={`text-[11px] font-semibold uppercase tracking-[0.22em] ${labelText}`}
                   >
-                    Reading Module · {active.module.level}
+                    Practice Module · {active.module.level}
                   </p>
                   <h2
                     className={`mt-1 font-serif text-xl font-semibold tracking-tight ${headingText} md:text-2xl`}
@@ -486,41 +585,21 @@ const App: React.FC = () => {
                   <p
                     className={`text-[11px] font-semibold uppercase tracking-[0.18em] ${labelText}`}
                   >
-                    German Text
+                    Context Examples
                   </p>
-                  <div className={`mt-2 space-y-1.5 text-[15px] leading-relaxed ${darkMode ? "text-slate-100" : "text-slate-900"}`}>
+                  <div className={`mt-2 space-y-3 text-[15px] leading-relaxed`}>
                     {active.module.germanLines.map((line, i) => (
-                      <p key={i}>{line}</p>
+                      <div key={i}>
+                        <p className={darkMode ? "text-slate-100" : "text-slate-900"}>{line}</p>
+                        {showEnglish && active.module!.englishLines[i] && (
+                          <p className={`mt-0.5 text-[13px] italic ${darkMode ? "text-slate-400" : "text-slate-500"}`}>
+                            {active.module!.englishLines[i]}
+                          </p>
+                        )}
+                      </div>
                     ))}
                   </div>
                 </div>
-
-                {/* English text toggle */}
-                {showEnglish && (
-                  <div
-                    className={
-                      "rounded-2xl border p-4 " +
-                      (darkMode
-                        ? "border-slate-700 bg-slate-900/80"
-                        : "border-slate-200 bg-white/90")
-                    }
-                  >
-                    <p
-                      className={`text-[11px] font-semibold uppercase tracking-[0.18em] ${darkMode ? "text-slate-300" : "text-slate-400"
-                        }`}
-                    >
-                      English Translation
-                    </p>
-                    <div
-                      className={`mt-2 space-y-1.5 text-[13px] leading-relaxed italic ${darkMode ? "text-slate-200" : "text-slate-600"
-                        }`}
-                    >
-                      {active.module.englishLines.map((line, i) => (
-                        <p key={i}>{line}</p>
-                      ))}
-                    </div>
-                  </div>
-                )}
 
                 {/* Vocabulary */}
                 <div
@@ -571,17 +650,20 @@ const App: React.FC = () => {
                     Exercises
                   </p>
                   <ul className={`mt-2 space-y-1.5 text-sm ${bodyText}`}>
-                    {active.module.tasks.map((t, i) => (
-                      <li key={i} className="flex gap-2">
-                        <span
-                          className={`mt-[1px] text-[11px] font-semibold ${darkMode ? "text-slate-300" : "text-slate-400"
-                            }`}
-                        >
-                          {i + 1}.
-                        </span>
-                        <span>{t}</span>
-                      </li>
-                    ))}
+                    {active.module.tasks.map((englishTask, i) => {
+                      const germanTask = active.module!.tasksGerman?.[i];
+                      const displayTask = showEnglish ? englishTask : (germanTask ?? englishTask);
+                      return (
+                        <li key={i} className="flex gap-2">
+                          <span
+                            className={`mt-[1px] text-[11px] font-semibold ${darkMode ? "text-slate-300" : "text-slate-400"}`}
+                          >
+                            {i + 1}.
+                          </span>
+                          <span>{displayTask}</span>
+                        </li>
+                      );
+                    })}
                   </ul>
                   <div className="mt-3">
                     <label

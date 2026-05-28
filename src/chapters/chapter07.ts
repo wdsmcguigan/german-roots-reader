@@ -188,6 +188,12 @@ export const chapter07: Chapter = {
       "Create two new playful compounds from objects in your room (for example: Kaffeetasse, Bücherregal).",
       "Write a short three-sentence scene using at least two compounds you created.",
       "Invent one playful compound and define it in English (for example: Traumtasche — a pocket for dreams)."
+    ],
+    tasksGerman: [
+      "Zerlege drei deutsche Komposita, die du kennst, in ihre Teile (zum Beispiel: Zahnarzt, Bahnhof, Haustür).",
+      "Erfinde zwei neue spielerische Komposita aus Gegenständen in deinem Zimmer (zum Beispiel: Kaffeetasse, Bücherregal).",
+      "Schreibe eine kurze Szene mit drei Sätzen, in der du mindestens zwei deiner erfundenen Komposita verwendest.",
+      "Erfinde ein spielerisches Kompositum und erkläre es auf Deutsch (zum Beispiel: Traumtasche — eine Tasche für Träume).",
     ]
   }
 };

@@ -217,6 +217,12 @@ export const chapter12: Chapter = {
       { german: "die Sprache", english: "language" }
     ],
     tasks: [
+      "Choose an earlier practice module and summarise it in 2–3 German sentences.",
+      "Rewrite the text of this page ('Verstehen und Gestalten') in your own German words, keeping the same idea.",
+      "Write a closing paragraph in German about your journey with this language so far. Focus: What has changed in your mind?",
+      "Bonus: Use a recording app and read your paragraph aloud in German. Listen back to yourself as someone who actually uses this language.",
+    ],
+    tasksGerman: [
       "Wähle einen früheren Modultest und fasse ihn in 2–3 deutschen Sätzen zusammen.",
       "Schreibe den Text dieser Seite („Verstehen und Gestalten“) in deinen eigenen deutschen Worten neu, mit derselben Idee.",
       "Schreibe einen abschließenden Absatz auf Deutsch über deinen bisherigen Weg mit dieser Sprache. Fokus: Was hat sich in deinem Kopf verändert?",

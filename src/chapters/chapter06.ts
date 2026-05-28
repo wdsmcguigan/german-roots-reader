@@ -233,6 +233,12 @@ export const chapter06: Chapter = {
       "Invent one new compound with -gang or -gang/-gehen as a component (for example: Übergang, Rückgang, Eingang).",
       "Write two sentences using your new compound in context.",
       "Invent one playful compound of your own (for example: Mondgang for a slow walk under moonlight) and write a short sentence with it."
+    ],
+    tasksGerman: [
+      "Unterstreiche oder markiere alle Wörter im Text, die zur Wortwurzel-Familie von gehen gehören.",
+      "Erfinde eine neue Zusammensetzung mit -gang oder -gehen als Bestandteil (zum Beispiel: Übergang, Rückgang, Eingang).",
+      "Schreibe zwei Sätze, in denen du deine neue Zusammensetzung verwendest.",
+      "Erfinde eine spielerische Zusammensetzung (zum Beispiel: Mondgang für einen langsamen Spaziergang im Mondlicht) und schreibe einen kurzen Satz damit.",
     ]
   }
 };

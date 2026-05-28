@@ -193,6 +193,12 @@ export const chapter08: Chapter = {
       "Write one deliberately wrong sentence with a false friend (for example using Gift as ‘present’), then correct it in German and English.",
       "Make a personal mini-list of 3–5 false friends you want to remember and write one example sentence for each.",
       "Optional: Write one true and one false sentence, then correct the false one yourself. Example: Falsch: Heute esse ich Gift im Café. Richtig: Heute esse ich Kuchen im Café."
+    ],
+    tasksGerman: [
+      "Schreibe zwei korrekte Sätze mit bekommen im Präsens (zum Beispiel: Ich bekomme eine Nachricht. Wir bekommen Besuch.).",
+      "Schreibe einen absichtlich falschen Satz mit einem falschen Freund (zum Beispiel Gift als ‚Geschenk'), und korrigiere ihn dann auf Deutsch und Englisch.",
+      "Erstelle eine persönliche Mini-Liste von 3–5 falschen Freunden, die du dir merken möchtest, und schreibe für jeden einen Beispielsatz.",
+      "Optional: Schreibe einen richtigen und einen falschen Satz, und korrigiere den falschen selbst. Beispiel: Falsch: Heute esse ich Gift im Café. Richtig: Heute esse ich Kuchen im Café.",
     ]
   }
 };

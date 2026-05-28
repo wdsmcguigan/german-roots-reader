@@ -176,9 +176,15 @@ export const chapter11: Chapter = {
       { german: "direkt", english: "directly" }
     ],
     tasks: [
+      "Write your own inner monologue in German with 4–6 lines. No English words, no translation.",
+      "Rewrite the same monologue in the third person (er/sie/man), for example: Heute denkt sie direkt in Deutsch.",
+      "Choose a feeling (for example: müde, neugierig, nervös) and describe it with an image rather than just the word. For example: 'Mein Kopf ist schwer, und meine Augen wollen zugehen.'",
+      "Bonus: Write 3–4 sentences using patterns like: mir ist … / ich habe … / es gibt … / das gefällt mir … and read them aloud.",
+    ],
+    tasksGerman: [
       "Schreibe deinen eigenen inneren Monolog auf Deutsch mit 4–6 Zeilen. Keine englischen Wörter, keine Übersetzung.",
       "Schreibe denselben Monolog noch einmal in der dritten Person (er/sie/man), zum Beispiel: Heute denkt sie direkt in Deutsch.",
-      "Wähle ein Gefühl (zum Beispiel: müde, neugierig, nervös) und beschreibe es mit einem Bild statt nur mit dem Wort. Zum Beispiel: „Mein Kopf ist schwer, und meine Augen wollen zugehen.“",
+      "Wähle ein Gefühl (zum Beispiel: müde, neugierig, nervös) und beschreibe es mit einem Bild statt nur mit dem Wort. Zum Beispiel: „Mein Kopf ist schwer, und meine Augen wollen zugehen.”",
       "Bonus: Schreibe 3–4 Sätze mit Mustern wie: mir ist … / ich habe … / es gibt … / das gefällt mir … und lies sie laut vor."
     ]
   }
