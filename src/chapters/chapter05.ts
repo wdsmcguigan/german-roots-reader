@@ -220,6 +220,12 @@ export const chapter05: Chapter = {
       "Write three parallel sentences with trinken (ich trinke, ich trank, ich habe getrunken).",
       "Write one sentence that uses a strong verb and a weak verb together.",
       "Create a sentence where both a weak and a strong verb appear, for example: Ich schreibe langsam und habe Kaffee getrunken."
+    ],
+    tasksGerman: [
+      "Konjugiere singen in der Ich-Form: ich singe, ich sang, ich habe gesungen.",
+      "Schreibe drei parallele Sätze mit trinken (ich trinke, ich trank, ich habe getrunken).",
+      "Schreibe einen Satz, in dem ein starkes und ein schwaches Verb gemeinsam vorkommen.",
+      "Schreibe einen Satz, in dem ein schwaches und ein starkes Verb vorkommen, zum Beispiel: Ich schreibe langsam und habe Kaffee getrunken.",
     ]
   }
 };

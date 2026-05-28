@@ -170,6 +170,11 @@ export const chapter04: Chapter = {
       "Identify which noun is masculine, which feminine, which neuter.",
       "Rewrite the sentences using: der Hund / die Sonne / das Buch.",
       "Create three new sentences with tense variation (war / wird / ist)."
+    ],
+    tasksGerman: [
+      "Bestimme, welches Nomen maskulin, welches feminin und welches neutrum ist.",
+      "Schreibe die Sätze mit folgenden Nomen um: der Hund / die Sonne / das Buch.",
+      "Schreibe drei neue Sätze mit Zeitvariationen (war / wird / ist).",
     ]
   }
 };

@@ -191,6 +191,12 @@ export const chapter03: Chapter = {
       "Find three example sentences in a beginner German textbook or website. Underline the nouns and mark them as N (nominative), A (accusative) or D (dative).",
       "Write one mini-dialogue (3–4 lines) where someone gives, sends or shows something to someone else. Try to include at least one dative and one accusative noun.",
       "Keep a running list of verbs like geben, helfen, schicken that strongly suggest a certain case pattern. Add to it as you continue through the book."
+    ],
+    tasksGerman: [
+      "Nimm drei einfache englische Sätze (zum Beispiel: „The child sees the dog", „I give the woman the book", „We help the man"). Schreibe eine deutsche Version und bezeichne, wer Subjekt, wer direktes Objekt und wer Empfänger ist.",
+      "Suche drei Beispielsätze in einem Anfänger-Lehrwerk oder auf einer Website. Unterstreiche die Nomen und markiere sie als N (Nominativ), A (Akkusativ) oder D (Dativ).",
+      "Schreibe einen kurzen Dialog (3–4 Zeilen), in dem jemand etwas gibt, schickt oder zeigt. Versuche, mindestens ein Dativ- und ein Akkusativnomen einzubauen.",
+      "Führe eine laufende Liste von Verben wie geben, helfen, schicken, die ein bestimmtes Kasusmuster verlangen. Ergänze sie, während du weiterliest.",
     ]
   }
 };
