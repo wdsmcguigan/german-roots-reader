@@ -18,9 +18,6 @@ import { chapter12 } from "./chapter12";
 
 // Import all appendices
 import { appendixA } from "./appendices/appendixA";
-import { appendixB } from "./appendices/appendixB";
-import { appendixC } from "./appendices/appendixC";
-import { appendixD } from "./appendices/appendixD";
 import { appendixE } from "./appendices/appendixE";
 import { appendixF } from "./appendices/appendixF";
 
@@ -43,9 +40,6 @@ export const chapters: Chapter[] = [
   chapter12,
   // Appendices
   appendixA,
-  appendixB,
-  appendixC,
-  appendixD,
   appendixE,
   appendixF,
 ];

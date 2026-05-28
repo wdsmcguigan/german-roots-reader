@@ -13,6 +13,8 @@ export const chapter04: Chapter = {
       heading: "4.1 Why Gender Exists at All",
       paragraphs: [
         "Grammatical gender is not a comment on masculinity or femininity. It is a classification tool — an ancient one. Many Indo-European languages once carried three genders. English lost most of that structure; German preserved it.",
+        "English had three genders too, all the way through the Anglo-Saxon period — sēo sunne (the sun, feminine) and se mōna (the moon, masculine) and þæt wīf (the woman, neuter, because all diminutives were neuter, even adult women). What killed the system was sound erosion: the unstressed vowels at the ends of English words gradually flattened to a single neutral sound, and once they did, the gender markers were indistinguishable.",
+        "German’s stressed endings stayed crisp. The gender stayed crisp with them. So when you meet der/die/das, you’re not meeting arbitrary German bureaucracy. You’re meeting the part of the Old English noun that survived.",
         "Instead of treating der/die/das like three boxes you must memorize, treat them like memory markers. The article and noun fuse into a single sound in your brain: dertisch, dieblume, dashaus.",
         "Gender becomes rhythm — not theory."
       ]
@@ -93,7 +95,9 @@ export const chapter04: Chapter = {
       paragraphs: [
         "Cases don’t create chaos — they show movement.",
         "Masculine nouns shift early, feminine holds longer, neuter behaves like a blend.",
-        "Watch the symmetry, not the exceptions."
+        "Watch the symmetry, not the exceptions.",
+        "Notice the asymmetry between the three columns below: masculine changes its article in every case, neuter changes once, feminine barely moves at all. This isn’t bureaucratic noise. Across Indo-European, feminine declensions consistently lost their case distinctions earlier than masculine ones — the same flattening English completed everywhere, German half-completed in only one gender. When you write ‘die Frau’ and don’t change it for accusative, you’re meeting a sound erosion that started a thousand years ago and stopped halfway.",
+        "You’ll see a ‘Gen’ row in the tables below — genitive. Chapter 3 deferred it because spoken German often replaces it with von + dative. But it still lives in writing, fixed phrases, and the -es ending on masculine and neuter nouns. Read the row; don’t memorise it yet."
       ],
       exampleBlocks: [
         {
@@ -140,7 +144,7 @@ export const chapter04: Chapter = {
         "Gender is not random. Declension is not memorisation.",
         "You now see endings, categories, patterns. You read gender as code.",
         "From here forward, every noun is a rhythm pattern — derTisch, dieBlume, dasHaus — and every case shift is a movement you can hear.",
-        "Next we expand your toolkit into **word order architecture** — how German sentences balance information like structural beams."
+        "Next we look at the engines that move every German sentence — verbs — and how their strong and weak tribes carry a thousand years of pattern memory."
       ]
     }
   ],
@@ -148,33 +152,45 @@ export const chapter04: Chapter = {
     level: "A1",
     title: "Wörter Haben Formen",
     germanLines: [
-      "Der Tisch ist groß.",
-      "Die Blume ist schön.",
-      "Das Haus ist alt.",
-      "Der Tisch bleibt der Tisch.",
-      "Die Blume bleibt die Blume."
+      "Die Zeitung liegt auf dem Tisch.",
+      "Das Mädchen liest.",
+      "Der Lehrer kommt.",
+      "Die Universität ist groß.",
+      "Das Dokument ist neu.",
+      "Endungen sind kleine Signale: -ung, -heit, -tät zeigen oft die.",
+      "-chen, -ment, -um zeigen oft das. -er, -ig, -or zeigen oft der."
     ],
     englishLines: [
-      "The table is big.",
-      "The flower is beautiful.",
-      "The house is old.",
-      "The table stays the table.",
-      "The flower stays the flower."
+      "The newspaper lies on the table.",
+      "The girl reads.",
+      "The teacher comes.",
+      "The university is big.",
+      "The document is new.",
+      "Endings are small signals: -ung, -heit, -tät usually point to die.",
+      "-chen, -ment, -um usually point to das. -er, -ig, -or usually point to der."
     ],
     vocabulary: [
       { german: "der Tisch", english: "table" },
       { german: "die Blume", english: "flower" },
-      { german: "das Haus", english: "house" }
+      { german: "das Haus", english: "house" },
+      { german: "die Zeitung", english: "newspaper (-ung → die)" },
+      { german: "das Mädchen", english: "girl (-chen → das)" },
+      { german: "der Lehrer", english: "teacher (-er → der)" },
+      { german: "die Universität", english: "university (-tät → die)" },
+      { german: "das Dokument", english: "document (-ment → das)" },
+      { german: "der Honig", english: "honey (-ig → der)" },
+      { german: "die Schönheit", english: "beauty (-heit → die)" },
+      { german: "das Thema", english: "theme (-ma → das)" }
     ],
     tasks: [
       "Identify which noun is masculine, which feminine, which neuter.",
       "Rewrite the sentences using: der Hund / die Sonne / das Buch.",
-      "Create three new sentences with tense variation (war / wird / ist)."
+      "Predict the gender of these new nouns based on their endings, then check against §4.2: Wohnung, Mädchen, Direktor, Schönheit, Universität."
     ],
     tasksGerman: [
       "Bestimme, welches Nomen maskulin, welches feminin und welches neutrum ist.",
       "Schreibe die Sätze mit folgenden Nomen um: der Hund / die Sonne / das Buch.",
-      "Schreibe drei neue Sätze mit Zeitvariationen (war / wird / ist).",
+      "Rate das Genus dieser neuen Nomen anhand der Endungen und überprüfe es mit §4.2: Wohnung, Mädchen, Direktor, Schönheit, Universität.",
     ]
   }
 };

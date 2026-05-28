@@ -20,8 +20,9 @@ export const chapter02: Chapter = {
     {
       heading: "2.2 Grimm’s Law Without the Textbook Pain",
       paragraphs: [
-        "Linguists call the big sound changes between Proto-Indo-European, Proto-Germanic and later Germanic languages ‘Grimm’s Law’. You do not need the full theory. You only need a few high-yield patterns.",
-        "The key idea: certain consonants shifted in systematic ways. What looks different today is often just the same sound, at a different stage in the timeline.",
+        "The big sound changes between Proto-Indo-European and the Germanic branch are called Grimm’s Law — and yes, that’s the same Grimm. Jacob Grimm, the elder of the two brothers who collected the fairy tales, was a working philologist. While his brother Wilhelm shaped the storybooks, Jacob spent his days noticing that German Vater and Latin pater and Sanskrit pitar lined up in a way that couldn’t be accident.",
+        "Then he noticed the alignment was systematic — that a p in the older languages reliably showed up as an f in Germanic ones. That insight, published in 1822, is essentially the founding observation of comparative linguistics.",
+        "You don’t need the full theory. You need the moment of recognition Jacob had: that what looks different on the surface is the same sound, caught at a different stage in the timeline.",
         "You already met some of these implicitly in Chapter 1. Now we put them on the table.",
       ],
       exampleBlocks: [
@@ -48,6 +49,14 @@ export const chapter02: Chapter = {
             },
           ],
         },
+      ],
+      // Footnote-style aside follows the table in the next paragraph block below.
+    },
+    {
+      heading: "2.2a A Quick Note on the Shifts You Just Saw",
+      paragraphs: [
+        "Linguistic purists will note these patterns mix two different shifts: Grimm’s Law (older, ancestor-level — Proto-Indo-European to Proto-Germanic) and the High German Consonant Shift (newer — Proto-Germanic to Old High German, the change that pulled standard German away from Low German and English).",
+        "For decoding purposes the simplification works fine. For a deeper dive, the term to search is ‘High German Consonant Shift.’",
       ],
     },
     {
@@ -114,7 +123,7 @@ export const chapter02: Chapter = {
       heading: "2.6 Mini-Reading: Hearing the Old Roots",
       paragraphs: [
         "Read the German sentences aloud first. Try to guess the English meaning using only sound and the patterns you know. Then check the English line.",
-        "Do not worry about every small word. Focus on the core nouns and verbs. That is where the roots speak the loudest.",
+        "Do not worry about every small word — or the small endings on adjectives like ‘kaltes’. Focus on the core nouns and verbs. That is where the roots speak the loudest. The endings are coming in Chapter 3.",
       ],
       exampleBlocks: [
         {
@@ -176,6 +185,9 @@ export const chapter02: Chapter = {
       { german: "entschlüsseln", english: "to decode" },
       { german: "raten", english: "to guess" },
       { german: "verstehen", english: "to understand" },
+      { german: "kalt", english: "cold (k ↔ c; t ↔ d)" },
+      { german: "das Licht", english: "light (ch ↔ gh)" },
+      { german: "der Vater", english: "father (V ↔ F; t ↔ th)" },
     ],
     tasks: [
       "Mark all clear cognates in the German text (Vater, Wasser, Hand, Haus, etc.). Add at least two more that you notice yourself.",

@@ -1,199 +1,200 @@
-// src/chapters/chapter07.ts
-
+// src/chapters/chapter06.ts
 import type { Chapter } from "./types";
 
 export const chapter07: Chapter = {
   id: 7,
-  title: "Compounds as LEGO",
-  subtitle: "Handschuh, Lieblingswort & Co.",
+  title: "Root Families",
+  subtitle: "Ein Wort wird viele.",
   summary:
-    "German lets you stick words together to form precise, often funny new ones. Instead of memorising long words, you learn to read them as LEGO constructions: modifiers stacked in front of a headword. This chapter trains you to decode, build, and play with compounds so they become your favourite part of the language.",
+    "Memorising 1,000 isolated words is slow. Learning 100 roots that generate 3,000 words is efficient. German builds dense families around core verbs and stems. Once you see roots like gehen, schreiben, nehmen, sehen under compounds and prefix verbs, vocabulary stops being a list and becomes a network.",
   sections: [
     {
-      heading: "7.1 The Most Powerful Feature in the Language",
+      heading: "7.1 Vocabulary Grows Like a Tree, Not a List",
       paragraphs: [
-        "German would rather build a new compound than borrow a foreign word. Where English says ‘glove’, German literally says ‘Handschuh’ — hand-shoe. Where English says ‘kindergarten’, it just steals the German compound as-is: Kinder + Garten.",
-        "Compounds are not a side-topic. They are the engine of German vocabulary.",
-        "Once you see long words as stacked blocks instead of monsters, the language stops feeling heavy and starts feeling engineered."
+        "Traditional language courses hand out words like loose leaves. Etymology hands you the trunk.",
+        "In German, one root generates entire forests of meaning. If you truly learn the stem, you unlock every branch built on it.",
+        "You already saw this with gehen hidden inside Zugang, Ausgang, Vorgang, Übergang. Once you recognise the root, you stop treating each word as a stranger. You see them as family.",
+        "This chapter teaches roots in four layers at once — the root itself, its English relatives, the compounds it makes, and the prefix verbs it spawns. Each layer multiplies the others."
       ],
       exampleBlocks: [
         {
-          title: "German as LEGO",
+          title: "Root Family Preview — gehen (to go)",
           rows: [
-            { left: "Hand + Schuh", right: "Handschuh → glove (a shoe for the hand)" },
-            { left: "Zahn + Arzt", right: "Zahnarzt → dentist (tooth doctor)" },
-            { left: "Kühl + Schrank", right: "Kühlschrank → fridge (cool cabinet)" },
-            { left: "Kinder + Garten", right: "Kindergarten → children’s garden" }
+            { left: "gehen", right: "to go, to walk" },
+            { left: "Zugang", right: "zu + Gang → access; way in" },
+            { left: "Ausgang", right: "aus + Gang → exit; way out" },
+            { left: "Vorgang", right: "vor + Gang → process; what is going on" },
+            { left: "Übergang", right: "über + Gang → transition; crossing" }
           ]
         }
       ]
     },
     {
-      heading: "7.2 How Compounds Are Structured",
+      heading: "7.2 Root Family Templates",
       paragraphs: [
-        "German compounds follow a clean rule:",
-        "• Modifier(s) + Headword = Compound.",
-        "The final word — the head — tells you what kind of thing it actually is. Everything to the left sharpens or narrows the meaning.",
-        "You read them logically from right to left: first identify the head, then layer the modifiers."
+        "You will reuse this template throughout the book. Once you understand how one family works, you can build your own.",
+        "Below are four example families. Do not memorise every word. Focus on seeing the logic."
       ],
       exampleBlocks: [
         {
-          title: "Right-to-Left Decoding",
+          title: "Root Family 1 — gehen (to go, walk)",
           rows: [
-            { left: "Handschuh", right: "Schuh (shoe) for the Hand → glove" },
-            { left: "Bahnhof", right: "Hof (yard/area) for Bahn (trains) → station" },
-            { left: "Haustür", right: "Tür (door) for Haus (house) → front door" },
-            { left: "Wasserflasche", right: "Flasche (bottle) for Wasser (water) → water bottle" }
-          ]
-        }
-      ]
-    },
-    {
-      heading: "7.3 Compressed Ideas in One Word",
-      paragraphs: [
-        "Compounds let German compress complex ideas into a single word. English often needs a whole phrase to say the same thing.",
-        "These words might look long, but once you split them, the meaning is almost obvious."
-      ],
-      exampleBlocks: [
-        {
-          title: "Compressed Meaning",
-          rows: [
-            { left: "Morgenmuffel", right: "Morgen (morning) + Muffel (grump) → morning grouch" },
-            { left: "Machtverlustangst", right: "Macht (power) + Verlust (loss) + Angst (fear) → fear of losing power" },
-            { left: "Lebensfreude", right: "Leben (life) + Freude (joy) → joy of living" },
-            { left: "Sonnenschutzfaktor", right: "Sonne (sun) + Schutz (protection) + Faktor (factor) → SPF factor" },
-            { left: "Hauptbahnhof", right: "Haupt (main) + Bahnhof (station) → central station" }
-          ]
-        }
-      ]
-    },
-    {
-      heading: "7.4 A Root Cluster: WORT (Word)",
-      paragraphs: [
-        "Compounds also grow around roots you already know.",
-        "Take Wort (word). Once you recognise it inside longer forms, a whole mini-network unlocks instantly."
-      ],
-      exampleBlocks: [
-        {
-          title: "Wort-Family Compounds",
-          rows: [
-            { left: "Wortschatz", right: "word + treasure → vocabulary" },
-            { left: "Fremdwort", right: "foreign + word → foreign word" },
-            { left: "Schimpfwort", right: "insult + word → swear word" },
-            { left: "Stichwort", right: "stab/poke + word → keyword, cue word" },
-            { left: "Lieblingswort", right: "favourite + word → favourite word" }
-          ]
-        }
-      ]
-    },
-    {
-      heading: "7.5 Verbs and Adjectives as Compounds",
-      paragraphs: [
-        "It’s not just nouns. Verbs and adjectives also combine into compact meaning units.",
-        "Again, you don’t memorise them as noise — you read them as structure."
-      ],
-      exampleBlocks: [
-        {
-          title: "Compound Verbs",
-          rows: [
-            { left: "festhalten", right: "fest (firm) + halten (hold) → hold tight" },
-            { left: "zurückkehren", right: "zurück (back) + kehren (turn) → return" },
-            { left: "durchlesen", right: "durch (through) + lesen (read) → read through" }
+            { left: "English relatives", right: "gait, gate (opening), gangway" },
+            { left: "Core logic", right: "movement, transition, passage" },
+            { left: "Gang", right: "‘going’ → corridor, passage, gait" },
+            { left: "Zugang", right: "zu + Gang → access, way in" }
+          ],
+          moreTitle: "Extended Family",
+          moreRows: [
+            { left: "Ausgang", right: "aus + Gang → exit, way out" },
+            { left: "Übergang", right: "über + Gang → crossing, transition" },
+            { left: "Vorgang", right: "vor + Gang → process; what is going on" }
           ]
         },
         {
-          title: "Compound Adjectives",
+          title: "Root Family 2 — schreiben (to write)",
           rows: [
-            { left: "kinderleicht", right: "Kinder (children) + leicht (easy) → child’s play, very easy" },
-            { left: "blitzschnell", right: "Blitz (lightning) + schnell (fast) → lightning-fast" }
-          ]
-        }
-      ]
-    },
-    {
-      heading: "7.6 Exercises: Build and Decode",
-      paragraphs: [
-        "Now you train your brain to think in blocks instead of isolated words. Do this on paper or in a note app and extend it over time."
-      ],
-      exampleBlocks: [
-        {
-          title: "A) Build Compounds",
-          rows: [
-            { left: "Zeit →", right: "Zeitzone, Zeitraum, Zeitpunkt" },
-            { left: "Hand →", right: "Handschrift, Handwerk, Handball" },
-            { left: "Licht →", right: "Lichtquelle, Lichtschalter" }
+            { left: "English relatives", right: "scribe, script, inscription" },
+            { left: "Core logic", right: "recording, marking, expressing in text" },
+            { left: "Beschreibung", right: "be + schreiben → description" }
+          ],
+          moreTitle: "Extended Family",
+          moreRows: [
+            { left: "Einschreiben", right: "ein + schreiben → to enrol; registered mail" },
+            { left: "Umschreiben", right: "um + schreiben → to rewrite, paraphrase" },
+            { left: "Verschreibung", right: "ver + schreiben → prescription" }
           ]
         },
         {
-          title: "B) Decode Compounds",
+          title: "Root Family 3 — nehmen (to take)",
           rows: [
-            { left: "Lebensfreude", right: "life + joy → joy of living" },
-            { left: "Hauptbahnhof", right: "main + station → central station" },
-            { left: "Sonnenschutzfaktor", right: "sun + protection + factor → sun protection factor (SPF)" }
+            { left: "English echoes", right: "nimble (quick to take), numb (taken feeling)" },
+            { left: "Core logic", right: "acquiring, grasping, absorbing" },
+            { left: "annehmen", right: "to accept; to take in" },
+            { left: "aufnehmen", right: "to record; to take up" }
+          ],
+          moreTitle: "Extended Family",
+          moreRows: [
+            { left: "entnehmen", right: "to remove; to take out" },
+            { left: "übernehmen", right: "to take over; assume control" },
+            { left: "vernehmen", right: "to examine, interrogate; take information" }
+          ]
+        },
+        {
+          title: "Root Family 4 — sehen (to see)",
+          rows: [
+            { left: "English relatives", right: "sight, oversee, insight" },
+            { left: "Core logic", right: "perception, observation" },
+            { left: "ansehen", right: "to look at; to view" },
+            { left: "übersehen", right: "to overlook; to miss, ignore" }
+          ],
+          moreTitle: "Extended Family",
+          moreRows: [
+            { left: "einsehen", right: "to see into; to realise" },
+            { left: "zusehen", right: "to watch; to observe passively" },
+            { left: "versehen", right: "to do by mistake; mis-see → error" }
+          ]
+        },
+        {
+          title: "Root Family 5 — ziehen (to pull, to move)",
+          rows: [
+            { left: "English relatives", right: "tug, tow, tie (PIE *deuk-); via Latin: duct, duke" },
+            { left: "Core logic", right: "pulling — and, by extension, pulling yourself somewhere new" },
+            { left: "Anzug", right: "‘the pull-on’ → suit (the thing you pull on)" },
+            { left: "Umzug", right: "‘the pull-around’ → a move, a procession" }
+          ],
+          moreTitle: "Extended Family",
+          moreRows: [
+            { left: "anziehen", right: "to put on (clothes); to attract" },
+            { left: "ausziehen", right: "to take off (clothes); to move out" },
+            { left: "einziehen", right: "to move in" },
+            { left: "umziehen", right: "to change clothes; to relocate" },
+            { left: "Erziehung", right: "‘pulling out’ → upbringing, education" },
+            { left: "Zug", right: "a pull; a train; a draft of air" }
           ]
         }
       ]
     },
     {
-      heading: "7.7 Creative Word Construction",
+      heading: "7.3 A Root That Lives a Double Life",
       paragraphs: [
-        "Once you understand how compounds work, you can invent your own. Native speakers do this constantly.",
-        "Even if your creations are not in any dictionary, they are usually understandable — and memorable."
+        "Of the families above, ziehen behaves differently. The others stay close to one core meaning. Ziehen split itself in half — and German grammar kept score.",
+        "Its oldest job was muscle. Pulling carts, dragging rope, towing a load. The PIE root *deuk- — that’s Proto-Indo-European, the reconstructed ancestor of English, German, Latin, Sanskrit and dozens of others; the asterisk marks a word linguists have rebuilt but never directly observed — surfaces in English as tug, tow, tie, and gave Latin its words for leading and channeling: duct, duke.",
+        "Then the wagons happened. Before moving vans existed, relocating meant packing your life into a cart and pulling it to the next valley. Tribes and families literally said the equivalent of ‘we pulled to the next town.’ Over time, the wagons fell out of the sentence. The pulling stayed, but it meant the migration itself.",
+        "Now ziehen does both jobs. With a direct object — a door, a card, a cable — it is still old physical work, and it takes haben. Without one, it means relocating, and it takes sein. (You met this split in §5.6.) Er hat die Tür gezogen versus er ist nach Berlin gezogen: same verb, two events."
       ],
       exampleBlocks: [
         {
-          title: "Playful Creations",
+          title: "You’ll See This Again — A Pattern Across Germanic",
           rows: [
-            { left: "Ausspracheangst", right: "pronunciation + fear → fear of mispronouncing" },
-            { left: "Grammatikverbesserer", right: "grammar + improver → grammar corrector" },
-            { left: "Überraschungsfreund", right: "surprise + friend → pleasantly surprising friend/guest" }
+            { left: "English pack", right: "bundle → ‘pack up and leave’ — the wrapping becomes the departure" },
+            { left: "English bear / German tragen", right: "carry weight → bear a child → bear a burden — the load becomes the state" },
+            { left: "English move / German bewegen", right: "shift an object → move to a new city — the action becomes the relocation" },
+            { left: "The trick", right: "Germanic minds repeatedly took a physical-load verb and reused it for an abstract change of state or place" },
+            { left: "Note inside English", right: "bear (the animal) and bare (naked) are unrelated to bear (carry). The cognate lives in the verb sense alone." }
           ]
         }
       ]
     },
     {
-      heading: "7.8 Key Insight for Chapter 7",
+      heading: "7.4 How to Generate New Vocabulary On Your Own",
       paragraphs: [
-        "German compounding doesn’t ask you to memorise more. It invites you to build more.",
-        "You now think in structure, not just vocabulary. Long words become transparent: headword at the end, modifiers stacked in front.",
-        "Once compounds feel like LEGO, you stop fearing big words and start enjoying them."
+        "Once you understand root families, you no longer wait for a teacher or app to feed you words. You can generate them.",
+        "For any new root, ask yourself:",
+        "• What English words share letters, sound, or meaning with this stem?",
+        "• How do meaning and structure align?",
+        "• What happens if I add common prefixes?",
+        "• Does German form compound nouns from this root?",
+        "You turn vocabulary into a building kit, not a memorisation list."
+      ]
+    },
+    {
+      heading: "7.5 Closing Insight for Chapter 7",
+      paragraphs: [
+        "Vocabulary is not a flat list. It is a network.",
+        "Roots are engines. Prefixes are fuel. Compounds are architecture.",
+        "Once you master root families, German stops expanding linearly and starts expanding exponentially.",
+        "This is where fluency accelerates: you no longer collect words — you grow systems."
       ]
     }
   ],
   module: {
     level: "A1–A2",
-    title: "Wörter Kleben Zusammen",
+    title: "Ein Wort Wird Viele",
     germanLines: [
-      "Ich trinke Kaffee aus einer Tasse.",
-      "Auf dem Tisch liegt mein Notizbuch.",
-      "Heute habe ich ein neues Lieblingswort: Handschuh.",
-      "Hand + Schuh = ein Schuh für die Hand.",
-      "Deutsch baut Wörter wie Lego."
+      "Ich gehe langsam durch die Stadt.",
+      "Der Zugang zum Park ist offen.",
+      "Ein Ausgang führt zum Fluss.",
+      "Jeder Vorgang hat einen Anfang.",
+      "Ein kleines Wort baut viele große Wörter."
     ],
     englishLines: [
-      "I drink coffee from a cup.",
-      "On the table lies my notebook.",
-      "Today I have a new favourite word: Handschuh.",
-      "Hand + shoe = a shoe for the hand.",
-      "German builds words like LEGO."
+      "I walk slowly through the city.",
+      "The entrance to the park is open.",
+      "An exit leads to the river.",
+      "Every process has a beginning.",
+      "A small word builds many big words."
     ],
     vocabulary: [
-      { german: "der Handschuh", english: "glove (hand-shoe)" },
-      { german: "das Notizbuch", english: "notebook" },
-      { german: "das Lieblingswort", english: "favourite word" },
-      { german: "die Tasse", english: "cup" }
+      { german: "gehen", english: "to go, to walk" },
+      { german: "Zugang", english: "access, entrance" },
+      { german: "Ausgang", english: "exit" },
+      { german: "Vorgang", english: "process" },
+      { german: "Anfang", english: "beginning" },
+      { german: "führt", english: "leads (from führen, to lead)" },
+      { german: "die Stadt", english: "city" }
     ],
     tasks: [
-      "Break three German compounds you know into their parts (for example: Zahnarzt, Bahnhof, Haustür).",
-      "Create two new playful compounds from objects in your room (for example: Kaffeetasse, Bücherregal).",
-      "Write a short three-sentence scene using at least two compounds you created.",
-      "Invent one playful compound and define it in English (for example: Traumtasche — a pocket for dreams)."
+      "Underline or highlight all words in the text that belong to the root family of gehen.",
+      "Decode these compounds without checking a dictionary: Mitteilung (mit + teilen), Vorstellung (vor + stellen), Entdeckung (ent + decken), Gegenstand (gegen + Stand). Write your guess, then verify.",
+      "Write two sentences using your new compound in context.",
+      "Invent one playful compound of your own (for example: Mondgang for a slow walk under moonlight) and write a short sentence with it."
     ],
     tasksGerman: [
-      "Zerlege drei deutsche Komposita, die du kennst, in ihre Teile (zum Beispiel: Zahnarzt, Bahnhof, Haustür).",
-      "Erfinde zwei neue spielerische Komposita aus Gegenständen in deinem Zimmer (zum Beispiel: Kaffeetasse, Bücherregal).",
-      "Schreibe eine kurze Szene mit drei Sätzen, in der du mindestens zwei deiner erfundenen Komposita verwendest.",
-      "Erfinde ein spielerisches Kompositum und erkläre es auf Deutsch (zum Beispiel: Traumtasche — eine Tasche für Träume).",
+      "Unterstreiche oder markiere alle Wörter im Text, die zur Wortwurzel-Familie von gehen gehören.",
+      "Entschlüssele diese Zusammensetzungen ohne Wörterbuch: Mitteilung (mit + teilen), Vorstellung (vor + stellen), Entdeckung (ent + decken), Gegenstand (gegen + Stand). Notiere deine Vermutung, überprüfe sie dann.",
+      "Schreibe zwei Sätze, in denen du deine neue Zusammensetzung verwendest.",
+      "Erfinde eine spielerische Zusammensetzung (zum Beispiel: Mondgang für einen langsamen Spaziergang im Mondlicht) und schreibe einen kurzen Satz damit.",
     ]
   }
 };
