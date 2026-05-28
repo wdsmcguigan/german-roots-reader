@@ -1,27 +1,33 @@
 # Editorial Review
 
-Runs a full editorial pass on German Roots Reader using the three editorial agents in sequence.
+Runs a full editorial pass on German Roots Reader using all four editorial agents.
 
 ## What This Does
 
-1. **editorial-director** — overall structural/arc analysis of the whole book
-2. **reader-sim** — dual-persona reading simulation on Chapter 1 (the entry point)
-3. **voice-auditor** — voice and story-density audit on Chapter 1
+1. **editorial-director** — full structural/arc analysis of the whole book
+2. **reader-sim** — dual-persona simulation (Maya + David) across all chapters, structured by chapter
+3. **voice-auditor** — story density, audience reach, and audio viability audit across all chapters
+4. **module-auditor** — Practice Module quality audit (Examples, Vocabulary, Exercises) across all chapters
 
-You can also run individual agents directly:
-- For a reader sim on a specific chapter: mention "reader-sim chapter N"
-- For a voice audit on a specific chapter: mention "voice-auditor chapter N"
-- For the full structural pass only: mention "editorial-director"
+All four agents output findings **plus** a structured `## Editorial Action Plan` block
+at the end of their report. These action plan blocks are the input for `/apply-editorial-changes`.
 
 ## Usage
 
-Type `/editorial-review` to run the full pass, or add a chapter number to focus:
-`/editorial-review chapter 3`
+```
+/editorial-review              # full pass — all four agents, all chapters
+/editorial-review chapter 3    # reader-sim and voice-auditor focused on Chapter 3 only;
+                               # editorial-director and module-auditor still run full book
+/editorial-review module       # module-auditor only
+/editorial-review structure    # editorial-director only
+```
 
----
+## Important
 
-Run the editorial-director agent first for the structural overview, then
-reader-sim and voice-auditor on the specified chapter (default: Chapter 1).
-Report findings for each agent separately with a clear heading, then close
-with a combined **Priority List**: the top 5 changes across all three analyses
-that would most improve the book.
+Each agent runs independently. Run all four in parallel. Report findings under
+separate headings. Close with a **Combined Top 5 Priority List** drawn from all
+four action plans — the changes that would most improve the book.
+
+The action plan items each agent outputs can be passed directly to
+`/apply-editorial-changes` for execution. Review and adjust the plan before
+triggering that command.
