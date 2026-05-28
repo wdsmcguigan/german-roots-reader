@@ -1,204 +1,181 @@
-// src/chapters/chapter08.ts
+// src/chapters/chapter07.ts
 
 import type { Chapter } from "./types";
 
 export const chapter08: Chapter = {
   id: 8,
-  title: "False Friends",
-  subtitle: "bekommen, Gift & other traps.",
+  title: "Compounds as LEGO",
+  subtitle: "Handschuh, Lieblingswort & Co.",
   summary:
-    "Some German words look like English but mean something very different. Instead of fearing them, you learn why meanings drift, how false friends are born, and how to build a personal watchlist so they become historical clues instead of traps.",
+    "German lets you stick words together to form precise, often funny new ones. Instead of memorising long words, you learn to read them as LEGO constructions: modifiers stacked in front of a headword. This chapter trains you to decode, build, and play with compounds so they become your favourite part of the language.",
   sections: [
     {
-      heading: "8.1 When Familiarity Lies to You",
+      heading: "8.1 The Most Powerful Feature in the Language",
       paragraphs: [
-        "Up to now, German has mostly rewarded your instincts. Roots matched, sound shifts made sense, compounds felt logical.",
-        "False friends are the next test: words that look like English but are not. Words that used to match until meaning wandered. Words that share ancestry, but not destiny.",
-        "You do not beat false friends by brute-force memorisation. You beat them by understanding how languages drift apart."
-      ]
-    },
-    {
-      heading: "8.2 Why False Friends Exist",
-      paragraphs: [
-        "Every word carries history. English and German split, evolved, borrowed from French and Latin, simplified in different ways and drifted in meaning.",
-        "Some pairs stayed close: Haus/house, kalt/cold, Wasser/water. Others wandered off:",
+        "German would rather build a new compound than borrow a foreign word. Where English says ‘glove’, German literally says ‘Handschuh’ — hand-shoe. Where English says ‘kindergarten’, it just steals the German compound as-is: Kinder + Garten.",
+        "Compounds are not a side-topic. They are the engine of German vocabulary.",
+        "Once you see long words as stacked blocks instead of monsters, the language stops feeling heavy and starts feeling engineered."
       ],
       exampleBlocks: [
         {
-          title: "Same Roots, Different Destinies",
+          title: "German as LEGO",
           rows: [
-            { left: "bekommen", right: "looks like ‘become’ → actually ‘to receive’" },
-            { left: "bald", right: "looks like ‘bald’ → actually ‘soon’" },
-            { left: "Rat", right: "looks like ‘rat’ → actually ‘advice; council’" }
+            { left: "Hand + Schuh", right: "Handschuh → glove (a shoe for the hand)" },
+            { left: "Zahn + Arzt", right: "Zahnarzt → dentist (tooth doctor)" },
+            { left: "Kühl + Schrank", right: "Kühlschrank → fridge (cool cabinet)" },
+            { left: "Kinder + Garten", right: "Kindergarten → children’s garden" }
           ]
         }
       ]
     },
     {
-      heading: "8.3 The Five Types of False Friends",
+      heading: "8.2 How Compounds Are Structured",
       paragraphs: [
-        "False friends are easier to tame when you know what kind of trick they are playing. Most of them fall into a few patterns."
+        "German compounds follow a clean rule:",
+        "• Modifier(s) + Headword = Compound.",
+        "The final word — the head — tells you what kind of thing it actually is. Everything to the left sharpens or narrows the meaning.",
+        "You read them logically from right to left: first identify the head, then layer the modifiers."
       ],
       exampleBlocks: [
         {
-          title: "1) Ancient Cognates with Diverged Meaning",
+          title: "Right-to-Left Decoding",
           rows: [
-            { left: "Gift (German)", right: "poison — NOT a present" },
-            { left: "gift (English)", right: "present — generous, not deadly" }
-          ]
-        },
-        {
-          title: "2) Borrowed Words That Shifted",
-          rows: [
-            { left: "Chef (German)", right: "boss, manager — hierarchy" },
-            { left: "chef (English)", right: "head cook — kitchen" }
-          ]
-        },
-        {
-          title: "3) Words That Shrunk or Expanded",
-          rows: [
-            { left: "brav (German)", right: "well-behaved, good" },
-            { left: "brave (English)", right: "courageous, fearless" }
-          ]
-        },
-        {
-          title: "4) Older Meanings vs New Meanings",
-          rows: [
-            { left: "fast (German)", right: "almost, nearly" },
-            { left: "fast (English)", right: "quick" }
-          ]
-        },
-        {
-          title: "5) Pure Coincidence",
-          rows: [
-            { left: "Brief (German)", right: "letter (mail) — not ‘brief’/short" },
-            { left: "Lokomotive (German)", right: "locomotive — not ‘location’" }
+            { left: "Handschuh", right: "Schuh (shoe) for the Hand → glove" },
+            { left: "Bahnhof", right: "Hof (yard/area) for Bahn (trains) → station" },
+            { left: "Haustür", right: "Tür (door) for Haus (house) → front door" },
+            { left: "Wasserflasche", right: "Flasche (bottle) for Wasser (water) → water bottle" }
           ]
         }
       ]
     },
     {
-      heading: "8.4 High-Risk Everyday False Friends",
+      heading: "8.3 Compressed Ideas in One Word",
       paragraphs: [
-        "This book focuses on false friends that actually show up at beginner and lower-intermediate level. These are the ones that can genuinely confuse you in real text or speech.",
-        "Read the table, then say the real meanings out loud once, with a clear sentence in your head."
+        "Compounds let German compress complex ideas into a single word. English often needs a whole phrase to say the same thing.",
+        "These words might look long, but once you split them, the meaning is almost obvious."
       ],
       exampleBlocks: [
         {
-          title: "Core Watchlist",
+          title: "Compressed Meaning",
           rows: [
-            { left: "bekommen", right: "to receive — NOT ‘to become’" },
-            { left: "bald", right: "soon — NOT ‘bald (no hair)’" },
-            { left: "Chef", right: "boss, manager — NOT ‘chef/cook’" },
-            { left: "Gift", right: "poison — NOT ‘present’" },
-            { left: "fast", right: "almost — NOT ‘fast/quick’" }
-          ],
-          moreTitle: "More False Friends",
-          moreRows: [
-            { left: "brav", right: "well-behaved — NOT ‘brave’" },
-            { left: "aktuell", right: "current, up-to-date — NOT ‘actual’" },
-            { left: "eventuell", right: "possibly, maybe — NOT ‘eventually’" },
-            { left: "Fabrik", right: "factory — NOT ‘fabric’" },
-            { left: "großartig", right: "magnificent, fantastic — NOT ‘gross’" }
+            { left: "Morgenmuffel", right: "Morgen (morning) + Muffel (grump) → morning grouch" },
+            { left: "Sehenswürdigkeit", right: "sehen (see) + würdig (worthy) + -keit (-ness) → sight worth seeing, tourist attraction" },
+            { left: "Lebensfreude", right: "Leben (life) + Freude (joy) → joy of living" },
+            { left: "Sonnenschutzfaktor", right: "Sonne (sun) + Schutz (protection) + Faktor (factor) → SPF factor" },
+            { left: "Hauptbahnhof", right: "Haupt (main) + Bahnhof (station) → central station" }
           ]
         }
       ]
     },
     {
-      heading: "8.5 Why Learning These Makes You Smarter, Not Cautious",
+      heading: "8.4 A Root Cluster: WORT (Word)",
       paragraphs: [
-        "False friends are not there to humiliate you. They are fossils showing where English and German split paths.",
-        "When you see eventuell and your brain screams ‘eventually’, you pause and remember: German often kept the older, more literal meaning. English sometimes slid into something metaphorical or shifted entirely.",
-        "Over time, your instinct rewires. You stop trusting the English look-alike and start asking: how did this word travel here?"
-      ]
-    },
-    {
-      heading: "8.6 Exercises: Correct the Lies",
-      paragraphs: [
-        "Now you train your brain to spot the trap and replace it with the correct meaning. Don’t rush. Focus on the feeling of correction."
+        "Compounds also grow around roots you already know.",
+        "Take Wort (word). Once you recognise it inside longer forms, a whole mini-network unlocks instantly."
       ],
       exampleBlocks: [
         {
-          title: "A) Fix the Sentence in Your Head",
+          title: "Wort-Family Compounds",
           rows: [
-            {
-              left: "Ich bekomme morgen ein Paket.",
-              right: "I receive a package tomorrow. (NOT: I become a package.)"
-            },
-            {
-              left: "Das ist vielleicht irgendwann eventuell möglich.",
-              right: "That is possibly maybe doable someday. (eventuell = possibly, not eventually)"
-            },
-            {
-              left: "Der aktuelle Plan ist besser.",
-              right: "The current plan is better. (NOT: the ‘actual real’ plan.)"
-            },
-            {
-              left: "Er hat mir einen guten Rat gegeben.",
-              right: "He gave me good advice. (Rat = advice, NOT a small animal.)"
-            },
-            {
-              left: "Das Essen war Gift.",
-              right: "The food was poison. (NOT: a gift.)"
-            }
+            { left: "Wortschatz", right: "word + treasure → vocabulary" },
+            { left: "Fremdwort", right: "foreign + word → foreign word" },
+            { left: "Schimpfwort", right: "insult + word → swear word" },
+            { left: "Stichwort", right: "stab/poke + word → keyword, cue word" },
+            { left: "Lieblingswort", right: "favourite + word → favourite word" }
+          ]
+        }
+      ]
+    },
+    {
+      heading: "8.5 Verbs and Adjectives as Compounds",
+      paragraphs: [
+        "It’s not just nouns. Verbs and adjectives also combine into compact meaning units.",
+        "Again, you don’t memorise them as noise — you read them as structure."
+      ],
+      exampleBlocks: [
+        {
+          title: "Compound Verbs",
+          rows: [
+            { left: "festhalten", right: "fest (firm) + halten (hold) → hold tight" },
+            { left: "zurückkehren", right: "zurück (back) + kehren (turn) → return" },
+            { left: "durchlesen", right: "durch (through) + lesen (read) → read through" }
           ]
         },
         {
-          title: "B) Quick Recognition Drill",
+          title: "Compound Adjectives",
           rows: [
-            { left: "brav", right: "well-behaved, good" },
-            { left: "schlimm", right: "bad, terrible (NOT ‘slim’)" },
-            { left: "großartig", right: "wonderful, magnificent" },
-            { left: "aktuell", right: "current" },
-            { left: "Fabrik", right: "factory" }
+            { left: "kinderleicht", right: "Kinder (children) + leicht (easy) → child’s play, very easy" },
+            { left: "blitzschnell", right: "Blitz (lightning) + schnell (fast) → lightning-fast" }
           ]
         }
       ]
     },
     {
-      heading: "8.7 Closing Insight for Chapter 8",
+      heading: "8.6 Creative Word Construction",
       paragraphs: [
-        "False friends are not bugs in the system. They are history lessons wearing a disguise.",
-        "Once you see why meanings diverge — drift, borrowing, metaphor — these words stop deceiving you. They become markers: signs that tell you how English and German parted ways.",
-        "You are no longer afraid of the familiar-looking word. You are alert, curious, and starting to think like a historical linguist in training."
+        "Once you understand how compounds work, you can invent your own. Native speakers do this constantly.",
+        "Even if your creations are not in any dictionary, they are usually understandable — and memorable."
+      ],
+      exampleBlocks: [
+        {
+          title: "Playful Creations",
+          rows: [
+            { left: "Ausspracheangst", right: "pronunciation + fear → fear of mispronouncing" },
+            { left: "Grammatikverbesserer", right: "grammar + improver → grammar corrector" },
+            { left: "Überraschungsfreund", right: "surprise + friend → pleasantly surprising friend/guest" }
+          ]
+        }
+      ]
+    },
+    {
+      heading: "8.7 Key Insight for Chapter 8",
+      paragraphs: [
+        "German compounding doesn’t ask you to memorise more. It invites you to build more.",
+        "You now think in structure, not just vocabulary. Long words become transparent: headword at the end, modifiers stacked in front.",
+        "Once compounds feel like LEGO, you stop fearing big words and start enjoying them."
       ]
     }
   ],
   module: {
     level: "A1–A2",
-    title: "Wörter Täuschen Manchmal",
+    title: "Wörter Kleben Zusammen",
     germanLines: [
-      "Heute bekomme ich ein Paket.",
-      "Das bedeutet: Ich erhalte etwas.",
-      "Ich werde nicht jemand anderes — es heißt nicht „become“.",
-      "„Gift“ heißt nicht Geschenk, es heißt Gift = Poison.",
-      "Manche Wörter sehen gleich aus, aber meinen etwas anderes."
+      "Ich trinke Kaffee aus einer Tasse.",
+      "Auf dem Tisch liegt mein Notizbuch.",
+      "Heute habe ich ein neues Lieblingswort: Handschuh.",
+      "Hand + Schuh = ein Schuh für die Hand.",
+      "Deutsch baut Wörter wie Lego."
     ],
     englishLines: [
-      "Today I get a package.",
-      "That means: I receive something.",
-      "I do not become someone else — it does not mean “become.”",
-      "“Gift” does not mean present, it means poison.",
-      "Some words look the same, but mean something different."
+      "I drink coffee from a cup.",
+      "On the table lies my notebook.",
+      "Today I have a new favourite word: Handschuh.",
+      "Hand + shoe = a shoe for the hand.",
+      "German builds words like LEGO."
     ],
     vocabulary: [
-      { german: "bekommen", english: "to receive (NOT: to become)" },
-      { german: "erhalten", english: "to receive, obtain" },
-      { german: "das Gift", english: "poison" },
-      { german: "das Paket", english: "package, parcel" },
-      { german: "anders", english: "different" }
+      { german: "der Handschuh", english: "glove (hand-shoe)" },
+      { german: "das Notizbuch", english: "notebook" },
+      { german: "das Lieblingswort", english: "favourite word" },
+      { german: "die Tasse", english: "cup" },
+      { german: "der Zahnarzt", english: "dentist (tooth + doctor)" },
+      { german: "der Bahnhof", english: "train station (train + yard)" },
+      { german: "der Kühlschrank", english: "fridge (cool + cabinet)" },
+      { german: "der Kindergarten", english: "kindergarten (children + garden)" },
+      { german: "der Wortschatz", english: "vocabulary (word + treasure)" },
+      { german: "die Haustür", english: "front door (house + door)" }
     ],
     tasks: [
-      "Write two correct sentences with bekommen in the present tense (for example: Ich bekomme eine Nachricht. Wir bekommen Besuch.).",
-      "Write one deliberately wrong sentence with a false friend (for example using Gift as ‘present’), then correct it in German and English.",
-      "Make a personal mini-list of 3–5 false friends you want to remember and write one example sentence for each.",
-      "Optional: Write one true and one false sentence, then correct the false one yourself. Example: Falsch: Heute esse ich Gift im Café. Richtig: Heute esse ich Kuchen im Café."
+      "Break three German compounds you know into their parts (for example: Zahnarzt, Bahnhof, Haustür).",
+      "Create two new playful compounds from objects in your room (for example: Kaffeetasse, Bücherregal).",
+      "Write a short three-sentence scene using at least two compounds you created.",
+      "Invent one playful compound and define it in English (for example: Traumtasche — a pocket for dreams)."
     ],
     tasksGerman: [
-      "Schreibe zwei korrekte Sätze mit bekommen im Präsens (zum Beispiel: Ich bekomme eine Nachricht. Wir bekommen Besuch.).",
-      "Schreibe einen absichtlich falschen Satz mit einem falschen Freund (zum Beispiel Gift als ‚Geschenk'), und korrigiere ihn dann auf Deutsch und Englisch.",
-      "Erstelle eine persönliche Mini-Liste von 3–5 falschen Freunden, die du dir merken möchtest, und schreibe für jeden einen Beispielsatz.",
-      "Optional: Schreibe einen richtigen und einen falschen Satz, und korrigiere den falschen selbst. Beispiel: Falsch: Heute esse ich Gift im Café. Richtig: Heute esse ich Kuchen im Café.",
+      "Zerlege drei deutsche Komposita, die du kennst, in ihre Teile (zum Beispiel: Zahnarzt, Bahnhof, Haustür).",
+      "Erfinde zwei neue spielerische Komposita aus Gegenständen in deinem Zimmer (zum Beispiel: Kaffeetasse, Bücherregal).",
+      "Schreibe eine kurze Szene mit drei Sätzen, in der du mindestens zwei deiner erfundenen Komposita verwendest.",
+      "Erfinde ein spielerisches Kompositum und erkläre es auf Deutsch (zum Beispiel: Traumtasche — eine Tasche für Träume).",
     ]
   }
 };

@@ -125,6 +125,7 @@ export const chapter05: Chapter = {
     {
       heading: "5.6 Haben or Sein? Two Helpers, Two Worlds",
       paragraphs: [
+        "Two helpers, one rule of thumb: most verbs take haben. Use sein only when the subject moves to a new place (gehen, kommen, fahren) or changes state on its own (einschlafen, sterben). Everything else: haben. That rule covers about 95% of cases. The rest of this section is the interesting 5% — verbs that flip meaning depending on which helper you choose.",
         "The ge- participle tells you when an action happened. The auxiliary tells you what kind of event you just witnessed.",
         "German splits its perfect tense between two helpers. The rule is short: if the verb describes an action carried out on an object, it takes haben. If it describes a change of location, or a state the subject ends up in on its own, it takes sein.",
         "Most verbs sit on one side or the other. A handful — the most interesting ones — flip depending on what they mean in a given sentence. Ziehen is the headline case: er hat die Tür gezogen (he pulled the door) and er ist nach Berlin gezogen (he moved to Berlin) share one participle but describe two different events."
@@ -143,51 +144,13 @@ export const chapter05: Chapter = {
       ]
     },
     {
-      heading: "5.7 Exercises: Strong vs Weak in Your Head",
-      paragraphs: [
-        "Now test the patterns. Do not memorise — recognise.",
-        "First, decide whether each verb feels weak (W) or strong (S). Then, try to guess past forms based on the vowel tribes."
-      ],
-      exampleBlocks: [
-        {
-          title: "A) Strong or Weak?",
-          rows: [
-            { left: "lernen", right: "W (lernen → lernte → gelernt)" },
-            { left: "schwimmen", right: "S (schwimmen → schwamm → geschwommen)" },
-            { left: "trinken", right: "S (trinken → trank → getrunken)" },
-            { left: "leben", right: "W (leben → lebte → gelebt)" },
-            { left: "essen", right: "S (essen → aß → gegessen)" },
-            { left: "kaufen", right: "W (kaufen → kaufte → gekauft)" }
-          ]
-        },
-        {
-          title: "B) Predict the Past by Vowel Tribe",
-          rows: [
-            { left: "singen → ______ → gesungen", right: "sang" },
-            { left: "brechen → ______ → gebrochen", right: "brach" },
-            { left: "geben → ______ → gegeben", right: "gab" },
-            { left: "finden → ______ → gefunden", right: "fand" }
-          ]
-        },
-        {
-          title: "C) Prefix Expansion — gehen (to go)",
-          rows: [
-            { left: "ausgehen", right: "go out → exit, go out socially" },
-            { left: "umgehen", right: "go around → handle, deal with" },
-            { left: "vergehen", right: "go away → time passes" },
-            { left: "durchgehen", right: "go through → review, go through" },
-            { left: "entgehen", right: "go away from → escape, avoid" }
-          ]
-        }
-      ]
-    },
-    {
-      heading: "5.8 Closing Insight for Chapter 5",
+      heading: "5.7 Closing Insight for Chapter 5",
       paragraphs: [
         "German verbs are not irregular — they are alive.",
         "They evolve through patterns: vowel tribes, prefix logic, and ge- as a time marker.",
         "Once you learn to hear the shifts and read the stems, verb charts stop being walls of forms. They collapse into intuition.",
-        "You stop cramming German verbs and start speaking their history."
+        "You stop cramming German verbs and start speaking their history.",
+        "Next we open up the prefix layer in depth — ver-, be-, ent-, er-, zer-, and the separable family — so a single stem like schlafen can fork into verschlafen and einschlafen and you read both on sight."
       ]
     }
   ],
@@ -219,13 +182,15 @@ export const chapter05: Chapter = {
       "Conjugate singen in ich-form: ich singe, ich sang, ich habe gesungen.",
       "Write three parallel sentences with trinken (ich trinke, ich trank, ich habe getrunken).",
       "Write one sentence that uses a strong verb and a weak verb together.",
-      "Create a sentence where both a weak and a strong verb appear, for example: Ich schreibe langsam und habe Kaffee getrunken."
+      "Pick the verb stehen and write three sentences that each use a different prefix verb from §5.4 (e.g., verstehen, bestehen, entstehen). Notice how each prefix tilts the meaning.",
+      "Classify these as weak (W) or strong (S), then write each in past + perfect: lernen, schwimmen, trinken, leben, essen, kaufen. (Hints: schwimmen → schwamm → geschwommen; essen → aß → gegessen.)"
     ],
     tasksGerman: [
       "Konjugiere singen in der Ich-Form: ich singe, ich sang, ich habe gesungen.",
       "Schreibe drei parallele Sätze mit trinken (ich trinke, ich trank, ich habe getrunken).",
       "Schreibe einen Satz, in dem ein starkes und ein schwaches Verb gemeinsam vorkommen.",
-      "Schreibe einen Satz, in dem ein schwaches und ein starkes Verb vorkommen, zum Beispiel: Ich schreibe langsam und habe Kaffee getrunken.",
+      "Nimm das Verb stehen und schreibe drei Sätze, die jeweils ein anderes Präfixverb aus §5.4 verwenden (z. B. verstehen, bestehen, entstehen). Achte darauf, wie jedes Präfix die Bedeutung verschiebt.",
+      "Ordne diese Verben als schwach (W) oder stark (S) ein und schreibe jeweils Präteritum und Perfekt: lernen, schwimmen, trinken, leben, essen, kaufen. (Hinweise: schwimmen → schwamm → geschwommen; essen → aß → gegessen.)",
     ]
   }
 };

@@ -113,7 +113,7 @@ export const chapter01: Chapter = {
     },
 
     {
-      heading: "1.7 Bonus Cognates (Fast Recognition Training)",
+      heading: "1.6 Bonus Cognates (Fast Recognition Training)",
       paragraphs: [
         "Below are rapid-fire cognates — words you can recognise instantly without translation. Try reading them aloud. The rhythm itself teaches.",
         "Notice the pattern: short, ancient nouns and elemental vocabulary change the least across time."
@@ -135,7 +135,7 @@ export const chapter01: Chapter = {
       ]
     },
     {
-      heading: "1.8 Cognate Sentences — Not Just Words",
+      heading: "1.7 Cognate Sentences — Not Just Words",
       paragraphs: [
         "Now expand from isolated words to whole thoughts. These sentences contain high cognate density — you can almost understand them without study.",
         "Read each aloud first in German, then in English. Feel the shape of familiarity."
@@ -153,7 +153,7 @@ export const chapter01: Chapter = {
       ]
     },
     {
-      heading: "1.9 Friendly False Friends (Early Warning)",
+      heading: "1.8 Friendly False Friends (Early Warning)",
       paragraphs: [
         "Not everything that looks familiar means what you expect — but many 'danger words' still teach patterns.",
         "Treat these like bright yellow road signs, not traps. They keep you awake while you learn."
@@ -177,7 +177,7 @@ export const chapter01: Chapter = {
     title: "Zwei Sprachen, Ein Ursprung",
     germanLines: [
       "Deutsch und Englisch sind alte Freunde.",
-      "Sie kommen aus derselben Sprache-Familie.",
+      "Sie kommen aus derselben Sprachfamilie.",
       "Viele Wörter sehen ähnlich aus: Wasser, Hand, Haus, Name.",
       "Manchmal sind sie genau gleich, manchmal ein bisschen anders.",
       "Wenn wir langsam lesen, erkennen wir die Verwandtschaft.",
@@ -194,11 +194,16 @@ export const chapter01: Chapter = {
     vocabulary: [
       { german: "die Sprache", english: "language" },
       { german: "die Familie", english: "family" },
-      { german: "die Sprache-Familie", english: "language family" },
+      { german: "die Sprachfamilie", english: "language family" },
       { german: "ähnlich", english: "similar" },
       { german: "die Verwandtschaft", english: "relationship, kinship" },
       { german: "erkennen", english: "to recognise" },
       { german: "das Muster", english: "pattern" },
+      { german: "das Wasser", english: "water" },
+      { german: "die Hand", english: "hand" },
+      { german: "das Haus", english: "house" },
+      { german: "der Name", english: "name" },
+      { german: "der Apfel", english: "apple" },
     ],
     tasks: [
       "Mark all clear cognates in the German text (Wasser, Hand, Haus, Name, etc.). Add at least two more that you notice yourself.",

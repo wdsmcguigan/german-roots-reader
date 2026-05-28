@@ -43,6 +43,8 @@ export const chapter03: Chapter = {
         "English still has tiny case fossils:",
         "Compare: I see him vs. He sees me — not *I see he* or *him sees I*.",
         "Those pronoun changes are the last visible bits of a much larger older case system. German simply kept the full version.",
+        "English’s case system didn’t shatter — it eroded. For about three centuries after the Vikings arrived, Old English and Old Norse speakers in northern England spoke languages similar enough to mostly understand each other but different enough in their endings that the endings became the friction point. Communication worked better when both sides quietly dropped them. By Chaucer’s time the system was nearly gone; today ‘whom’ sounds bookish even to fluent English speakers.",
+        "German kept the endings because German never had a Danelaw — its history of contact looked different. So when you meet der/den/dem on the page, you’re not meeting an extra burden. You’re meeting what English would still have if a thousand years had gone slightly differently.",
         "So instead of thinking: ‘German is weird, why all the endings?’, try this: ‘German is honest about who does what to whom. English only whispers it.’"
       ],
       exampleBlocks: [
@@ -103,11 +105,8 @@ export const chapter03: Chapter = {
     {
       heading: "3.6 Micro-Rules You Can Actually Use",
       paragraphs: [
-        "Early on, it’s enough to internalise a few working rules instead of memorising full charts:",
-        "• If something is clearly the subject (‘who does it?’), expect nominative.",
-        "• If something is clearly the direct thing being acted on (‘what is thrown, eaten, seen?’), expect accusative.",
-        "• If someone is clearly receiving or benefiting (‘to whom? for whom?’), expect dative.",
-        "Over time, you will connect these roles to article patterns automatically — der/den/dem, ein/einen/einem, etc."
+        "The shortcut is simpler than the chart. Anything that does the action — the eater, the thrower, the one in the doorway — takes nominative. Anything directly affected — the food, the ball, the news — takes accusative. Anyone receiving or benefiting — the friend you brought the coffee to, the dog the bone was thrown for — takes dative.",
+        "The endings come later, after the roles are intuitive. Over time, you will connect these roles to article patterns automatically — der/den/dem, ein/einen/einem, and so on."
       ],
       exampleBlocks: [
         {
@@ -124,7 +123,8 @@ export const chapter03: Chapter = {
       heading: "3.7 Quick Case Spotting Drill",
       paragraphs: [
         "Try to name the roles in each sentence before you name the cases. That keeps the logic primary and the labels secondary.",
-        "You can do this even just listening to German: ask yourself silently, ‘who does what to whom?’"
+        "You can do this even just listening to German: ask yourself silently, ‘who does what to whom?’",
+        "One thing to flag before the drill: a small group of common verbs — helfen, danken, gefallen, gehören, antworten — always send their main partner into dative, even when English would treat that partner as a direct object. Treat them as a watch-list of ‘dative verbs.’ The full list appears in your dictionary; the rule is just: when in doubt with one of these, reach for dative."
       ],
       exampleBlocks: [
         {
@@ -164,18 +164,18 @@ export const chapter03: Chapter = {
     level: "A1–A2",
     title: "Wer macht was mit wem? — Cases as Roles",
     germanLines: [
-      "Im Deutschen zeigen Fälle, wer was macht und wer etwas bekommt.",
-      "Der Nominativ ist das Subjekt: die Person oder Sache, die handelt.",
-      "Der Akkusativ ist das direkte Objekt: was direkt betroffen ist.",
-      "Der Dativ ist oft die Person, die etwas bekommt: wem wir etwas geben.",
-      "Wenn wir die Rollen verstehen, verstehen wir den Satz."
+      "Der Mann wirft den Ball.",
+      "Der Hund läuft schnell.",
+      "Der Hund bringt dem Mann den Ball.",
+      "Der Mann gibt dem Hund Wasser.",
+      "Wir sehen: der = Subjekt, den = Objekt, dem = Empfänger."
     ],
     englishLines: [
-      "In German, cases show who does what and who receives something.",
-      "The nominative is the subject: the person or thing that acts.",
-      "The accusative is the direct object: what is directly affected.",
-      "The dative is often the person who receives something: whom we give something to.",
-      "When we understand the roles, we understand the sentence."
+      "The man throws the ball.",
+      "The dog runs fast.",
+      "The dog brings the man the ball.",
+      "The man gives the dog water.",
+      "We see: der = subject, den = object, dem = recipient."
     ],
     vocabulary: [
       { german: "der Fall", english: "case (grammar)" },
@@ -184,7 +184,8 @@ export const chapter03: Chapter = {
       { german: "der Empfänger", english: "recipient" },
       { german: "bekommen", english: "to receive, get" },
       { german: "helfen", english: "to help (takes dative)" },
-      { german: "geben", english: "to give" }
+      { german: "geben", english: "to give" },
+      { german: "der / den / dem Mann", english: "the man (nominative / accusative / dative)" }
     ],
     tasks: [
       "Take three simple English sentences (for example: 'The child sees the dog', 'I give the woman the book', 'We help the man'). Write a German version and label who is subject, who is direct object, who is receiver.",

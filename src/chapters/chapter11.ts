@@ -12,6 +12,7 @@ export const chapter11: Chapter = {
     {
       heading: "11.1 From English Sentences to German Thoughts",
       paragraphs: [
+        "Chapter 10 worked on the input side: stop translating as you read. This chapter works on the output side: stop translating as you express. Same wall, different face.",
         "Direct translation fails because languages do not map 1:1. English phrase structure is not German phrase structure. English metaphors are not German metaphors. English rhythm is not German rhythm.",
         "If you think in English and then output German, you often end up with sentences that are grammatically correct but emotionally or structurally wrong. They sound like copies, not originals.",
         "Native German is not a translation of English. It is a different way of framing reality. In this chapter, you stop asking ‘How do I say this English sentence?’ and instead ask: ‘How would a German speaker naturally express this idea?’"
@@ -37,6 +38,7 @@ export const chapter11: Chapter = {
         "Naive translation attempt: ❌ Ich habe nicht Zeit heute.",
         "Natural German thought: ✓ Ich habe heute keine Zeit.",
         "German negation typically attaches to the noun (keine Zeit) instead of just tacked onto the verb. The structure shifts because the language is highlighting the absence of ‘time’ as the key fact.",
+        "Working rule: if you would negate the noun that follows in English (no time, no friends, no idea), German prefers kein/keine before the noun. If you would negate the verb or the whole action (don’t run, didn’t come), German uses nicht. So ‘I have no time’ = Ich habe keine Zeit, while ‘I’m not running today’ = Ich laufe heute nicht.",
         "Thought first, grammar second. Translation is never the goal; appropriate German structure is."
       ],
       exampleBlocks: [
@@ -59,6 +61,7 @@ export const chapter11: Chapter = {
       heading: "11.4 Replace Translation with Re-Framing",
       paragraphs: [
         "Instead of translating English sentences into German, you re-frame the idea in German logic. Many everyday phrases show clear structural differences.",
+        "There’s something philosophically tidy in mir ist kalt. English flattens the experience into identity: I am cold, as if cold were a property of me. German keeps the experience separate from the self — cold is happening to me; I’m just the one it’s happening to. Same with hunger, boredom, and most pains and pleasures. Whether or not native speakers consciously feel this distinction, the grammar quietly maintains it. Languages aren’t neutral containers for thought. They tilt the room slightly toward certain ways of describing what’s happening, and mir ist kalt is one of German’s small tilts.",
         "Notice how German often uses ‘have’ or ‘to me is’ instead of ‘I am’:"
       ],
       exampleBlocks: [
@@ -79,69 +82,15 @@ export const chapter11: Chapter = {
       ]
     },
     {
-      heading: "11.5 The Four-Step Thinking Method",
+      heading: "11.5 What This Looks Like in Your Head",
       paragraphs: [
-        "To train yourself to think in German structures, use this method:",
-        "1) Stop the automatic translation. When you feel an English sentence forming in your head, pause.",
-        "2) Identify the function of the idea. Is it a feeling, a physical state, a need, a wish, a possession, a description?",
-        "3) Recall the German pattern that expresses that function (mir ist …, ich habe …, es gibt …, das gefällt mir, ich denke an …).",
-        "4) Only then form the German sentence. English never appears in the final line.",
-        "Example:",
-        "Idea: ‘I’m nervous.’ Function: internal emotional condition. German pattern: mir ist + Gefühl. German thought: Mir ist nervös. (More natural would be: Ich bin nervös or Ich fühle mich nervös — multiple options exist, but the point is: you chose from German patterns, not word-for-word translation.)"
+        "When you catch yourself starting to translate, what you’re really catching is a fork in the road. The English sentence is forming. The question is whether you pause long enough to ask what the idea actually is — a feeling, a physical state, a wish, a need, a possession — and reach for the German pattern that expresses that kind of thing rather than the English words that say it.",
+        "Take the cold. Idea: I’m cold. Function: internal physical condition. German’s pattern for internal physical conditions is mir ist + Adjektiv, so the sentence that arrives is Mir ist kalt — not Ich bin kalt, which sounds emotionally cold or detached. You didn’t translate. You named the function and let the language hand you the form.",
+        "The shift is small and it happens slowly. The first month you catch yourself a few times. The third month, German patterns start to surface before English ones do. The first year, you stop noticing the switch at all."
       ]
     },
     {
-      heading: "11.6 Exercises for Rewiring Thought",
-      paragraphs: [
-        "These exercises are designed to break the translation reflex and replace it with German-first thinking.",
-        "Do them slowly. The goal is not speed, but a new mental habit."
-      ],
-      exampleBlocks: [
-        {
-          title: "A) Convert the Idea, Not the Words",
-          rows: [
-            { left: "I am cold.", right: "Mir ist kalt." },
-            { left: "I’m afraid.", right: "Ich habe Angst." },
-            { left: "I feel bad.", right: "Mir geht es schlecht." },
-            { left: "I need help.", right: "Ich brauche Hilfe." },
-            { left: "I like the book.", right: "Das Buch gefällt mir." }
-          ]
-        },
-        {
-          title: "B) Expand the Thought in Natural German",
-          rows: [
-            {
-              left: "I woke up late.",
-              right: "Ich bin heute spät aufgewacht."
-            },
-            {
-              left: "The coffee tastes strong.",
-              right: "Der Kaffee schmeckt stark und warm."
-            },
-            {
-              left: "I’m thinking about tomorrow.",
-              right: "Ich denke an morgen."
-            },
-            {
-              left: "I’m getting better at German.",
-              right: "Ich werde immer besser im Deutschen."
-            }
-          ]
-        },
-        {
-          title: "C) Journal Prompt (No English Allowed)",
-          rows: [
-            {
-              left: "Use: mir ist / es gibt / ich habe / ich denke / ich will / weil / aber",
-              right:
-                "Example: Heute ist es ruhig. Ich habe Zeit zum Lernen. Mir ist ein bisschen kalt, aber es fühlt sich klar an. Ich denke über meine Ziele nach, und ich will weitergehen."
-            }
-          ]
-        }
-      ]
-    },
-    {
-      heading: "11.7 Closing Insight for Chapter 11",
+      heading: "11.6 Closing Insight for Chapter 11",
       paragraphs: [
         "At this stage, you are no longer just putting German clothes on English thoughts.",
         "You are allowing German to shape your thoughts directly — your feelings, your complaints, your wishes, your small observations.",
@@ -173,7 +122,12 @@ export const chapter11: Chapter = {
       { german: "fühlen", english: "to feel" },
       { german: "ruhig", english: "calm" },
       { german: "von innen", english: "from inside" },
-      { german: "direkt", english: "directly" }
+      { german: "direkt", english: "directly" },
+      { german: "mir ist kalt", english: "I’m cold (lit. to me is cold)" },
+      { german: "ich habe Hunger", english: "I’m hungry (lit. I have hunger)" },
+      { german: "das gefällt mir", english: "I like that (lit. that pleases me)" },
+      { german: "es gibt", english: "there is/are (lit. it gives)" },
+      { german: "du fehlst mir", english: "I miss you (lit. you are missing to me)" }
     ],
     tasks: [
       "Write your own inner monologue in German with 4–6 lines. No English words, no translation.",

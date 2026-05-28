@@ -10,8 +10,9 @@ export const chapter10: Chapter = {
     "Fluency begins the moment you stop routing every sentence through English. This chapter trains you to read German as direct experience — seeing scenes, tracking roles, and writing simple texts without translation as a middle step.",
   sections: [
     {
-      heading: "10.1 The Final Wall: Translation Must Die",
+      heading: "10.1 Why the Detour Through English Eventually Has to End",
       paragraphs: [
+        "The translating reader and the fluent reader use different parts of the brain — that’s not a metaphor. Imaging studies of late bilinguals show measurable lag and recruitment of executive function regions when they read their second language; in early bilinguals or highly fluent late learners, that lag disappears. What you’re trying to build, when you stop translating, is not willpower. It’s a route.",
         "Most learners read like this: Deutsch → Englisch → Bedeutung.",
         "Fluent users read like this: Deutsch → Bedeutung.",
         "That middle step is useful at the very beginning — like training wheels. But if you never remove it, your brain never builds direct links between German and meaning. Every sentence has to squeeze through a narrow English bottleneck.",
@@ -80,63 +81,26 @@ export const chapter10: Chapter = {
       ]
     },
     {
-      heading: "10.4 Structural Reading Drills",
+      heading: "10.4 Writing the Way You Read",
       paragraphs: [
-        "Instead of translating each sentence, you mark roles and structure.",
-        "Ask yourself for every line: Who is acting? What is being affected? Where does it happen? When?",
-        "The more often you do this, the more German sentences start to look like clean little machines."
-      ],
-      exampleBlocks: [
-        {
-          title: "Role Marking Examples",
-          rows: [
-            {
-              left: "Der Junge gibt dem Hund Wasser.",
-              right: "NOM = der Junge, DAT = dem Hund, ACC = Wasser."
-            },
-            {
-              left: "Im Garten findet das Kind einen Käfer.",
-              right: "NOM = das Kind, ACC = einen Käfer, Ort = im Garten."
-            }
-          ]
-        }
+        "The same route works the other direction. When you write — even a sentence, even three — restrict yourself to words you already know, describe only concrete things, and keep English off the page. No grand essays. Just experience flowing straight into German.",
+        "The goal isn't complexity. The goal is the route itself: experience → German, with no English warehouse to detour through. Five honest sentences a day will reshape more than five hundred translated ones."
       ]
     },
     {
-      heading: "10.5 The “No English Allowed” Journaling Method",
-      paragraphs: [
-        "A simple daily practice to force direct thinking:",
-        "1) Restrict yourself to words you already know.",
-        "2) Describe only real, concrete things: your room, your drink, the weather, your evening.",
-        "3) Write 3–5 sentences in German. No English on the page.",
-        "The goal is not complexity. The goal is: experience → German, without detours."
-      ],
-      exampleBlocks: [
-        {
-          title: "Journal Seed Example",
-          rows: [
-            {
-              left: "Heute Morgen war ruhig.",
-              right: "This morning was quiet."
-            },
-            {
-              left: "Ich hatte Zeit.",
-              right: "I had time."
-            },
-            {
-              left: "Ich habe langsam Kaffee getrunken.",
-              right: "I drank coffee slowly."
-            }
-          ]
-        }
-      ]
-    },
-    {
-      heading: "10.6 Guided Thought Prompts (No Translation)",
+      heading: "10.5 Guided Thought Prompts (No Translation)",
       paragraphs: [
         "Use prompts that are sensory and simple. Write directly in German. If you catch yourself planning in English first, stop and restart simpler.",
-        "Prompt Set A — Weather / Food / Light / Body.",
-        "Prompt Set B — Movement and agency: gehen, öffnen, finden, sehen.",
+        "Prompt Set A — Weather / Food / Light / Body:",
+        "• Wie ist das Wetter heute?",
+        "• Was hast du heute gegessen?",
+        "• Wo ist das Licht weich?",
+        "• Wie fühlt sich dein Körper an?",
+        "Prompt Set B — Movement and agency (gehen, öffnen, finden, sehen):",
+        "• Wohin gehst du?",
+        "• Was öffnest du?",
+        "• Was findest du?",
+        "• Was siehst du?",
         "Your responses can be short. They just have to be honest and concrete."
       ],
       exampleBlocks: [
@@ -156,7 +120,7 @@ export const chapter10: Chapter = {
       ]
     },
     {
-      heading: "10.7 Short Reading: Nacht in der Stadt",
+      heading: "10.6 Short Reading: Nacht in der Stadt",
       paragraphs: [
         "Try to understand the following text without translating line-by-line. Read it twice, then answer the questions in simple German.",
         "Die Nacht ist still.",
@@ -178,7 +142,7 @@ export const chapter10: Chapter = {
       ]
     },
     {
-      heading: "10.8 Closing Insight for Chapter 10",
+      heading: "10.7 Closing Insight for Chapter 10",
       paragraphs: [
         "Fluency is not ‘translating very fast’. Fluency is not needing to translate.",
         "You read. You process. You visualise. You feel. The meaning arrives without English labels.",
@@ -214,7 +178,7 @@ export const chapter10: Chapter = {
       "Close your eyes and picture the scene using only the German text. Then write one new detail in simple German.",
       "Write your own morning scene in 4–6 lines in German. No translation — only images in your mind.",
       "Underline all verbs and say them aloud in the ich-form.",
-      "Bonus: Write an even simpler version of the same scene, for example: 'Morning. Coffee. I breathe. Slowly life comes into the streets.'",
+      "Bonus: Write an even simpler version of the same scene — staccato, image-only. For example: ‘Morgen. Kaffee. Ich atme. Langsam kommt Leben in die Straßen.’",
     ],
     tasksGerman: [
       "Schließe die Augen und stell dir die Szene nur mit dem deutschen Text vor. Schreibe dann ein neues Detail in einfachem Deutsch.",

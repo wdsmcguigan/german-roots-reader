@@ -10,6 +10,14 @@ export const chapter12: Chapter = {
     "This final chapter fuses everything: you decode German based on structure and roots, rebuild the meaning in your own simpler German, and then extend it with your voice. The focus is on moving from recognition to creation — from learning German to participating in it.",
   sections: [
     {
+      heading: "12.0 Where We Started",
+      paragraphs: [
+        "Open chapter one again. The page where Wasser stood next to water, Hand next to hand, Haus next to house. Read those pairs slowly.",
+        "They have not changed. You have.",
+        "The familiarity you felt then was a hunch. The familiarity you feel now is knowledge. The same words. A different reader."
+      ]
+    },
+    {
       heading: "12.1 The Fluent Cycle: Read → Understand → Rebuild → Express",
       paragraphs: [
         "By now you hold three major abilities: you can decode German naturally using structure, cases, roots and compounds; you can shape ideas in German forms instead of translating; and you can predict meaning through etymology and semantic drift.",
@@ -103,71 +111,12 @@ export const chapter12: Chapter = {
       paragraphs: [
         "At first, your rewrites stay close to the original. Then you start taking more risks: changing time (present → past → future), perspective (ich → sie → man), mood (neutral → poetic → humorous), or adding personal details.",
         "This is where German stops being the book’s language and starts being your language.",
-        "Use the progression:",
-        "• Phase 1: Copy — read and understand the original.",
-        "• Phase 2: Rebuild — express the same meaning in new German.",
-        "• Phase 3: Extend — add one or two sentences from your own life.",
-        "• Phase 4: Transform — keep only the core idea and write an entirely new mini-text."
+        "First you copy. Then you rebuild. Then you extend with a line of your own. Then one day you keep only the core idea and write something that exists nowhere in the original. That is when the book stops being a textbook and starts being a mirror.",
+        "There is a moment, somewhere past the first year, when a German word you’ve never seen surfaces in your head before its English equivalent does. Not because you memorized it — because the structure offered it to you. Your brain saw the prefix, saw the stem, saw the suffix, and built the meaning from the ground up the way the language itself would. That’s the moment the book stops being the book and starts being the world. From there, the language is no longer the project. It’s the medium."
       ]
     },
     {
-      heading: "12.6 Final Exercise Set",
-      paragraphs: [
-        "These exercises are your exit exam — not in the sense of passing or failing, but as a demonstration to yourself: I can now decode, rebuild and express in German."
-      ],
-      exampleBlocks: [
-        {
-          title: "A) Read → Understand → Rebuild",
-          rows: [
-            {
-              left: "Im Winter sind die Straßen leer, und die Welt wirkt langsamer.",
-              right: "Rebuild the meaning in your own German words."
-            },
-            {
-              left: "Manchmal findet man Frieden in kleinen Momenten.",
-              right: "Rewrite using different vocabulary and structure."
-            },
-            {
-              left: "Im Herzen jeder Sprache liegt eine Geschichte.",
-              right: "Rephrase with a slightly poetic variation."
-            }
-          ]
-        },
-        {
-          title: "B) Think → Build → Express",
-          rows: [
-            {
-              left: "Beschreibe deinen idealen Morgen.",
-              right: "Write 3–5 sentences in German."
-            },
-            {
-              left: "Beschreibe eine Erinnerung nur über Sinne (Sehen, Hören, Riechen, Fühlen).",
-              right: "No abstract words — only sensations."
-            },
-            {
-              left: "Beschreibe eine Stadt bei Nacht, ohne das Wort „Stadt“ zu benutzen.",
-              right: "Force yourself to use imagery."
-            },
-            {
-              left: "Beschreibe dein Deutschlernen als Verwandlung.",
-              right: "Use at least one metaphor (Weg, Reise, Tür, Licht, Wurzel …)."
-            }
-          ]
-        },
-        {
-          title: "C) Your First Freeform Paragraph",
-          rows: [
-            {
-              left: "Aufgabe:",
-              right:
-                "Schreibe einen freien Absatz auf Deutsch über ein Thema deiner Wahl. Keine Übersetzung, kein Wörterbuch — nur Gedanken, die direkt in Deutsch erscheinen."
-            }
-          ]
-        }
-      ]
-    },
-    {
-      heading: "12.7 Looking Back at the Journey",
+      heading: "12.6 Looking Back at the Journey",
       paragraphs: [
         "The chapter ends — and the book ends — by inviting you to look backwards in the language you have been building.",
         "You have moved from seeing German as a wall of endings and cases to seeing it as a system with roots, sound shifts, gender patterns, verb tribes, compounds, semantic drift, and native thought structures.",
@@ -176,7 +125,7 @@ export const chapter12: Chapter = {
       ]
     },
     {
-      heading: "12.8 Closing Insight for Chapter 12",
+      heading: "12.7 Closing Insight for Chapter 12",
       paragraphs: [
         "You now possess:",
         "• Linguistic instinct — a feel for what ‘sounds right’.",
@@ -220,12 +169,18 @@ export const chapter12: Chapter = {
       "Choose an earlier practice module and summarise it in 2–3 German sentences.",
       "Rewrite the text of this page ('Verstehen und Gestalten') in your own German words, keeping the same idea.",
       "Write a closing paragraph in German about your journey with this language so far. Focus: What has changed in your mind?",
+      "Read → Understand → Rebuild: rebuild these three German lines in your own simpler German — ‘Im Winter sind die Straßen leer, und die Welt wirkt langsamer.’ / ‘Manchmal findet man Frieden in kleinen Momenten.’ / ‘Im Herzen jeder Sprache liegt eine Geschichte.’",
+      "Think → Build → Express: pick one prompt and write 3–5 German sentences. Choose from: Beschreibe deinen idealen Morgen / Beschreibe eine Erinnerung nur über Sinne / Beschreibe eine Stadt bei Nacht ohne das Wort „Stadt“ / Beschreibe dein Deutschlernen als Verwandlung.",
+      "Your first freeform paragraph: write a free paragraph in German on a topic of your choice. No translation, no dictionary — only thoughts that come directly in German.",
       "Bonus: Use a recording app and read your paragraph aloud in German. Listen back to yourself as someone who actually uses this language.",
     ],
     tasksGerman: [
-      "Wähle einen früheren Modultest und fasse ihn in 2–3 deutschen Sätzen zusammen.",
+      "Wähle ein früheres Übungsmodul und fasse es in 2–3 deutschen Sätzen zusammen.",
       "Schreibe den Text dieser Seite („Verstehen und Gestalten“) in deinen eigenen deutschen Worten neu, mit derselben Idee.",
       "Schreibe einen abschließenden Absatz auf Deutsch über deinen bisherigen Weg mit dieser Sprache. Fokus: Was hat sich in deinem Kopf verändert?",
+      "Lesen → Verstehen → Umbauen: formuliere diese drei deutschen Sätze in deinem eigenen, einfacheren Deutsch um — „Im Winter sind die Straßen leer, und die Welt wirkt langsamer.“ / „Manchmal findet man Frieden in kleinen Momenten.“ / „Im Herzen jeder Sprache liegt eine Geschichte.“",
+      "Denken → Bauen → Ausdrücken: wähle ein Thema und schreibe 3–5 deutsche Sätze: Beschreibe deinen idealen Morgen / Beschreibe eine Erinnerung nur über Sinne / Beschreibe eine Stadt bei Nacht, ohne das Wort „Stadt“ zu benutzen / Beschreibe dein Deutschlernen als Verwandlung.",
+      "Dein erster freier Absatz: schreibe einen freien Absatz auf Deutsch über ein Thema deiner Wahl. Keine Übersetzung, kein Wörterbuch — nur Gedanken, die direkt in Deutsch erscheinen.",
       "Bonus: Nimm dir eine Aufnahme-App und lies deinen Absatz laut auf Deutsch ein. Höre dir zu wie einer Person, die diese Sprache wirklich benutzt."
     ]
   }

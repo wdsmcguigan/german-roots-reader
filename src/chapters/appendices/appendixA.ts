@@ -21,10 +21,11 @@ export const appendixA: Chapter = {
       ]
     },
     {
-      heading: "A.2 Core Roots (Foundational 50)",
+      heading: "A.2 Core Roots — Starter Set",
       paragraphs: [
-        "These are high-value roots that appear everywhere in everyday German. Learn to recognise them and you suddenly understand dozens of compounds at a glance.",
-        "You can expand this table yourself inside your notebook or digital system. Add new compounds whenever you meet them in the wild."
+        "Here is a starter set of high-value roots — a foundation you’ll extend toward fifty (and beyond) as you read in the wild.",
+        "These appear everywhere in everyday German. Learn to recognise them and you suddenly understand dozens of compounds at a glance.",
+        "Expand this table yourself in your notebook or digital system. Add new compounds whenever you meet them."
       ],
       exampleBlocks: [
         {

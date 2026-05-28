@@ -89,12 +89,14 @@ export const appendixE: Chapter = {
           ]
         },
         {
-          title: "Verbs That Flip Between Haben and Sein",
+          title: "More Flip Verbs You’ll Meet in Real Reading",
           rows: [
-            { left: "ziehen", right: "hat gezogen — pulled, drew (something) · ist gezogen — moved, migrated" },
-            { left: "brechen", right: "hat gebrochen — broke (something) · ist gebrochen — shattered on its own" },
-            { left: "schmelzen", right: "hat geschmolzen — melted (something) · ist geschmolzen — melted in the heat" },
-            { left: "reißen", right: "hat gerissen — tore (something) · ist gerissen — snapped, gave way" },
+            { left: "See Chapter 5.6", right: "for the four classic flip-verb cases (ziehen, brechen, schmelzen, reißen). Below are five more you’ll meet in real reading." },
+            { left: "fahren", right: "hat gefahren — drove (a vehicle, transitive) · ist gefahren — travelled, went by vehicle" },
+            { left: "treten", right: "hat getreten — kicked (something) · ist getreten — stepped (forward, into, onto)" },
+            { left: "biegen", right: "hat gebogen — bent (something) · ist gebogen — turned (e.g. um die Ecke gebogen)" },
+            { left: "fliegen", right: "hat geflogen — flew (a plane, transitive) · ist geflogen — flew (as passenger or bird)" },
+            { left: "springen", right: "hat gesprungen — rare transitive use · ist gesprungen — jumped, leapt (motion)" },
             { left: "Quick test", right: "If you can swap in ‘relocated’ or ‘the thing changed on its own,’ use sein. Otherwise haben." }
           ]
         }
