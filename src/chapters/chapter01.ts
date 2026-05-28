@@ -210,7 +210,7 @@ export const chapter01: Chapter = {
       "Markiere alle klaren Kognaten im deutschen Text (Wasser, Hand, Haus, Name, usw.). Füge mindestens zwei weitere hinzu, die du selbst entdeckst.",
       "Schreibe einen kurzen Minitext auf Deutsch mit mindestens drei Kognaten (zum Beispiel: Haus, Name, Familie, Musik, Hotel). Lass die Grammatik einfach.",
       "Wähle einen Satz aus dem deutschen Text und schreibe ihn mit anderen Wörtern um, aber mit derselben Bedeutung – zuerst auf Deutsch, dann vergleiche mit der englischen Version.",
-      "Mach in deinem Notizheft eine zweispaltige Liste „Deutsch / Englisch" und füge 5–10 Kognaten-Paare hinzu, die du beim Lesen oder Hören selbst entdeckst.",
+      "Mach in deinem Notizheft eine zweispaltige Liste „Deutsch / Englisch“ und füge 5–10 Kognaten-Paare hinzu, die du beim Lesen oder Hören selbst entdeckst.",
     ],
   }
 

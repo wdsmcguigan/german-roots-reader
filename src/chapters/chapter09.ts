@@ -193,16 +193,16 @@ export const chapter09: Chapter = {
       { german: "die Richtung", english: "direction" }
     ],
     tasks: [
-      “Explain in simple German what ‘fast’ means in German and in English.”,
-      “Write your own metaphor for how languages change (for example like trees, cities, or weather).”,
-      “Choose another word pair (for example: Traum/dream, brav/brave) and describe the difference in meaning in 2–3 German sentences.”,
-      “Optional: Write 2–3 sentences about a word that feels ‘different’ to you in German and English, and note which meaning feels stronger where.”,
+      "Explain in simple German what ‘fast’ means in German and in English.",
+      "Write your own metaphor for how languages change (for example like trees, cities, or weather).",
+      "Choose another word pair (for example: Traum/dream, brav/brave) and describe the difference in meaning in 2–3 German sentences.",
+      "Optional: Write 2–3 sentences about a word that feels ‘different’ to you in German and English, and note which meaning feels stronger where.",
     ],
     tasksGerman: [
-      “Erkläre in einfachem Deutsch, was „fast” in Deutsch und in Englisch bedeutet.”,
-      “Schreibe deine eigene Metapher dafür, wie Sprachen sich verändern (zum Beispiel wie Bäume, Städte oder Wetter).”,
-      “Wähle ein weiteres Wortpaar (zum Beispiel: Traum/dream, brav/brave) und beschreibe den Bedeutungsunterschied in 2–3 deutschen Sätzen.”,
-      “Optional: Schreibe 2–3 Sätze über ein Wort, das sich für dich ‚anders’ anfühlt im Deutschen und im Englischen, und notiere, welche Bedeutung wo stärker ist.”
+      "Erkläre in einfachem Deutsch, was „fast” in Deutsch und in Englisch bedeutet.",
+      "Schreibe deine eigene Metapher dafür, wie Sprachen sich verändern (zum Beispiel wie Bäume, Städte oder Wetter).",
+      "Wähle ein weiteres Wortpaar (zum Beispiel: Traum/dream, brav/brave) und beschreibe den Bedeutungsunterschied in 2–3 deutschen Sätzen.",
+      "Optional: Schreibe 2–3 Sätze über ein Wort, das sich für dich ‚anders’ anfühlt im Deutschen und im Englischen, und notiere, welche Bedeutung wo stärker ist."
     ]
   }
 };

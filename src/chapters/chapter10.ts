@@ -211,16 +211,16 @@ export const chapter10: Chapter = {
       { german: "die Szene", english: "scene" }
     ],
     tasks: [
-      “Close your eyes and picture the scene using only the German text. Then write one new detail in simple German.”,
-      “Write your own morning scene in 4–6 lines in German. No translation — only images in your mind.”,
-      “Underline all verbs and say them aloud in the ich-form.”,
-      “Bonus: Write an even simpler version of the same scene, for example: 'Morning. Coffee. I breathe. Slowly life comes into the streets.'”,
+      "Close your eyes and picture the scene using only the German text. Then write one new detail in simple German.",
+      "Write your own morning scene in 4–6 lines in German. No translation — only images in your mind.",
+      "Underline all verbs and say them aloud in the ich-form.",
+      "Bonus: Write an even simpler version of the same scene, for example: 'Morning. Coffee. I breathe. Slowly life comes into the streets.'",
     ],
     tasksGerman: [
-      “Schließe die Augen und stell dir die Szene nur mit dem deutschen Text vor. Schreibe dann ein neues Detail in einfachem Deutsch.”,
-      “Schreibe deine eigene Morgen-Szene mit 4–6 Zeilen auf Deutsch. Keine Übersetzung – nur Bilder in deinem Kopf.”,
-      “Unterstreiche alle Verben und sprich sie laut in der ich-Form.”,
-      “Bonus: Schreibe eine noch einfachere Version derselben Szene, zum Beispiel: „Morgen. Kaffee. Ich atme. Langsam kommt Leben in die Straßen.””
+      "Schließe die Augen und stell dir die Szene nur mit dem deutschen Text vor. Schreibe dann ein neues Detail in einfachem Deutsch.",
+      "Schreibe deine eigene Morgen-Szene mit 4–6 Zeilen auf Deutsch. Keine Übersetzung – nur Bilder in deinem Kopf.",
+      "Unterstreiche alle Verben und sprich sie laut in der ich-Form.",
+      "Bonus: Schreibe eine noch einfachere Version derselben Szene, zum Beispiel: „Morgen. Kaffee. Ich atme. Langsam kommt Leben in die Straßen.”"
     ]
   }
 };
