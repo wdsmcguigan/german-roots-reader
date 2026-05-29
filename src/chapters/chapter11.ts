@@ -1,4 +1,4 @@
-// src/chapters/chapter10.ts
+// src/chapters/chapter11.ts
 
 import type { Chapter } from "./types";
 
@@ -12,9 +12,10 @@ export const chapter11: Chapter = {
     {
       heading: "11.1 Why the Detour Through English Eventually Has to End",
       paragraphs: [
-        "The translating reader and the fluent reader use different parts of the brain — that’s not a metaphor. Imaging studies of late bilinguals show measurable lag and recruitment of executive function regions when they read their second language; in early bilinguals or highly fluent late learners, that lag disappears. What you’re trying to build, when you stop translating, is not willpower. It’s a route.",
+        "The translating reader and the fluent reader use different mental routes — not metaphorically, but as a matter of practiced habit. The brain that has to detour through English on every sentence builds slower, more effortful comprehension; the brain that has built direct German-to-meaning links reads at the speed of seeing. What you’re trying to build, when you stop translating, is not willpower. It’s a route.",
         "Most learners read like this: Deutsch → Englisch → Bedeutung.",
         "Fluent users read like this: Deutsch → Bedeutung.",
+        "If you're reading this book without intending to actively learn German, this chapter still matters. It describes what fluency feels like from the inside — the moment the scaffolding falls away — and that moment is the punchline of the entire roots-and-shifts story. You don't need to do the technique to recognise what it builds.",
         "That middle step is useful at the very beginning — like training wheels. But if you never remove it, your brain never builds direct links between German and meaning. Every sentence has to squeeze through a narrow English bottleneck.",
         "This chapter is about dismantling that bottleneck. Not with force, but by giving your mind enough safe practice to trust German on its own.",
         "You do not translate ‘Der Hund jagt die Katze.’ You see it. You feel it. You understand it directly."
@@ -55,7 +56,7 @@ export const chapter11: Chapter = {
       paragraphs: [
         "To think in German, you need short texts with high meaning and low vocabulary. Scenes you can actually visualise.",
         "You read the German. You imagine the situation. Only afterwards — if needed — you check the English.",
-        "The point is not word-per-word accuracy. The point is: did you see and feel the moment?"
+        "The point is not word-per-word accuracy. The point is: did you see and feel the moment? If you are listening rather than reading, pause after each German line and picture it before the English arrives."
       ],
       exampleBlocks: [
         {
@@ -113,23 +114,13 @@ export const chapter11: Chapter = {
     {
       heading: "11.6 Short Reading: Nacht in der Stadt",
       paragraphs: [
-        "Try to understand the following text without translating line-by-line. Read it twice, then answer the questions in simple German.",
+        "Read this twice without checking any of it.",
         "Die Nacht ist still.",
         "Auf den Straßen hört man nur Schritte.",
         "Eine Katze sitzt im Fenster und wartet.",
         "Irgendwo brennt noch ein kleines Licht.",
-        "Berlin schläft — aber nicht ganz."
-      ],
-      exampleBlocks: [
-        {
-          title: "Understanding Questions (Answer in German)",
-          rows: [
-            { left: "Wer ist aktiv im Text?", right: "…" },
-            { left: "Was macht die Stadt?", right: "…" },
-            { left: "Was hört man?", right: "…" },
-            { left: "Was bedeutet „aber nicht ganz“?", right: "…" }
-          ]
-        }
+        "Berlin schläft — aber nicht ganz.",
+        "By the third read, the cat is already at the window before you reach Katze. „Irgendwo brennt noch ein kleines Licht“ arrives as light, not as ‘somewhere a small light still burns.’ The translation isn't gone — you simply no longer need it. That gap between the German and the meaning was where English used to live."
       ]
     },
     {
@@ -142,7 +133,7 @@ export const chapter11: Chapter = {
     }
   ],
   module: {
-    level: "A2",
+    level: "B1",
     title: "Ohne Übersetzung",
     germanLines: [
       "Der Morgen ist still.",
@@ -175,13 +166,13 @@ export const chapter11: Chapter = {
     tasks: [
       "Close your eyes and picture the scene using only the German text. Then write one new detail in simple German.",
       "Write your own morning scene in 4–6 lines in German. No translation — only images in your mind.",
-      "Underline all verbs and say them aloud in the ich-form.",
+      "Read the passage once silently. Close your eyes for ten seconds and try to hold the scene in your mind without any English words. Then write one sentence in German describing what you saw or felt — not what the text said, but what your mind kept.",
       "Bonus: Write an even simpler version of the same scene — staccato, image-only. For example: ‘Morgen. Kaffee. Ich atme. Langsam kommt Leben in die Straßen.’",
     ],
     tasksGerman: [
       "Schließe die Augen und stell dir die Szene nur mit dem deutschen Text vor. Schreibe dann ein neues Detail in einfachem Deutsch.",
       "Schreibe deine eigene Morgen-Szene mit 4–6 Zeilen auf Deutsch. Keine Übersetzung – nur Bilder in deinem Kopf.",
-      "Unterstreiche alle Verben und sprich sie laut in der ich-Form.",
+      "Lies die Passage einmal still. Schließe die Augen für zehn Sekunden und versuche, die Szene ohne englische Worte festzuhalten. Schreibe dann einen deutschen Satz darüber, was du gesehen oder gefühlt hast — nicht was der Text sagte, sondern was im Kopf geblieben ist.",
       "Bonus: Schreibe eine noch einfachere Version derselben Szene, zum Beispiel: „Morgen. Kaffee. Ich atme. Langsam kommt Leben in die Straßen.”"
     ]
   }

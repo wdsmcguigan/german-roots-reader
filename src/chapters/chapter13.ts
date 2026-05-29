@@ -1,4 +1,4 @@
-// src/chapters/chapter12.ts
+// src/chapters/chapter13.ts
 
 import type { Chapter } from "./types";
 
@@ -22,11 +22,7 @@ export const chapter13: Chapter = {
       paragraphs: [
         "By now you hold three major abilities: you can decode German naturally using structure, cases, roots and compounds; you can shape ideas in German forms instead of translating; and you can predict meaning through etymology and semantic drift.",
         "Fluency is the fusion of these skills. You read a text, you understand it, you rebuild it in your own words, and then you extend it with your own thoughts.",
-        "The core loop for this chapter is simple:",
-        "1) Decode a short German text.",
-        "2) Rebuild its meaning in simpler German.",
-        "3) Extend or personalise it.",
-        "You are moving from recognition to creation."
+        "The loop is small enough to keep in your head. You meet a piece of German and decode it — structure, roots, prefixes, compounds — the way the last twelve chapters trained you to. Then you rebuild it: say the same thing back in simpler German that's yours. Then you push past the original and add a sentence the source never had. Decode, rebuild, extend. Recognition slides into creation without the seam ever quite showing."
       ]
     },
     {
@@ -74,13 +70,7 @@ export const chapter13: Chapter = {
       paragraphs: [
         "To speak and write freely, you reverse the process. You start from meaning and build German outward.",
         "Instead of asking ‘How do I say this in German?’ you decide what you want to express, choose perspective, sketch a sentence skeleton, and only then add detail.",
-        "Example idea: ‘Tonight feels peaceful.’",
-        "German build process:",
-        "• Frame: Heute Abend …",
-        "• State: … ist es ruhig …",
-        "• Optional nuance: … und die Luft ist weich.",
-        "Final expression: Heute Abend ist es ruhig, und die Luft ist weich.",
-        "No translation. Just meaning → structure → words."
+        "Take an idea: tonight feels peaceful. The English sentence wants to fire straight at the feeling. The German sentence prefers to set the room first. Heute Abend — opening the time. Then the state arrives: ist es ruhig. Then, only if you want it, a second clause adds the texture: und die Luft ist weich. The finished sentence — Heute Abend ist es ruhig, und die Luft ist weich — was never translated. It was assembled outward from the centre of the idea, the way German would have assembled it from scratch."
       ]
     },
     {
@@ -106,7 +96,9 @@ export const chapter13: Chapter = {
         "At first, your rewrites stay close to the original. Then you start taking more risks: changing time (present → past → future), perspective (ich → sie → man), mood (neutral → poetic → humorous), or adding personal details.",
         "This is where German stops being the book’s language and starts being your language.",
         "First you copy. Then you rebuild. Then you extend with a line of your own. Then one day you keep only the core idea and write something that exists nowhere in the original. That is when the book stops being a textbook and starts being a mirror.",
-        "There is a moment, somewhere past the first year, when a German word you’ve never seen surfaces in your head before its English equivalent does. Not because you memorized it — because the structure offered it to you. Your brain saw the prefix, saw the stem, saw the suffix, and built the meaning from the ground up the way the language itself would. That’s the moment the book stops being the book and starts being the world. From there, the language is no longer the project. It’s the medium."
+        "There is a moment, somewhere past the first year, when a German word you’ve never seen surfaces in your head before its English equivalent does. Not because you memorized it — because the structure offered it to you. Your brain saw the prefix, saw the stem, saw the suffix, and built the meaning from the ground up the way the language itself would. That’s the moment the book stops being the book and starts being the world. From there, the language is no longer the project. It’s the medium.",
+        "In Year One the moments are small and isolated — a single compound parses on sight, a single sentence reads in one breath. In Year Three they have stopped being moments. You don't notice yourself decoding Hauptbahnhof or Sehenswürdigkeit any more than an English speaker notices themselves parsing 'sandwich' into sand and witch. The mechanism is still there. The attention isn't.",
+        "Somewhere in between, the shift to German feeling like a medium rather than a project happens. There isn't a fixed date. There's just a morning when you read a paragraph and realise afterwards that you didn't translate any of it, didn't even consider translating it, and the only English word that crossed your mind was the one you were about to use to tell someone else what you'd just read."
       ]
     },
     {
@@ -121,9 +113,10 @@ export const chapter13: Chapter = {
     {
       heading: "13.7 Closing Insight for Chapter 13",
       paragraphs: [
-        "You leave this book with an instinct for what sounds right, a sense of where German and English split and why, an eye for cases and word order and prefix verbs and compounds, an ear for the patterns inside roots and endings, and — quietly, in the background — an inner voice that has started to run in German.",
-        "Fluency is not perfection and not completion. It is a living process.",
-        "Your German will keep expanding as long as you keep decoding, rebuilding and expressing.",
+        "You leave this book with an instinct.",
+        "It tells you when something sounds German rather than translated — when a sentence has the shape of its own language rather than the shape of English wearing borrowed clothes.",
+        "The instinct is small, and it will grow.",
+        "Fluency is not perfection and not completion. It is a living process. Your German will keep expanding as long as you keep decoding, rebuilding and expressing.",
         "You are done with this book.",
         "You are not done with the language."
       ]
@@ -162,21 +155,15 @@ export const chapter13: Chapter = {
       { german: "die Bedeutung", english: "meaning" }
     ],
     tasks: [
-      "Choose an earlier practice module and summarise it in 2–3 German sentences.",
-      "Rewrite the text of this page ('Verstehen und Gestalten') in your own German words, keeping the same idea.",
-      "Write a closing paragraph in German about your journey with this language so far. Focus: What has changed in your mind?",
       "Read → Understand → Rebuild: rebuild these three German lines in your own simpler German — ‘Im Winter sind die Straßen leer, und die Welt wirkt langsamer.’ / ‘Manchmal findet man Frieden in kleinen Momenten.’ / ‘Im Herzen jeder Sprache liegt eine Geschichte.’",
-      "Think → Build → Express: pick one prompt and write 3–5 German sentences. Choose from: Beschreibe deinen idealen Morgen / Beschreibe eine Erinnerung nur über Sinne / Beschreibe eine Stadt bei Nacht ohne das Wort „Stadt“ / Beschreibe dein Deutschlernen als Verwandlung.",
-      "Your first freeform paragraph: write a free paragraph in German on a topic of your choice. No translation, no dictionary — only thoughts that come directly in German.",
-      "Bonus: Use a recording app and read your paragraph aloud in German. Listen back to yourself as someone who actually uses this language.",
+      "Take one of your rebuilds from the previous task and shift it: change time (present → past), perspective (ich → sie → man), or mood (neutral → poetic). Write the result as 2–3 German sentences.",
+      "Your first freeform paragraph: pick one prompt and write 4–6 German sentences directly, with no English warehouse and no dictionary. Prompts: Beschreibe deinen idealen Morgen / Beschreibe eine Erinnerung nur über Sinne / Beschreibe eine Stadt bei Nacht ohne das Wort ‘Stadt’ / Beschreibe dein Deutschlernen als Verwandlung.",
+      "Bonus: Use a recording app and read your paragraph aloud in German. Listen back to yourself as someone who actually uses this language."
     ],
     tasksGerman: [
-      "Wähle ein früheres Übungsmodul und fasse es in 2–3 deutschen Sätzen zusammen.",
-      "Schreibe den Text dieser Seite („Verstehen und Gestalten“) in deinen eigenen deutschen Worten neu, mit derselben Idee.",
-      "Schreibe einen abschließenden Absatz auf Deutsch über deinen bisherigen Weg mit dieser Sprache. Fokus: Was hat sich in deinem Kopf verändert?",
       "Lesen → Verstehen → Umbauen: formuliere diese drei deutschen Sätze in deinem eigenen, einfacheren Deutsch um — „Im Winter sind die Straßen leer, und die Welt wirkt langsamer.“ / „Manchmal findet man Frieden in kleinen Momenten.“ / „Im Herzen jeder Sprache liegt eine Geschichte.“",
-      "Denken → Bauen → Ausdrücken: wähle ein Thema und schreibe 3–5 deutsche Sätze: Beschreibe deinen idealen Morgen / Beschreibe eine Erinnerung nur über Sinne / Beschreibe eine Stadt bei Nacht, ohne das Wort „Stadt“ zu benutzen / Beschreibe dein Deutschlernen als Verwandlung.",
-      "Dein erster freier Absatz: schreibe einen freien Absatz auf Deutsch über ein Thema deiner Wahl. Keine Übersetzung, kein Wörterbuch — nur Gedanken, die direkt in Deutsch erscheinen.",
+      "Nimm eine deiner Umbauten aus der vorigen Aufgabe und verschiebe sie: ändere die Zeit (Präsens → Präteritum), die Perspektive (ich → sie → man) oder die Stimmung (neutral → poetisch). Schreib das Ergebnis als 2–3 deutsche Sätze.",
+      "Dein erster freier Absatz: wähle ein Thema und schreibe 4–6 deutsche Sätze direkt, ohne englisches Zwischenlager und ohne Wörterbuch. Themen: Beschreibe deinen idealen Morgen / Beschreibe eine Erinnerung nur über Sinne / Beschreibe eine Stadt bei Nacht ohne das Wort „Stadt“ / Beschreibe dein Deutschlernen als Verwandlung.",
       "Bonus: Nimm dir eine Aufnahme-App und lies deinen Absatz laut auf Deutsch ein. Höre dir zu wie einer Person, die diese Sprache wirklich benutzt."
     ]
   }

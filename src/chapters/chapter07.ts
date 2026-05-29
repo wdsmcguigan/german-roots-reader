@@ -1,4 +1,4 @@
-// src/chapters/chapter06.ts
+// src/chapters/chapter07.ts
 
 import type { Chapter } from "./types";
 
@@ -90,7 +90,8 @@ export const chapter07: Chapter = {
       heading: "7.3 Inseparable Prefixes in Depth",
       paragraphs: [
         "The five core inseparable prefixes — ver-, ent-, zer-, be-, er- — are not just direction markers. Each does specific semantic work on the verb it joins. Once you know the job, half the dictionary opens up.",
-        "Each prefix also has an English ancestor or cousin, often hiding inside an old or specialised word."
+        "Each prefix also has an English ancestor or cousin, often hiding inside an old or specialised word.",
+        "Watch er- in particular. It means ‘carry through to the end’ — bringing an action to completion — and in German, completion can be benign or final depending on what's being completed. The benign side gives you erfinden (invent — finding something all the way into existence), erkennen (recognise — knowing arriving in an instant), erreichen (reach all the way to the goal). Then the dictionary tilts: erfrieren is freezing all the way (to death); erschießen is shooting all the way (to death); erwürgen is strangling all the way (to death). Er- doesn't decide whether the ending is good. It only decides that there is an ending."
       ],
       exampleBlocks: [
         {
@@ -135,15 +136,7 @@ export const chapter07: Chapter = {
           ]
         },
         {
-          title: "er- — The Achiever (Read the Prose Before the Table)",
-          rows: [
-            { left: "What er- does", right: "er- means ‘carry through to the end’ — bringing an action to completion. In German, completion can be benign or final depending on what's being completed." },
-            { left: "Benign side", right: "erfinden finds something all the way into existence (invent); erkennen knows something all the way into recognition; erreichen reaches all the way to the goal." },
-            { left: "Dark side", right: "Then the dictionary tilts: erfrieren is freezing all the way (to death); erschießen is shooting all the way (to death); erwürgen is strangling all the way (to death). Er- doesn't decide whether the ending is good. It only decides that there is an ending." }
-          ]
-        },
-        {
-          title: "er- : The Achiever — full table",
+          title: "er- : The Achiever",
           rows: [
             { left: "finden → erfinden", right: "find → invent (find something that wasn’t there)" },
             { left: "kennen → erkennen", right: "know → recognise (knowing arrives in an instant)" },
@@ -158,8 +151,9 @@ export const chapter07: Chapter = {
     {
       heading: "7.4 Separable Prefixes as German Phrasal Verbs",
       paragraphs: [
-        "Separable prefixes are not abstract. They point in specific spatial directions: on, off, in, out, after, up. Each one has a direct English match — sometimes literally the same word.",
-        "They behave the way English phrasal verbs do: switch on, switch off, turn in, look after, set up. The German prefix arrives at the end of the sentence the way ‘off’ arrives at the end of ‘switch it off.’"
+        "Separable prefixes are not abstract. They are the German equivalent of English phrasal verbs — switch on, turn in, look after — and they behave the same way. The prefix arrives at the end of the sentence the way off arrives at the end of switch it off.",
+        "Watch anrufen — to call. Ich rufe dich an. The an waited at the back of the sentence the way up waits in ‘I'll call you up.’ Watch einschlafen — to fall asleep. Ich schlafe ein. The ein arrived last, the way out arrives last in ‘I dozed out.’ Watch aufstehen — to stand up. Ich stehe auf. Once you hear that pattern, the whole separable family — auf-, ab-, ein-, aus-, mit-, nach-, vor-, zu- — stops feeling like German oddity and starts feeling like a structure English never lost.",
+        "Each prefix also has a direct English match — sometimes literally the same word."
       ],
       exampleBlocks: [
         {
@@ -179,9 +173,9 @@ export const chapter07: Chapter = {
     {
       heading: "7.5 Suffix Logic (Meaning from Endings)",
       paragraphs: [
-        "Suffixes signal what kind of thing a word is: concrete object, abstract state, group, small version, quality.",
-        "Once you see -ung, -heit, -keit, -schaft, -chen, -lein, -bar everywhere, you stop being surprised by new nouns. You know their job before you know their exact dictionary gloss.",
-        "Use this section as a semantic blueprint: the ending tells you roughly what kind of meaning lives inside the word."
+        "You met most of these endings in Chapter 5 as gender signals — die Freiheit, das Mädchen, der Lehrer. Now look at them again, but for what they tell you about meaning rather than gender. The same -heit that pulls feminine also signals an abstract quality. The work doubles.",
+        "If prefixes steer a verb's direction, suffixes label a noun's category. German marks the difference between an abstract quality and a concrete thing in the ending itself, the way English marks the difference between ‘kingdom’ and ‘king’ — and German does it more consistently than English ever did. -heit and -keit turn an adjective into the abstract noun for the state it describes: frei becomes Freiheit, the quality of being free. -ung turns a verb into the result the verb produces: bewegen becomes Bewegung, the result of moving. -chen shrinks anything it touches to a smaller, often affectionate version of itself.",
+        "Once you've internalised half a dozen of these, new German nouns arrive pre-tagged. You know what kind of thing they are before you know what the thing is."
       ],
       exampleBlocks: [
         {
@@ -210,6 +204,10 @@ export const chapter07: Chapter = {
             {
               left: "-bar",
               right: "capable of, possible · machbar, sichtbar, essbar"
+            },
+            {
+              left: "-lich",
+              right: "adjective signal, often ‘-ly’ or ‘capable of’ · freundlich, möglich, herrlich, verständlich"
             }
           ]
         }
@@ -219,7 +217,7 @@ export const chapter07: Chapter = {
       heading: "7.6 Combining Roots, Prefixes and Suffixes",
       paragraphs: [
         "A single root plus one prefix plus one suffix already gives you three layers of meaning: base action, direction, and kind of thing.",
-        "Put the three layers together on one word and you can read the whole thing in a breath. Take Unverbesserlichkeit. The root verb is bessern — to better. Add ver- and it becomes verbessern: to improve, to make actually better. Add -lich and you get an adjective: verbesserlich, capable of being improved. Add un- to negate it: unverbesserlich, incapable of being improved. Add -keit to abstract it: Unverbesserlichkeit — incorrigibility, the quality of being beyond improvement.",
+        "Put the three layers together on one word and you can read the whole thing in a breath. Take Unverbesserlichkeit. Build it from the inside out. Start with bessern — to better. Add ver- and you get verbessern: to improve, to make actually better. Add -lich and the verb becomes an adjective: verbesserlich, capable of being improved. Add un- and you negate it: unverbesserlich, incapable of being improved. Now abstract it with -keit — and the result is Unverbesserlichkeit: incorrigibility, the quality of being beyond improvement.",
         "Five syllables you've never seen. One root, two prefixes, two suffixes. Read on sight."
       ]
     },
@@ -233,7 +231,7 @@ export const chapter07: Chapter = {
     }
   ],
   module: {
-    level: "A1–A2",
+    level: "A2",
     title: "Vorsilben Steuern Bedeutung",
     germanLines: [
       "Ich schlafe acht Stunden — ich verschlafe den Wecker.",

@@ -1,4 +1,4 @@
-// src/chapters/chapter07.ts
+// src/chapters/chapter09.ts
 
 import type { Chapter } from "./types";
 
@@ -168,13 +168,13 @@ export const chapter09: Chapter = {
     ],
     tasks: [
       "Break three German compounds you know into their parts (for example: Zahnarzt, Bahnhof, Haustür).",
-      "Look around the room you're in and name three real objects you don't know the German word for. Build a logical compound for each from words you do know (for example: Schreibtischlampe, Fensterbrett, Kabelhalter).",
+      "Decode these unfamiliar compounds without a dictionary by splitting them at the seams and reading right-to-left: Augenblick, Sehenswürdigkeit, Geschwindigkeitsbegrenzung, Kaffeetasse, Schreibtischlampe. For each, mark the head (rightmost word) and the modifiers, then write what the whole thing means.",
       "Write a short three-sentence scene using at least two compounds you created.",
       "Invent one playful compound and define it in English (for example: Traumtasche — a pocket for dreams)."
     ],
     tasksGerman: [
       "Zerlege drei deutsche Komposita, die du kennst, in ihre Teile (zum Beispiel: Zahnarzt, Bahnhof, Haustür).",
-      "Schau dich in deinem Zimmer um und nenne drei reale Gegenstände, deren deutschen Namen du nicht kennst. Baue für jeden ein logisches Kompositum aus Wörtern, die du kennst (zum Beispiel: Schreibtischlampe, Fensterbrett, Kabelhalter).",
+      "Entschlüssele diese unbekannten Komposita ohne Wörterbuch, indem du sie an den Nahtstellen trennst und von rechts nach links liest: Augenblick, Sehenswürdigkeit, Geschwindigkeitsbegrenzung, Kaffeetasse, Schreibtischlampe. Markiere bei jedem das Grundwort (rechts) und die Bestimmungswörter, und schreib dann auf, was das ganze Wort bedeutet.",
       "Schreibe eine kurze Szene mit drei Sätzen, in der du mindestens zwei deiner erfundenen Komposita verwendest.",
       "Erfinde ein spielerisches Kompositum und erkläre es auf Deutsch (zum Beispiel: Traumtasche — eine Tasche für Träume).",
     ]

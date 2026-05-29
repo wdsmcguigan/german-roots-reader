@@ -34,9 +34,9 @@ All book content is plain TypeScript data in `src/chapters/`. The shape is defin
 - **`Module`** — per-chapter reading practice: German text lines, English translation lines, vocabulary pairs, and exercise tasks
 - **`ExampleBlock`** (the data shape inside Section) — a two-column table with optional expandable `moreRows`
 
-Chapters are numbered 1–12 (`id` 1–12). Appendices use `id >= 100` and `kind: "appendix"` (e.g., Appendix A = `id: 101`).
+Chapters are numbered 1–13 (`id` 1–13). Appendices use `id >= 100` and `kind: "appendix"` (e.g., Appendix A = `id: 101`).
 
-**Active manifest:** `src/chapters/index.ts` exports the `chapters` array used by the app (all 12 chapters + 6 appendices A–F). The file `src/chapters/chapters.ts` is a legacy stub that only loads chapter01 + appendixE/F — it is not used by the app.
+**Active manifest:** `src/chapters/index.ts` exports the `chapters` array used by the app (all 13 chapters + 3 appendices A–C). The file `src/chapters/chapters.ts` is a legacy stub that only loads chapter01 + two appendices — it is not used by the app.
 
 ### Component structure
 

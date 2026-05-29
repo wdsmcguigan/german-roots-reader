@@ -20,11 +20,8 @@ export const chapter03: Chapter = {
     {
       heading: "3.2 Three Working Cases (for Real Life)",
       paragraphs: [
-        "German has four cases, but only three matter for most early reading:",
-        "• Nominative → the doer (subject).",
-        "• Accusative → the direct object (thing acted on).",
-        "• Dative → the receiver, indirect object, or ‘to/for’ person.",
-        "Genitive exists too, but in modern German it is often replaced by prepositions. For now, we focus on the three that drive most everyday sentences."
+        "German has four cases, but only three of them carry the everyday weight. The doer of an action — the eater, the speaker, the one in the doorway — sits in the nominative. The thing the action lands on — the food, the word, the door itself — sits in the accusative. The third role is the one English mostly handles with to or for: the receiver, the one to whom or for whom the action is done. German calls this dative, and you'll see it whenever something is given, sent, helped, or shown.",
+        "The fourth case — genitive — exists, but modern German often replaces it with prepositions, and you can let it sit for now. For early reading, the three working cases are enough to diagram most sentences you'll meet."
       ],
       exampleBlocks: [
         {
@@ -61,9 +58,7 @@ export const chapter03: Chapter = {
     {
       heading: "3.4 Articles as Case Signals",
       paragraphs: [
-        "At A1–A2 level, you do not need to know every ending. You need to recognise the most common article patterns.",
-        "Think of the article as a little flag that says: ‘this noun is subject’, or ‘this noun is object’, or ‘this noun is receiver’.",
-        "For now, we focus on masculine nouns, because they show the clearest changes. Feminine and neuter are simpler and often stay the same in nominative and accusative."
+        "The article is the case's flag. Three little words — der, den, dem — and you have the masculine paradigm in your hand: subject, object, receiver. Feminine and neuter articles barely move at all in early reading, which is why masculine is where the signal lives. The der-words below carry the whole logic in three syllables."
       ],
       exampleBlocks: [
         {
@@ -108,23 +103,13 @@ export const chapter03: Chapter = {
         "The shortcut is simpler than the chart. Anything that does the action — the eater, the thrower, the one in the doorway — takes nominative. Anything directly affected — the food, the ball, the news — takes accusative. Anyone receiving or benefiting — the friend you brought the coffee to, the dog the bone was thrown for — takes dative.",
         "The endings come later, after the roles are intuitive. Over time, you will connect these roles to article patterns automatically — der/den/dem, ein/einen/einem, and so on."
       ],
-      exampleBlocks: [
-        {
-          title: "Role → Likely Case",
-          rows: [
-            { left: "The eater", right: "nominative (subject)" },
-            { left: "The food", right: "accusative (direct object)" },
-            { left: "The friend you give food to", right: "dative (indirect object)" }
-          ]
-        }
-      ]
     },
     {
       heading: "3.7 What Role-First Reading Feels Like",
       paragraphs: [
         "A native reader of German does not consciously label cases. What they do — fast, automatically — is name roles first and let the endings ride along underneath. Who is doing it. What is being done. Who, if anyone, it's being done for.",
         "Watch the sentences below with that ear instead of the grammar-table ear. The roles are already obvious in English; the German endings just show their work.",
-        "One thing to flag before the examples: a small group of common verbs — helfen, danken, gefallen, gehören, antworten — always send their main partner into dative, even when English would treat that partner as a direct object. Treat them as a watch-list of ‘dative verbs.’ The full list appears in your dictionary; the rule is just: when in doubt with one of these, reach for dative."
+        "One thing to flag before the examples: a small group of common verbs — helfen, danken, gefallen, gehören, antworten — always send their main partner into dative, even when English would treat that partner as a direct object. Treat them as a watch-list of ‘dative verbs.’ Any decent German dictionary (online: dwds.de or pons.com) lists them; the rule is just: when in doubt with one of these, reach for dative."
       ],
       exampleBlocks: [
         {
@@ -182,7 +167,7 @@ export const chapter03: Chapter = {
       { german: "das Subjekt", english: "subject" },
       { german: "das Objekt", english: "object" },
       { german: "der Empfänger", english: "recipient" },
-      { german: "bekommen", english: "to receive, get" },
+      { german: "bringen", english: "to bring (takes accusative + dative)" },
       { german: "helfen", english: "to help (takes dative)" },
       { german: "geben", english: "to give" },
       { german: "der / den / dem Mann", english: "the man (nominative / accusative / dative)" },
@@ -192,13 +177,13 @@ export const chapter03: Chapter = {
     ],
     tasks: [
       "Take three simple English sentences (for example: 'The child sees the dog', 'I give the woman the book', 'We help the man'). Write a German version and label who is subject, who is direct object, who is receiver.",
-      "Find three example sentences in a beginner German textbook or website. Underline the nouns and mark them as N (nominative), A (accusative) or D (dative).",
+      "Take three sentences from §3.5 and §3.7 of this chapter. For each noun, mark it as N (nominative), A (accusative) or D (dative). Then check whether the verb in that sentence is one that consistently takes dative (helfen, danken, gehören) or accusative (sehen, kaufen, werfen).",
       "Write one mini-dialogue (3–4 lines) where someone gives, sends or shows something to someone else. Try to include at least one dative and one accusative noun.",
       "Keep a running list of verbs like geben, helfen, schicken that strongly suggest a certain case pattern. Add to it as you continue through the book."
     ],
     tasksGerman: [
       "Nimm drei einfache englische Sätze (zum Beispiel: „The child sees the dog“, „I give the woman the book“, „We help the man“). Schreibe eine deutsche Version und bezeichne, wer Subjekt, wer direktes Objekt und wer Empfänger ist.",
-      "Suche drei Beispielsätze in einem Anfänger-Lehrwerk oder auf einer Website. Unterstreiche die Nomen und markiere sie als N (Nominativ), A (Akkusativ) oder D (Dativ).",
+      "Nimm drei Sätze aus §3.5 und §3.7 dieses Kapitels. Markiere für jedes Nomen den Kasus als N (Nominativ), A (Akkusativ) oder D (Dativ). Prüfe dann, ob das Verb im Satz eines ist, das immer Dativ verlangt (helfen, danken, gehören) oder Akkusativ (sehen, kaufen, werfen).",
       "Schreibe einen kurzen Dialog (3–4 Zeilen), in dem jemand etwas gibt, schickt oder zeigt. Versuche, mindestens ein Dativ- und ein Akkusativnomen einzubauen.",
       "Führe eine laufende Liste von Verben wie geben, helfen, schicken, die ein bestimmtes Kasusmuster verlangen. Ergänze sie, während du weiterliest.",
     ]

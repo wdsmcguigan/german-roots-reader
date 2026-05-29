@@ -1,4 +1,4 @@
-// src/chapters/chapter09.ts
+// src/chapters/chapter10.ts
 
 import type { Chapter } from "./types";
 

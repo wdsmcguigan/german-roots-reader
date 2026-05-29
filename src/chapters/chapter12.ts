@@ -1,4 +1,4 @@
-// src/chapters/chapter11.ts
+// src/chapters/chapter12.ts
 
 import type { Chapter } from "./types";
 
@@ -33,11 +33,8 @@ export const chapter12: Chapter = {
     {
       heading: "12.3 Word-for-Word Translation vs German Thought",
       paragraphs: [
-        "A classic trap is translating each English word one by one. Watch what happens:",
-        "Idea: ‘I don’t have time today.’",
-        "Naive translation attempt: ❌ Ich habe nicht Zeit heute.",
-        "Natural German thought: ✓ Ich habe heute keine Zeit.",
-        "German negation typically attaches to the noun (keine Zeit) instead of just tacked onto the verb. The structure shifts because the language is highlighting the absence of ‘time’ as the key fact.",
+        "Take the idea ‘I don’t have time today.’ Run each word through its dictionary equivalent and you get Ich habe nicht Zeit heute — grammatically wrong, ear-of-a-native-speaker wrong, but not obviously wrong if you've only ever thought about it word by word.",
+        "The German that actually expresses the idea is Ich habe heute keine Zeit. The difference is structural. German didn't negate the having. It negated the time itself. The absence of time, not the absence of having, is what the sentence is reporting.",
         "Working rule: if you would negate the noun that follows in English (no time, no friends, no idea), German prefers kein/keine before the noun. If you would negate the verb or the whole action (don’t run, didn’t come), German uses nicht. So ‘I have no time’ = Ich habe keine Zeit, while ‘I’m not running today’ = Ich laufe heute nicht.",
         "Thought first, grammar second. Translation is never the goal; appropriate German structure is."
       ],
@@ -95,7 +92,7 @@ export const chapter12: Chapter = {
         "At this stage, you are no longer just putting German clothes on English thoughts.",
         "You are allowing German to shape your thoughts directly — your feelings, your complaints, your wishes, your small observations.",
         "Where most learners get stuck in word-for-word mode, you are starting to choose patterns like mir ist kalt, das gefällt mir, es gibt … as first instincts.",
-        "This is what real fluency looks like from the inside: not a bigger dictionary, but a new way to structure experience."
+        "What's left is the loop itself. The next chapter joins the input side and the output side into a single cycle — decode, rebuild, extend — and asks what this whole journey has actually changed in the way you meet a German sentence."
       ]
     }
   ],
@@ -130,16 +127,16 @@ export const chapter12: Chapter = {
       { german: "du fehlst mir", english: "I miss you (lit. you are missing to me)" }
     ],
     tasks: [
-      "Write your own inner monologue in German with 4–6 lines. No English words, no translation.",
+      "Write 4–6 lines of inner monologue using at least three dative-experience patterns from this chapter (mir ist …, mir gefällt …, ich habe Hunger / Durst / Angst, es gibt …, du fehlst mir). Avoid sentences that translate word-for-word from English.",
       "Rewrite the same monologue in the third person (er/sie/man), for example: Heute denkt sie direkt in Deutsch.",
       "Choose a feeling (for example: müde, neugierig, nervös) and describe it with an image rather than just the word. For example: 'Mein Kopf ist schwer, und meine Augen wollen zugehen.'",
-      "Bonus: Write 3–4 sentences using patterns like: mir ist … / ich habe … / es gibt … / das gefällt mir … and read them aloud.",
+      "Bonus: For each English idea, choose the natural German pattern (ich bin …, ich habe …, mir ist …, das gefällt mir, es gibt …): ‘I'm hungry’ / ‘I'm bored’ / ‘I like jazz’ / ‘There's a problem’ / ‘I'm tired.’ Only one pattern sounds native per idea — write the full German sentence.",
     ],
     tasksGerman: [
-      "Schreibe deinen eigenen inneren Monolog auf Deutsch mit 4–6 Zeilen. Keine englischen Wörter, keine Übersetzung.",
+      "Schreibe 4–6 Zeilen inneren Monolog und verwende mindestens drei Dativ-Erlebnis-Muster aus diesem Kapitel (mir ist …, mir gefällt …, ich habe Hunger / Durst / Angst, es gibt …, du fehlst mir). Vermeide Sätze, die wörtlich aus dem Englischen übersetzt sind.",
       "Schreibe denselben Monolog noch einmal in der dritten Person (er/sie/man), zum Beispiel: Heute denkt sie direkt in Deutsch.",
       "Wähle ein Gefühl (zum Beispiel: müde, neugierig, nervös) und beschreibe es mit einem Bild statt nur mit dem Wort. Zum Beispiel: „Mein Kopf ist schwer, und meine Augen wollen zugehen.”",
-      "Bonus: Schreibe 3–4 Sätze mit Mustern wie: mir ist … / ich habe … / es gibt … / das gefällt mir … und lies sie laut vor."
+      "Bonus: Wähle für jede englische Idee das natürliche deutsche Muster (ich bin …, ich habe …, mir ist …, das gefällt mir, es gibt …): „I'm hungry“ / „I'm bored“ / „I like jazz“ / „There's a problem“ / „I'm tired.“ Nur ein Muster klingt jeweils muttersprachlich — schreib den vollständigen deutschen Satz."
     ]
   }
 };
