@@ -98,10 +98,10 @@ export const chapter03: Chapter = {
       ]
     },
     {
-      heading: "3.6 Micro-Rules You Can Actually Use",
+      heading: "3.6 The Three Questions Behind Every German Sentence",
       paragraphs: [
-        "The shortcut is simpler than the chart. Anything that does the action — the eater, the thrower, the one in the doorway — takes nominative. Anything directly affected — the food, the ball, the news — takes accusative. Anyone receiving or benefiting — the friend you brought the coffee to, the dog the bone was thrown for — takes dative.",
-        "The endings come later, after the roles are intuitive. Over time, you will connect these roles to article patterns automatically — der/den/dem, ein/einen/einem, and so on."
+        "A fluent reader of German doesn't reach for a chart; they answer three questions automatically. Who is doing this? What is being acted on? Who, if anyone, is on the receiving end? The grammatical labels — nominative, accusative, dative — are just German's bookkeeping for those three questions.",
+        "The eater, the thrower, the one in the doorway: nominative. The food, the word, the door itself: accusative. The friend the coffee got brought to, the dog the bone got thrown for: dative. The endings will catch up to the roles on their own; the roles are the thing the language is actually built around."
       ],
     },
     {
@@ -178,14 +178,12 @@ export const chapter03: Chapter = {
     tasks: [
       "Take three simple English sentences (for example: 'The child sees the dog', 'I give the woman the book', 'We help the man'). Write a German version and label who is subject, who is direct object, who is receiver.",
       "Take three sentences from §3.5 and §3.7 of this chapter. For each noun, mark it as N (nominative), A (accusative) or D (dative). Then check whether the verb in that sentence is one that consistently takes dative (helfen, danken, gehören) or accusative (sehen, kaufen, werfen).",
-      "Write one mini-dialogue (3–4 lines) where someone gives, sends or shows something to someone else. Try to include at least one dative and one accusative noun.",
-      "Keep a running list of verbs like geben, helfen, schicken that strongly suggest a certain case pattern. Add to it as you continue through the book."
+      "Write one mini-dialogue (3–4 lines) where someone gives, sends or shows something to someone else. Try to include at least one dative and one accusative noun."
     ],
     tasksGerman: [
       "Nimm drei einfache englische Sätze (zum Beispiel: „The child sees the dog“, „I give the woman the book“, „We help the man“). Schreibe eine deutsche Version und bezeichne, wer Subjekt, wer direktes Objekt und wer Empfänger ist.",
       "Nimm drei Sätze aus §3.5 und §3.7 dieses Kapitels. Markiere für jedes Nomen den Kasus als N (Nominativ), A (Akkusativ) oder D (Dativ). Prüfe dann, ob das Verb im Satz eines ist, das immer Dativ verlangt (helfen, danken, gehören) oder Akkusativ (sehen, kaufen, werfen).",
       "Schreibe einen kurzen Dialog (3–4 Zeilen), in dem jemand etwas gibt, schickt oder zeigt. Versuche, mindestens ein Dativ- und ein Akkusativnomen einzubauen.",
-      "Führe eine laufende Liste von Verben wie geben, helfen, schicken, die ein bestimmtes Kasusmuster verlangen. Ergänze sie, während du weiterliest.",
     ]
   }
 };

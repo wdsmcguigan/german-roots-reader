@@ -169,13 +169,13 @@ export const chapter09: Chapter = {
     tasks: [
       "Break three German compounds you know into their parts (for example: Zahnarzt, Bahnhof, Haustür).",
       "Decode these unfamiliar compounds without a dictionary by splitting them at the seams and reading right-to-left: Augenblick, Sehenswürdigkeit, Geschwindigkeitsbegrenzung, Kaffeetasse, Schreibtischlampe. For each, mark the head (rightmost word) and the modifiers, then write what the whole thing means.",
-      "Write a short three-sentence scene using at least two compounds you created.",
+      "Write a short three-sentence scene that reuses at least two of the compounds from Task 1 or Task 2. Try to make their structure feel natural inside a real sentence.",
       "Invent one playful compound and define it in English (for example: Traumtasche — a pocket for dreams)."
     ],
     tasksGerman: [
       "Zerlege drei deutsche Komposita, die du kennst, in ihre Teile (zum Beispiel: Zahnarzt, Bahnhof, Haustür).",
       "Entschlüssele diese unbekannten Komposita ohne Wörterbuch, indem du sie an den Nahtstellen trennst und von rechts nach links liest: Augenblick, Sehenswürdigkeit, Geschwindigkeitsbegrenzung, Kaffeetasse, Schreibtischlampe. Markiere bei jedem das Grundwort (rechts) und die Bestimmungswörter, und schreib dann auf, was das ganze Wort bedeutet.",
-      "Schreibe eine kurze Szene mit drei Sätzen, in der du mindestens zwei deiner erfundenen Komposita verwendest.",
+      "Schreibe eine kurze Szene mit drei Sätzen, in der du mindestens zwei der Komposita aus Aufgabe 1 oder Aufgabe 2 verwendest. Versuche, ihre Struktur in einem echten Satz natürlich klingen zu lassen.",
       "Erfinde ein spielerisches Kompositum und erkläre es auf Deutsch (zum Beispiel: Traumtasche — eine Tasche für Träume).",
     ]
   }

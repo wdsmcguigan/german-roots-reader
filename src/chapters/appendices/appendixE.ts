@@ -74,20 +74,10 @@ export const appendixE: Chapter = {
       heading: "B.5 Auxiliary Verb Selection (Haben vs Sein)",
       paragraphs: [
         "Every German perfect tense needs a helper: haben or sein. The participle alone is not enough — and the wrong helper can change the meaning, sometimes drastically.",
-        "The default is haben. Reach for sein only when the verb describes motion from one place to another, or a change of state that the subject undergoes on its own.",
+        "Reach for sein when the verb describes motion to a destination — gehen, kommen, fahren, fliegen, reisen — or a change of state the subject undergoes on its own — sterben, wachsen, einschlafen, aufwachen. Sein and bleiben themselves always take sein. Everything else takes haben. A small set of verbs flips based on meaning; the table below catalogues the ones you'll meet most often.",
         "Chapter 6.6 introduced the split. This appendix is the lookup."
       ],
       exampleBlocks: [
-        {
-          title: "Rules of Thumb",
-          rows: [
-            { left: "haben", right: "transitive verbs (verb takes a direct object); most everyday actions" },
-            { left: "sein", right: "motion to a destination — gehen, kommen, fahren, fliegen, reisen" },
-            { left: "sein", right: "change of state on its own — sterben, wachsen, einschlafen, aufwachen" },
-            { left: "sein", right: "the verbs sein and bleiben themselves" },
-            { left: "Either", right: "a small set flips based on meaning — see the next table" }
-          ]
-        },
         {
           title: "More Flip Verbs You’ll Meet in Real Reading",
           rows: [

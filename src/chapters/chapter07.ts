@@ -91,7 +91,8 @@ export const chapter07: Chapter = {
       paragraphs: [
         "The five core inseparable prefixes — ver-, ent-, zer-, be-, er- — are not just direction markers. Each does specific semantic work on the verb it joins. Once you know the job, half the dictionary opens up.",
         "Each prefix also has an English ancestor or cousin, often hiding inside an old or specialised word.",
-        "Watch er- in particular. It means ‘carry through to the end’ — bringing an action to completion — and in German, completion can be benign or final depending on what's being completed. The benign side gives you erfinden (invent — finding something all the way into existence), erkennen (recognise — knowing arriving in an instant), erreichen (reach all the way to the goal). Then the dictionary tilts: erfrieren is freezing all the way (to death); erschießen is shooting all the way (to death); erwürgen is strangling all the way (to death). Er- doesn't decide whether the ending is good. It only decides that there is an ending."
+        "Watch er- in particular. It means ‘carry through to the end’ — bringing an action to completion — and in German, completion can be benign or final depending on what's being completed. The benign side gives you erfinden (invent — finding something all the way into existence), erkennen (recognise — knowing arriving in an instant), erreichen (reach all the way to the goal). Then the dictionary tilts: erfrieren is freezing all the way (to death); erschießen is shooting all the way (to death); erwürgen is strangling all the way (to death). Er- doesn't decide whether the ending is good. It only decides that there is an ending.",
+        "If you're listening rather than reading, pause briefly between the five prefix tables that follow — each one (ver-, ent-, zer-, be-, er-) is a self-contained portrait, and they're best taken one at a time."
       ],
       exampleBlocks: [
         {
@@ -263,15 +264,13 @@ export const chapter07: Chapter = {
     ],
     tasks: [
       "Decode these prefix verbs without a dictionary, using the §7.3 table: erkennen, beschreiben, entkommen, zerreißen, verkaufen. Write your guess, then check.",
-      "Take the stem stehen and write three sentences that each use a different inseparable prefix from §7.3 (e.g., verstehen, bestehen, entstehen). Notice how each prefix tilts the meaning.",
-      "Take the stem kommen and write three sentences using separable prefixes from §7.4 (ankommen, mitkommen, zurückkommen). Remember: the prefix lands at the end in the present tense.",
+      "Pick one inseparable prefix (ver-, be-, ent-, er-, zer-) and one separable prefix (an-, mit-, zurück-, ein-, aus-). Write two sentence pairs: stehen with the inseparable prefix, kommen with the separable one. Mark where each prefix lands — the inseparable stays fused to the stem; the separable jumps to the end.",
       "For each of these nouns, name the suffix and what it signals from §7.5: Freiheit, Bewegung, Mädchen, Freundschaft, Möglichkeit, machbar.",
       "Bonus: invent a new prefix verb (e.g., überkochen for 'to boil over with feeling') and write one sentence explaining what your invented verb means."
     ],
     tasksGerman: [
       "Entschlüssele diese Präfixverben ohne Wörterbuch, mithilfe der Tabelle in §7.3: erkennen, beschreiben, entkommen, zerreißen, verkaufen. Notiere deine Vermutung, prüfe sie dann.",
-      "Nimm den Stamm stehen und schreibe drei Sätze, die jeweils ein anderes untrennbares Präfix aus §7.3 verwenden (z. B. verstehen, bestehen, entstehen). Achte darauf, wie jedes Präfix die Bedeutung verschiebt.",
-      "Nimm den Stamm kommen und schreibe drei Sätze mit trennbaren Präfixen aus §7.4 (ankommen, mitkommen, zurückkommen). Denk daran: Das Präfix steht im Präsens am Ende.",
+      "Wähle ein untrennbares Präfix (ver-, be-, ent-, er-, zer-) und ein trennbares Präfix (an-, mit-, zurück-, ein-, aus-). Schreibe zwei Satzpaare: stehen mit dem untrennbaren, kommen mit dem trennbaren. Markiere, wo jedes Präfix landet — das untrennbare bleibt am Stamm, das trennbare springt ans Ende.",
       "Bestimme für jedes Nomen das Suffix und was es nach §7.5 signalisiert: Freiheit, Bewegung, Mädchen, Freundschaft, Möglichkeit, machbar.",
       "Bonus: Erfinde ein neues Präfixverb (z. B. überkochen für 'vor Gefühl überlaufen') und schreibe einen Satz, der dein neues Verb erklärt."
     ]

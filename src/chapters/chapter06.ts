@@ -125,8 +125,7 @@ export const chapter06: Chapter = {
             { left: "ziehen", right: "hat gezogen → pulled, drew (something) · ist gezogen → moved, migrated" },
             { left: "brechen", right: "hat gebrochen → broke (something) · ist gebrochen → shattered on its own" },
             { left: "schmelzen", right: "hat geschmolzen → melted (something) · ist geschmolzen → melted in the heat" },
-            { left: "reißen", right: "hat gerissen → tore (something) · ist gerissen → snapped, gave way" },
-            { left: "Quick test", right: "If you can swap in ‘relocated’ or ‘the thing changed on its own,’ use sein. Otherwise haben." }
+            { left: "reißen", right: "hat gerissen → tore (something) · ist gerissen → snapped, gave way" }
           ]
         }
       ]
@@ -177,14 +176,12 @@ export const chapter06: Chapter = {
       "Conjugate singen and trinken side by side in three tenses: present, simple past, perfect. (ich singe / ich sang / ich habe gesungen; ich trinke / ich trank / ich habe getrunken.) Notice the shared i → a → u vowel pattern.",
       "In the German passage, find every verb form and label it: present (P), simple past (Pr), or perfect participle (Pt). Then mark each as strong (S) or weak (W). You should see at least one of each.",
       "Write one sentence that uses a strong verb and a weak verb together.",
-      "Take three strong verbs from §6.2 (e.g., fahren, sehen, geben) and three weak verbs (e.g., machen, sagen, lernen). Conjugate each in present, simple past, and perfect. Notice that the strong verbs change their vowel while the weak verbs just take -te / -t endings.",
       "Classify these as weak (W) or strong (S), then write each in past + perfect: lernen, schwimmen, trinken, leben, essen, kaufen. (Hints: schwimmen → schwamm → geschwommen; essen → aß → gegessen.)"
     ],
     tasksGerman: [
       "Konjugiere singen und trinken nebeneinander in drei Zeiten: Präsens, Präteritum, Perfekt. (ich singe / ich sang / ich habe gesungen; ich trinke / ich trank / ich habe getrunken.) Achte auf das gemeinsame i → a → u Vokal-Muster.",
       "Finde im deutschen Text jede Verbform und benenne sie: Präsens (P), Präteritum (Pr) oder Partizip Perfekt (Pt). Markiere dann jede als stark (S) oder schwach (W). Du solltest mindestens eine von jeder Art finden.",
       "Schreibe einen Satz, in dem ein starkes und ein schwaches Verb gemeinsam vorkommen.",
-      "Nimm drei starke Verben aus §6.2 (z. B. fahren, sehen, geben) und drei schwache Verben (z. B. machen, sagen, lernen). Konjugiere jedes in Präsens, Präteritum und Perfekt. Achte darauf, wie die starken Verben den Vokal verändern, während die schwachen nur -te / -t anhängen.",
       "Ordne diese Verben als schwach (W) oder stark (S) ein und schreibe jeweils Präteritum und Perfekt: lernen, schwimmen, trinken, leben, essen, kaufen. (Hinweise: schwimmen → schwamm → geschwommen; essen → aß → gegessen.)",
     ]
   }

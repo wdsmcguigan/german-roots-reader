@@ -154,7 +154,7 @@ export const chapter02: Chapter = {
       paragraphs: [
         "You are no longer just recognising German. You are beginning to generate and decode it.",
         "Sound shifts are not trivia. They are tools for seeing through the surface of words into their shared ancestry.",
-        "From now on, every time you meet a new German word, ask two questions: ‘What English word does this remind me of?’ and ‘What sound changes would connect them?’",
+        "Once the shifts are in your ear, no new German word arrives without two quiet questions following it: What English word does this remind me of? And what sound change would connect them? You don't have to ask the questions consciously; the trained ear runs them on its own, and the answer often arrives before the dictionary does.",
         "In the next chapter we add the layer that lets German sentences keep their meaning even when the word order bends: cases. The endings on der/den/dem aren't bureaucracy — they're the diagram of who does what to whom.",
       ],
     },
@@ -195,13 +195,13 @@ export const chapter02: Chapter = {
       "In the German text, find at least three pairs where the German word differs from its English cousin by a single sound shift (for example Vater/father shows t → th). Write each pair and label the shift.",
       "Using the shift table in §2.2, predict the German form of each English word — write your guess, then check: foot, ten, thank, pepper, daughter. Note which shift (p → f, t → th, k → h, etc.) you applied for each.",
       "Write two simple German sentences that each contain at least one cognate and one sound-shift pair (for example: kalt/cold, Licht/light).",
-      "Find a short German headline online or in a book. Underline every word where you can see a sound shift from its English cousin. Aim for at least three shifts spotted before you stop.",
+      "Underline every word in these three German headlines where you can spot a sound shift from its English cousin (aim for at least three shifts across them): ‘Bahn streikt — Pendler warten kalt am Gleis’ / ‘Apfel-Ernte fällt klein aus’ / ‘Vater und Tochter finden alten Brief.’ Stretch: find one headline of your own and repeat the exercise.",
     ],
     tasksGerman: [
       "Finde im deutschen Text mindestens drei Paare, bei denen sich das deutsche Wort von seinem englischen Verwandten nur durch eine Lautverschiebung unterscheidet (zum Beispiel Vater/father zeigt t → th). Schreibe jedes Paar auf und benenne die Verschiebung.",
       "Nutze die Verschiebungstabelle in §2.2 und sag den deutschen Form jedes englischen Wortes voraus — notiere deine Vermutung, prüfe dann: foot, ten, thank, pepper, daughter. Halte für jedes fest, welche Verschiebung (p → f, t → th, k → h usw.) du angewendet hast.",
       "Schreibe zwei einfache deutsche Sätze, die jeweils mindestens einen Kognaten und ein Lautverschiebungspaar enthalten (zum Beispiel: kalt/cold, Licht/light).",
-      "Such eine kurze deutsche Schlagzeile online oder in einem Buch. Unterstreiche jedes Wort, bei dem du eine Lautverschiebung vom englischen Verwandten erkennst. Ziel: mindestens drei erkannte Verschiebungen, bevor du aufhörst.",
+      "Unterstreiche in diesen drei deutschen Schlagzeilen jedes Wort, bei dem du eine Lautverschiebung zum englischen Verwandten erkennst (Ziel: insgesamt mindestens drei): „Bahn streikt — Pendler warten kalt am Gleis“ / „Apfel-Ernte fällt klein aus“ / „Vater und Tochter finden alten Brief.“ Bonus: Such dir selbst eine Schlagzeile und wiederhole die Übung.",
     ],
   },
 };

@@ -194,13 +194,13 @@ export const chapter01: Chapter = {
       "Mark all clear cognates in the German text (Wasser, Hand, Haus, Name, etc.). Add at least two more that you notice yourself.",
       "Write a short two-line mini-text in German that uses at least three cognates (for example: Haus, Name, Familie, Musik, Hotel). Keep the grammar simple.",
       "Pick two sentences from the German text. For each, list every word you recognise instantly (cognate or near-cognate) and every word you had to think about. Notice the ratio — most early German texts are mostly recognisable once you know what to look for.",
-      "In your notebook, make a two-column list ‘Deutsch / Englisch’ and add 5–10 cognate pairs you discover in your own reading or listening.",
+      "Pick five cognate pairs from the passage (Wasser, Hand, Haus, Name, Apfel) and rank them from most-obvious to least-obvious. Explain why the least-obvious one took longer to recognise.",
     ],
     tasksGerman: [
       "Markiere alle klaren Kognaten im deutschen Text (Wasser, Hand, Haus, Name, usw.). Füge mindestens zwei weitere hinzu, die du selbst entdeckst.",
       "Schreibe einen kurzen Minitext auf Deutsch mit mindestens drei Kognaten (zum Beispiel: Haus, Name, Familie, Musik, Hotel). Lass die Grammatik einfach.",
       "Wähle zwei Sätze aus dem deutschen Text. Liste für jeden alle Wörter auf, die du sofort erkennst (Kognaten oder Beinahe-Kognaten), und alle, über die du nachdenken musstest. Achte auf das Verhältnis — frühe deutsche Texte sind meistens gut erkennbar, sobald du weißt, worauf du achten musst.",
-      "Mach in deinem Notizheft eine zweispaltige Liste „Deutsch / Englisch“ und füge 5–10 Kognaten-Paare hinzu, die du beim Lesen oder Hören selbst entdeckst.",
+      "Wähle fünf Kognaten-Paare aus dem Text (Wasser, Hand, Haus, Name, Apfel) und sortiere sie vom offensichtlichsten zum am wenigsten offensichtlichen. Erkläre, warum das am wenigsten offensichtliche länger gebraucht hat, um erkannt zu werden.",
     ],
   }
 
