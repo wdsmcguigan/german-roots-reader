@@ -68,11 +68,10 @@ export const chapter01: Chapter = {
     },
 
     {
-      heading: "1.4 Mini-Exercise: Test Your Instinct",
+      heading: "1.4 What Your Ear Already Knows",
       paragraphs: [
-        "Your ancestral ear already knows German. Time to prove it.",
-        "Look at the English words below. Speak your guess for the German form before checking the table.",
-        "Trust pattern. Trust memory. Even a wrong guess is successful learning."
+        "Run an English word through the same internal ear that produced ‘house’ from house, and the German form often arrives unbidden. Brot for bread. Stein for stone. Maus for mouse. None of these required study — they required permission to trust the family resemblance.",
+        "The column below is not a quiz. It is a tally of what you already knew before you opened this book."
       ],
       exampleBlocks: [
         {

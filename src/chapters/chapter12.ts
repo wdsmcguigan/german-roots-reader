@@ -1,187 +1,145 @@
-// src/chapters/chapter12.ts
+// src/chapters/chapter11.ts
 
 import type { Chapter } from "./types";
 
 export const chapter12: Chapter = {
   id: 12,
-  title: "Decode → Build → Express",
-  subtitle: "From understanding to free expression.",
+  title: "Thought Translation Training",
+  subtitle: "Thinking directly in German structures.",
   summary:
-    "This final chapter fuses everything: you decode German based on structure and roots, rebuild the meaning in your own simpler German, and then extend it with your voice. The focus is on moving from recognition to creation — from learning German to participating in it.",
+    "Instead of translating English sentences into German, you start from raw ideas, feelings and scenes — and choose the forms a native speaker would use: mir ist kalt, ich habe Hunger, das gefällt mir. This chapter trains you to reshape thoughts in German rather than converting English word-for-word.",
   sections: [
     {
-      heading: "12.0 Where We Started",
+      heading: "12.1 From English Sentences to German Thoughts",
       paragraphs: [
-        "Open chapter one again. The page where Wasser stood next to water, Hand next to hand, Haus next to house. Read those pairs slowly.",
-        "They have not changed. You have.",
-        "The familiarity you felt then was a hunch. The familiarity you feel now is knowledge. The same words. A different reader."
+        "Chapter 11 worked on the input side: stop translating as you read. This chapter works on the output side: stop translating as you express. Same wall, different face.",
+        "Direct translation fails because languages do not map 1:1. English phrase structure is not German phrase structure. English metaphors are not German metaphors. English rhythm is not German rhythm.",
+        "If you think in English and then output German, you often end up with sentences that are grammatically correct but emotionally or structurally wrong. They sound like copies, not originals.",
+        "Native German is not a translation of English. It is a different way of framing reality. In this chapter, you stop asking ‘How do I say this English sentence?’ and instead ask: ‘How would a German speaker naturally express this idea?’"
       ]
     },
     {
-      heading: "12.1 The Fluent Cycle: Read → Understand → Rebuild → Express",
+      heading: "12.2 How German Structures Thought",
       paragraphs: [
-        "By now you hold three major abilities: you can decode German naturally using structure, cases, roots and compounds; you can shape ideas in German forms instead of translating; and you can predict meaning through etymology and semantic drift.",
-        "Fluency is the fusion of these skills. You read a text, you understand it, you rebuild it in your own words, and then you extend it with your own thoughts.",
-        "The core loop for this chapter is simple:",
-        "1) Decode a short German text.",
-        "2) Rebuild its meaning in simpler German.",
-        "3) Extend or personalise it.",
-        "You are moving from recognition to creation."
+        "English tends to shoot straight: subject → verb → object.",
+        "German often builds context and structure first, then fills in the action. It thinks in frames, roles and conditions.",
+        "Compare the idea ‘I want to go to the store.’",
+        "• English: I want to go to the store.",
+        "• German: Ich will zum Laden gehen.",
+        "Literally: I want to the shop go.",
+        "German often moves towards the important part at the end (gehen), with context and intention setting up the scene. Think of it as building a small piece of architecture instead of firing a single arrow."
       ]
     },
     {
-      heading: "12.2 Decoding at Speed (Input Fluency)",
+      heading: "12.3 Word-for-Word Translation vs German Thought",
       paragraphs: [
-        "When you read now, you no longer stop at every unknown word. You look for the structural pillars that carry meaning, then let details fill in gradually.",
-        "You scan for articles, verb positions, prefixes, compounds and endings. You are not solving a puzzle; you are absorbing a scene.",
-        "Example sentence:",
-        "Wenn der Regen leise fällt, hört man nur das Atmen der Stadt.",
-        "A beginner translates. A fluent brain experiences: soft rain, quiet streets, the city breathing."
+        "A classic trap is translating each English word one by one. Watch what happens:",
+        "Idea: ‘I don’t have time today.’",
+        "Naive translation attempt: ❌ Ich habe nicht Zeit heute.",
+        "Natural German thought: ✓ Ich habe heute keine Zeit.",
+        "German negation typically attaches to the noun (keine Zeit) instead of just tacked onto the verb. The structure shifts because the language is highlighting the absence of ‘time’ as the key fact.",
+        "Working rule: if you would negate the noun that follows in English (no time, no friends, no idea), German prefers kein/keine before the noun. If you would negate the verb or the whole action (don’t run, didn’t come), German uses nicht. So ‘I have no time’ = Ich habe keine Zeit, while ‘I’m not running today’ = Ich laufe heute nicht.",
+        "Thought first, grammar second. Translation is never the goal; appropriate German structure is."
       ],
       exampleBlocks: [
         {
-          title: "Structural Pillars to Notice",
+          title: "English Thought → German Structure",
           rows: [
             {
-              left: "Artikel (der/die/das)",
-              right: "give you gender and often case (especially in nominative/accusative)"
+              left: "I don’t have time today.",
+              right: "Ich habe heute keine Zeit."
             },
             {
-              left: "Verbposition",
-              right: "tells you frame and flow: main verb in 2nd position, other verbs to the end"
-            },
-            {
-              left: "Präfixe (ver-, be-, ent-, aus-, an- …)",
-              right: "shift direction and nuance of meaning"
+              left: "Today I can’t come.",
+              right: "Ich kann heute nicht kommen."
             }
+          ]
+        }
+      ]
+    },
+    {
+      heading: "12.4 Replace Translation with Re-Framing",
+      paragraphs: [
+        "Instead of translating English sentences into German, you re-frame the idea in German logic. Many everyday phrases show clear structural differences.",
+        "There’s something philosophically tidy in mir ist kalt. English flattens the experience into identity: I am cold, as if cold were a property of me. German keeps the experience separate from the self — cold is happening to me; I’m just the one it’s happening to. Same with hunger, boredom, and most pains and pleasures. Whether or not native speakers consciously feel this distinction, the grammar quietly maintains it. Languages aren’t neutral containers for thought. They tilt the room slightly toward certain ways of describing what’s happening, and mir ist kalt is one of German’s small tilts.",
+        "Notice how German often uses ‘have’ or ‘to me is’ instead of ‘I am’:"
+      ],
+      exampleBlocks: [
+        {
+          title: "Common Pattern Shifts",
+          rows: [
+            { left: "I’m hungry.", right: "Ich habe Hunger. (I have hunger.)" },
+            { left: "I’m cold.", right: "Mir ist kalt. (To me is cold.)" },
+            { left: "I’m bored.", right: "Mir ist langweilig. (To me is boredom.)" }
           ],
-          moreTitle: "More Pillars",
+          moreTitle: "More Examples",
           moreRows: [
-            {
-              left: "Komposita",
-              right: "long nouns broken into parts → instant meaning unlock"
-            },
-            {
-              left: "Endungen (-ung, -heit, -keit, -chen, -ling …)",
-              right: "signal noun class, gender patterns and tone (abstract vs concrete, diminutives, etc.)"
-            }
+            { left: "I miss you.", right: "Du fehlst mir. (You are missing to me.)" },
+            { left: "I like this.", right: "Das gefällt mir. (That pleases me.)" },
+            { left: "There is a problem.", right: "Es gibt ein Problem. (It gives/there is a problem.)" }
           ]
         }
       ]
     },
     {
-      heading: "12.3 Building From Meaning (Output Fluency)",
+      heading: "12.5 What This Looks Like in Your Head",
       paragraphs: [
-        "To speak and write freely, you reverse the process. You start from meaning and build German outward.",
-        "Instead of asking ‘How do I say this in German?’ you decide what you want to express, choose perspective, sketch a sentence skeleton, and only then add detail.",
-        "Example idea: ‘Tonight feels peaceful.’",
-        "German build process:",
-        "• Frame: Heute Abend …",
-        "• State: … ist es ruhig …",
-        "• Optional nuance: … und die Luft ist weich.",
-        "Final expression: Heute Abend ist es ruhig, und die Luft ist weich.",
-        "No translation. Just meaning → structure → words."
+        "When you catch yourself starting to translate, what you’re really catching is a fork in the road. The English sentence is forming. The question is whether you pause long enough to ask what the idea actually is — a feeling, a physical state, a wish, a need, a possession — and reach for the German pattern that expresses that kind of thing rather than the English words that say it.",
+        "Take the cold. Idea: I’m cold. Function: internal physical condition. German’s pattern for internal physical conditions is mir ist + Adjektiv, so the sentence that arrives is Mir ist kalt — not Ich bin kalt, which sounds emotionally cold or detached. You didn’t translate. You named the function and let the language hand you the form.",
+        "The shift is small and it happens slowly. The first month you catch yourself a few times. The third month, German patterns start to surface before English ones do. The first year, you stop noticing the switch at all."
       ]
     },
     {
-      heading: "12.4 The Rebuild Technique",
+      heading: "12.6 Closing Insight for Chapter 12",
       paragraphs: [
-        "The rebuild technique is the cleanest test of real understanding:",
-        "1) Read a German sentence or short text.",
-        "2) Make sure you understand it.",
-        "3) Rewrite it in different German words — same meaning, new expression.",
-        "If you can do this, you are thinking in German internally.",
-        "Example:",
-        "Original: Berlin schläft — aber nicht ganz.",
-        "Possible rebuilds:"
-      ],
-      exampleBlocks: [
-        {
-          title: "Rebuild Variations",
-          rows: [
-            { left: "Die Stadt ruht, doch ein Rest bleibt wach.", right: "same idea, new phrasing" },
-            { left: "Es ist still in Berlin, aber irgendwo wacht jemand.", right: "focus shifted to ‘someone’" },
-            { left: "Nicht alles schläft hier — ein Teil lebt weiter.", right: "contrast emphasised" }
-          ]
-        }
-      ]
-    },
-    {
-      heading: "12.5 From Copying to Creating",
-      paragraphs: [
-        "At first, your rewrites stay close to the original. Then you start taking more risks: changing time (present → past → future), perspective (ich → sie → man), mood (neutral → poetic → humorous), or adding personal details.",
-        "This is where German stops being the book’s language and starts being your language.",
-        "First you copy. Then you rebuild. Then you extend with a line of your own. Then one day you keep only the core idea and write something that exists nowhere in the original. That is when the book stops being a textbook and starts being a mirror.",
-        "There is a moment, somewhere past the first year, when a German word you’ve never seen surfaces in your head before its English equivalent does. Not because you memorized it — because the structure offered it to you. Your brain saw the prefix, saw the stem, saw the suffix, and built the meaning from the ground up the way the language itself would. That’s the moment the book stops being the book and starts being the world. From there, the language is no longer the project. It’s the medium."
-      ]
-    },
-    {
-      heading: "12.6 Looking Back at the Journey",
-      paragraphs: [
-        "The chapter ends — and the book ends — by inviting you to look backwards in the language you have been building.",
-        "You have moved from seeing German as a wall of endings and cases to seeing it as a system with roots, sound shifts, gender patterns, verb tribes, compounds, semantic drift, and native thought structures.",
-        "The point of this reflection is not flawless grammar. It is the recognition: I can now think, feel and tell simple stories in this language.",
-        "You are no longer just studying German. You are participating in it."
-      ]
-    },
-    {
-      heading: "12.7 Closing Insight for Chapter 12",
-      paragraphs: [
-        "You now possess:",
-        "• Linguistic instinct — a feel for what ‘sounds right’.",
-        "• Historical understanding — where German and English split and why.",
-        "• Structural awareness — cases, word order, prefix verbs, compounds.",
-        "• Pattern recognition — roots, endings, gender and verb families.",
-        "• Internal expression — the ability to run your inner voice in German.",
-        "Fluency is not perfection and not completion. It is a living process.",
-        "Your German will keep expanding as long as you keep decoding, rebuilding and expressing.",
-        "You are done with this book.",
-        "You are not done with the language."
+        "At this stage, you are no longer just putting German clothes on English thoughts.",
+        "You are allowing German to shape your thoughts directly — your feelings, your complaints, your wishes, your small observations.",
+        "Where most learners get stuck in word-for-word mode, you are starting to choose patterns like mir ist kalt, das gefällt mir, es gibt … as first instincts.",
+        "This is what real fluency looks like from the inside: not a bigger dictionary, but a new way to structure experience."
       ]
     }
   ],
   module: {
     level: "A2",
-    title: "Verstehen und Gestalten",
+    title: "Ohne Umweg Durch Englisch",
     germanLines: [
-      "Ich lese einen kurzen Text.",
-      "Dann sage ich ihn mit anderen Wörtern neu.",
-      "Ich baue Sätze wie kleine Häuser.",
-      "Stein für Stein, Wort für Wort.",
-      "So wird Verständnis zu Sprache."
+      "Ich denke heute direkt in Deutsch.",
+      "Keine Übersetzung, kein Umweg.",
+      "Ich beschreibe nur, was ich sehe und fühle.",
+      "Der Himmel ist hell, und mein Kopf ist ruhig.",
+      "Worte kommen langsam, aber sie kommen von innen."
     ],
     englishLines: [
-      "I read a short text.",
-      "Then I say it again with different words.",
-      "I build sentences like small houses.",
-      "Stone by stone, word by word.",
-      "In this way, understanding becomes language."
+      "Today I think directly in German.",
+      "No translation, no detour.",
+      "I simply describe what I see and feel.",
+      "The sky is bright, and my mind is calm.",
+      "Words come slowly, but they come from inside."
     ],
     vocabulary: [
-      { german: "kurz", english: "short" },
-      { german: "mit anderen Wörtern", english: "with different words" },
-      { german: "bauen", english: "to build" },
-      { german: "der Stein", english: "stone" },
-      { german: "das Verständnis", english: "understanding" },
-      { german: "die Sprache", english: "language" }
+      { german: "der Umweg", english: "detour" },
+      { german: "beschreiben", english: "to describe" },
+      { german: "fühlen", english: "to feel" },
+      { german: "ruhig", english: "calm" },
+      { german: "von innen", english: "from inside" },
+      { german: "direkt", english: "directly" },
+      { german: "mir ist kalt", english: "I’m cold (lit. to me is cold)" },
+      { german: "ich habe Hunger", english: "I’m hungry (lit. I have hunger)" },
+      { german: "das gefällt mir", english: "I like that (lit. that pleases me)" },
+      { german: "es gibt", english: "there is/are (lit. it gives)" },
+      { german: "du fehlst mir", english: "I miss you (lit. you are missing to me)" }
     ],
     tasks: [
-      "Choose an earlier practice module and summarise it in 2–3 German sentences.",
-      "Rewrite the text of this page ('Verstehen und Gestalten') in your own German words, keeping the same idea.",
-      "Write a closing paragraph in German about your journey with this language so far. Focus: What has changed in your mind?",
-      "Read → Understand → Rebuild: rebuild these three German lines in your own simpler German — ‘Im Winter sind die Straßen leer, und die Welt wirkt langsamer.’ / ‘Manchmal findet man Frieden in kleinen Momenten.’ / ‘Im Herzen jeder Sprache liegt eine Geschichte.’",
-      "Think → Build → Express: pick one prompt and write 3–5 German sentences. Choose from: Beschreibe deinen idealen Morgen / Beschreibe eine Erinnerung nur über Sinne / Beschreibe eine Stadt bei Nacht ohne das Wort „Stadt“ / Beschreibe dein Deutschlernen als Verwandlung.",
-      "Your first freeform paragraph: write a free paragraph in German on a topic of your choice. No translation, no dictionary — only thoughts that come directly in German.",
-      "Bonus: Use a recording app and read your paragraph aloud in German. Listen back to yourself as someone who actually uses this language.",
+      "Write your own inner monologue in German with 4–6 lines. No English words, no translation.",
+      "Rewrite the same monologue in the third person (er/sie/man), for example: Heute denkt sie direkt in Deutsch.",
+      "Choose a feeling (for example: müde, neugierig, nervös) and describe it with an image rather than just the word. For example: 'Mein Kopf ist schwer, und meine Augen wollen zugehen.'",
+      "Bonus: Write 3–4 sentences using patterns like: mir ist … / ich habe … / es gibt … / das gefällt mir … and read them aloud.",
     ],
     tasksGerman: [
-      "Wähle ein früheres Übungsmodul und fasse es in 2–3 deutschen Sätzen zusammen.",
-      "Schreibe den Text dieser Seite („Verstehen und Gestalten“) in deinen eigenen deutschen Worten neu, mit derselben Idee.",
-      "Schreibe einen abschließenden Absatz auf Deutsch über deinen bisherigen Weg mit dieser Sprache. Fokus: Was hat sich in deinem Kopf verändert?",
-      "Lesen → Verstehen → Umbauen: formuliere diese drei deutschen Sätze in deinem eigenen, einfacheren Deutsch um — „Im Winter sind die Straßen leer, und die Welt wirkt langsamer.“ / „Manchmal findet man Frieden in kleinen Momenten.“ / „Im Herzen jeder Sprache liegt eine Geschichte.“",
-      "Denken → Bauen → Ausdrücken: wähle ein Thema und schreibe 3–5 deutsche Sätze: Beschreibe deinen idealen Morgen / Beschreibe eine Erinnerung nur über Sinne / Beschreibe eine Stadt bei Nacht, ohne das Wort „Stadt“ zu benutzen / Beschreibe dein Deutschlernen als Verwandlung.",
-      "Dein erster freier Absatz: schreibe einen freien Absatz auf Deutsch über ein Thema deiner Wahl. Keine Übersetzung, kein Wörterbuch — nur Gedanken, die direkt in Deutsch erscheinen.",
-      "Bonus: Nimm dir eine Aufnahme-App und lies deinen Absatz laut auf Deutsch ein. Höre dir zu wie einer Person, die diese Sprache wirklich benutzt."
+      "Schreibe deinen eigenen inneren Monolog auf Deutsch mit 4–6 Zeilen. Keine englischen Wörter, keine Übersetzung.",
+      "Schreibe denselben Monolog noch einmal in der dritten Person (er/sie/man), zum Beispiel: Heute denkt sie direkt in Deutsch.",
+      "Wähle ein Gefühl (zum Beispiel: müde, neugierig, nervös) und beschreibe es mit einem Bild statt nur mit dem Wort. Zum Beispiel: „Mein Kopf ist schwer, und meine Augen wollen zugehen.”",
+      "Bonus: Schreibe 3–4 Sätze mit Mustern wie: mir ist … / ich habe … / es gibt … / das gefällt mir … und lies sie laut vor."
     ]
   }
 };

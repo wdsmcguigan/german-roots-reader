@@ -1,190 +1,216 @@
-// src/chapters/chapter10.ts
+// src/chapters/chapter09.ts
 
 import type { Chapter } from "./types";
 
 export const chapter10: Chapter = {
   id: 10,
-  title: "Reading & Thinking in German",
-  subtitle: "Understanding without translating.",
+  title: "When Family Drifts",
+  subtitle: "Where shared cognates wander off into different meanings.",
   summary:
-    "Fluency begins the moment you stop routing every sentence through English. This chapter trains you to read German as direct experience — seeing scenes, tracking roles, and writing simple texts without translation as a middle step.",
+    "English and German were once one language. Then time pushed them in different directions — narrowing some meanings, broadening others, borrowing from French and Latin, shifting emotional weight. This chapter teaches you how meanings drift and gives you a watchlist of the false friends those drifts created. False friends stop being traps and become historical clues.",
   sections: [
     {
-      heading: "10.1 Why the Detour Through English Eventually Has to End",
+      heading: "10.1 Why Familiarity Lies",
       paragraphs: [
-        "The translating reader and the fluent reader use different parts of the brain — that’s not a metaphor. Imaging studies of late bilinguals show measurable lag and recruitment of executive function regions when they read their second language; in early bilinguals or highly fluent late learners, that lag disappears. What you’re trying to build, when you stop translating, is not willpower. It’s a route.",
-        "Most learners read like this: Deutsch → Englisch → Bedeutung.",
-        "Fluent users read like this: Deutsch → Bedeutung.",
-        "That middle step is useful at the very beginning — like training wheels. But if you never remove it, your brain never builds direct links between German and meaning. Every sentence has to squeeze through a narrow English bottleneck.",
-        "This chapter is about dismantling that bottleneck. Not with force, but by giving your mind enough safe practice to trust German on its own.",
-        "You do not translate ‘Der Hund jagt die Katze.’ You see it. You feel it. You understand it directly."
+        "Up to now, German has mostly rewarded your instincts. Roots matched, sound shifts made sense, compounds felt logical.",
+        "False friends are the next test: words that look like English but are not. Words that used to match until meaning wandered. Words that share ancestry, but not destiny.",
+        "You do not beat false friends by brute-force memorisation. You beat them by understanding how languages drift apart — and once you see drift as a process, the gallery of false friends turns from a minefield into a kind of history book."
       ]
     },
     {
-      heading: "10.2 How to Think in German Syntax",
+      heading: "10.2 How Meanings Drift",
       paragraphs: [
-        "English depends heavily on fixed order: Subject → Verb → Object. Change the order and you often break the meaning.",
-        "German thinks in roles first, word order second. Cases tell you who does what to whom. Word order becomes flexible — especially in main clauses — because endings carry the grammar.",
-        "Compare:",
-        "• Der Hund beißt den Mann.",
-        "• Den Mann beißt der Hund.",
-        "In both cases, the meaning is the same: the dog bites the man. Why? Because ‘der Hund’ is nominative (subject) and ‘den Mann’ is accusative (object). Function beats order.",
-        "When you read, your goal is not to translate in sequence but to identify roles: Who is the subject? What is the object? What is being done? Where? When?"
+        "Drift is not chaos. It usually follows a few recognisable paths. Four mechanisms account for almost every divergence you will meet: narrowing, broadening, emotional shift, and borrowing."
       ],
       exampleBlocks: [
         {
-          title: "Role-Based Understanding",
+          title: "1) Narrowing — Meaning Becomes More Specific",
           rows: [
-            {
-              left: "Der Junge gibt dem Hund Wasser.",
-              right:
-                "Der Junge = subject (NOM), dem Hund = indirect object (DAT, receiver), Wasser = direct object (ACC, thing given)."
-            },
-            {
-              left: "Im Garten findet das Kind einen Käfer.",
-              right:
-                "das Kind = subject (NOM), einen Käfer = object (ACC), im Garten = location (where)."
-            }
+            { left: "English: meat (older)", right: "food in general" },
+            { left: "English: meat (now)", right: "animal flesh only" },
+            { left: "German: Gift (older)", right: "something given" },
+            { left: "German: Gift (now)", right: "poison" }
+          ]
+        },
+        {
+          title: "2) Broadening — One Becomes Many",
+          rows: [
+            { left: "German: fahren", right: "originally ‘to travel’ → now any kind of going by vehicle" },
+            { left: "English: dog", right: "once one specific breed → now all dogs" }
+          ]
+        },
+        {
+          title: "3) Emotional Shift — Melioration & Pejoration",
+          rows: [
+            { left: "stolz", right: "proud; positive in German, sometimes arrogant in English feel" },
+            { left: "frech", right: "cheeky; playful in German, often rude in English tone" }
+          ]
+        },
+        {
+          title: "4) Borrowing — One Side Picks Up a Replacement",
+          rows: [
+            { left: "German: klug", right: "clever, intelligent in a steady, capable way" },
+            { left: "English: clever", right: "shifted toward ingenuity, trickiness, ‘life-hack’ smart" },
+            { left: "Why?", right: "English absorbed huge amounts of French and Latin vocabulary; German kept more of the original Germanic sense. The result: related words that no longer feel related at all." }
           ]
         }
       ]
     },
     {
-      heading: "10.3 Building Direct Links with Mini-Scenes",
+      heading: "10.3 Same Root, Different Destiny — The False Friend Gallery",
       paragraphs: [
-        "To think in German, you need short texts with high meaning and low vocabulary. Scenes you can actually visualise.",
-        "You read the German. You imagine the situation. Only afterwards — if needed — you check the English.",
-        "The point is not word-per-word accuracy. The point is: did you see and feel the moment?"
+        "Most false friends fall into a few patterns, and the patterns themselves are more interesting than the trap-list they produce.",
+        "Bekommen is the headline case for English speakers. It looks exactly like ‘become,’ shares the same Germanic root, and means something entirely different: to receive, to get. The slip is so common that German learners' forums have whole threads about the day someone confidently told their host family ‘Ich bekomme ein Baby’ meaning to say ‘I'm becoming a parent’ and accidentally announced a pregnancy.",
+        "The trap exists because both words descend from be- + kommen, ‘to come to’ — and English narrowed it toward identity change while German kept it on the older sense of something arriving. Every entry in the gallery below has a story like that underneath. The cognates are the surface; the centuries are what made them diverge."
       ],
       exampleBlocks: [
         {
-          title: "Text A — Herbstszene",
+          title: "1) Ancient Cognates with Diverged Meaning",
           rows: [
-            {
-              left: "Der Herbst kommt.",
-              right: "Autumn is coming."
-            },
-            {
-              left: "Die Tage werden kürzer.",
-              right: "The days become shorter."
-            },
-            {
-              left: "Der Wind ist kühl, aber die Sonne bleibt freundlich.",
-              right: "The wind is cool, but the sun stays friendly."
-            },
-            {
-              left: "Abends trinkt man Tee, und die Fenster leuchten warm.",
-              right: "In the evening people drink tea and the windows glow warmly."
-            }
+            { left: "Gift (German)", right: "poison — NOT a present" },
+            { left: "gift (English)", right: "present — generous, not deadly" }
+          ]
+        },
+        {
+          title: "2) Borrowed Words That Shifted",
+          rows: [
+            { left: "Chef (German)", right: "boss, manager — hierarchy" },
+            { left: "chef (English)", right: "head cook — kitchen" }
+          ]
+        },
+        {
+          title: "3) Words That Shrunk or Expanded",
+          rows: [
+            { left: "brav (German)", right: "well-behaved, good" },
+            { left: "brave (English)", right: "courageous, fearless" }
+          ]
+        },
+        {
+          title: "4) Older Meanings vs New Meanings",
+          rows: [
+            { left: "fast (German)", right: "almost, nearly" },
+            { left: "fast (English)", right: "quick" }
+          ]
+        },
+        {
+          title: "5) Pure Coincidence",
+          rows: [
+            { left: "Brief (German)", right: "letter (mail) — not ‘brief’/short" },
+            { left: "Lokomotive (German)", right: "locomotive — not ‘location’" }
+          ]
+        },
+        {
+          title: "Core Watchlist — The False Friends You’ll Actually Meet",
+          rows: [
+            { left: "bekommen", right: "to receive — NOT ‘to become’" },
+            { left: "bald", right: "soon — NOT ‘bald (no hair)’" },
+            { left: "Chef", right: "boss, manager — NOT ‘chef/cook’" },
+            { left: "Gift", right: "poison — NOT ‘present’" },
+            { left: "fast", right: "almost — NOT ‘fast/quick’" }
+          ],
+          moreTitle: "More False Friends",
+          moreRows: [
+            { left: "brav", right: "well-behaved — NOT ‘brave’" },
+            { left: "aktuell", right: "current, up-to-date — NOT ‘actual’" },
+            { left: "eventuell", right: "possibly, maybe — NOT ‘eventually’" },
+            { left: "Fabrik", right: "factory — NOT ‘fabric’" },
+            { left: "großartig", right: "magnificent, fantastic — NOT ‘gross’" }
           ]
         }
       ]
     },
     {
-      heading: "10.4 Writing the Way You Read",
+      heading: "10.4 Brief: An Elegant Drift",
       paragraphs: [
-        "The same route works the other direction. When you write — even a sentence, even three — restrict yourself to words you already know, describe only concrete things, and keep English off the page. No grand essays. Just experience flowing straight into German.",
-        "The goal isn't complexity. The goal is the route itself: experience → German, with no English warehouse to detour through. Five honest sentences a day will reshape more than five hundred translated ones."
+        "Brief is the most elegant case. It’s the same Latin word as English ‘brief’ — brevis, short — but the two languages took it in opposite directions.",
+        "English kept the adjective and used it for length: a brief meeting. German took the noun and used it for the most common short written thing in medieval life: a short official note. Over centuries the note grew longer, the meaning stayed ‘letter’, and Brief in German now means any piece of mail at all.",
+        "Same word, same root, two completely different daily lives."
       ]
     },
     {
-      heading: "10.5 Guided Thought Prompts (No Translation)",
+      heading: "10.5 Predicting Direction: Concrete vs Abstract",
       paragraphs: [
-        "Use prompts that are sensory and simple. Write directly in German. If you catch yourself planning in English first, stop and restart simpler.",
-        "Prompt Set A — Weather / Food / Light / Body:",
-        "• Wie ist das Wetter heute?",
-        "• Was hast du heute gegessen?",
-        "• Wo ist das Licht weich?",
-        "• Wie fühlt sich dein Körper an?",
-        "Prompt Set B — Movement and agency (gehen, öffnen, finden, sehen):",
-        "• Wohin gehst du?",
-        "• Was öffnest du?",
-        "• Was findest du?",
-        "• Was siehst du?",
-        "Your responses can be short. They just have to be honest and concrete."
+        "A rough but useful rule of thumb:",
+        "• German tends to stay more concrete and structural.",
+        "• English tends to float upward into abstraction and metaphor.",
+        "This is not always true, but it helps you guess how meaning may have shifted.",
+        "Counter-examples exist — Geist means both ghost and intellectual spirit, while English ‘mind’ has narrowed to mostly cognition. Treat the rule of thumb as a starting guess, not a law."
       ],
       exampleBlocks: [
         {
-          title: "Sample Free Responses",
+          title: "Anchored vs Floating",
           rows: [
-            {
-              left: "Das Licht ist weich heute. Die Luft riecht nach Regen.",
-              right: "The light is soft today. The air smells of rain."
-            },
-            {
-              left: "Ich gehe durch die Stadt und höre Musik. Ein Laden öffnet. Ein Kind findet eine Münze.",
-              right: "I walk through the city and listen to music. A shop opens. A child finds a coin."
-            }
+            { left: "Boden (German)", right: "ground, floor — physical surface" },
+            { left: "ground (English)", right: "physical ground, but also basis, reason, justification" },
+            { left: "Sinn (German)", right: "sense, meaning; concrete mental orientation" }
+          ],
+          moreTitle: "More Examples",
+          moreRows: [
+            { left: "sense (English)", right: "sense, feeling, logical meaning — more abstract" },
+            { left: "Geist (German)", right: "spirit, ghost; also mindset" },
+            { left: "ghost/spirit (English)", right: "mostly supernatural or metaphorical" },
+            { left: "schlimm (German)", right: "bad, terrible (NOT: slim)" },
+            { left: "Traum (German)", right: "dream; often deeper, more emotionally weighted than English ‘dream’" }
           ]
         }
       ]
     },
     {
-      heading: "10.6 Short Reading: Nacht in der Stadt",
+      heading: "10.6 Closing Insight for Chapter 10",
       paragraphs: [
-        "Try to understand the following text without translating line-by-line. Read it twice, then answer the questions in simple German.",
-        "Die Nacht ist still.",
-        "Auf den Straßen hört man nur Schritte.",
-        "Eine Katze sitzt im Fenster und wartet.",
-        "Irgendwo brennt noch ein kleines Licht.",
-        "Berlin schläft — aber nicht ganz."
-      ],
-      exampleBlocks: [
-        {
-          title: "Understanding Questions (Answer in German)",
-          rows: [
-            { left: "Wer ist aktiv im Text?", right: "…" },
-            { left: "Was macht die Stadt?", right: "…" },
-            { left: "Was hört man?", right: "…" },
-            { left: "Was bedeutet „aber nicht ganz“?", right: "…" }
-          ]
-        }
-      ]
-    },
-    {
-      heading: "10.7 Closing Insight for Chapter 10",
-      paragraphs: [
-        "Fluency is not ‘translating very fast’. Fluency is not needing to translate.",
-        "You read. You process. You visualise. You feel. The meaning arrives without English labels.",
-        "From this chapter onward, your job is to keep German in your head as German for longer and longer stretches. That is the real shift from vocabulary learner to German thinker."
+        "False friends are not bugs in the system. They are history lessons wearing a disguise.",
+        "Once you see why meanings diverge — narrowing, broadening, emotional shift, borrowing — vocabulary stops being a wall of arbitrary facts. You are no longer just memorising that ‘fast’ or ‘Gift’ mean something different. You are tracing the path that took them there.",
+        "You stop trusting the English look-alike and start asking: how did this word travel here? That is the shift from learner to linguistic observer — from surviving German to understanding how it thinks."
       ]
     }
   ],
   module: {
     level: "A2",
-    title: "Ohne Übersetzung",
+    title: "Wenn Verwandte Auseinandergehen",
     germanLines: [
-      "Der Morgen ist still.",
-      "Ich trinke Kaffee und atme warmen Dampf.",
-      "Die Stadt wacht langsam auf.",
-      "Ich höre Schritte, aber ich sehe niemanden.",
-      "Ich verstehe die Szene — ohne Englisch."
+      "Heute bekomme ich ein Paket. Das bedeutet: Ich erhalte etwas.",
+      "Ich werde nicht jemand anderes — „bekommen“ heißt nicht „become“.",
+      "Das deutsche Wort „Gift“ bedeutet nicht „Geschenk“ — es bedeutet wirklich: Gift, etwas Gefährliches.",
+      "Sprachen verändern sich wie Wasser im Fluss.",
+      "Das Herz des Wortes bleibt, aber die Richtung kann sich drehen."
     ],
     englishLines: [
-      "The morning is quiet.",
-      "I drink coffee and breathe warm steam.",
-      "The city wakes slowly.",
-      "I hear footsteps, but I see no one.",
-      "I understand the scene — without English."
+      "Today I get a package. That means: I receive something.",
+      "I do not become someone else — “bekommen” does not mean “become.”",
+      "The German word “Gift” does not mean “present” — it really means: poison, something dangerous.",
+      "Languages change like water in a river.",
+      "The heart of the word stays, but its direction can turn."
     ],
     vocabulary: [
-      { german: "still", english: "quiet" },
-      { german: "atmen", english: "to breathe" },
-      { german: "wacht auf", english: "wakes up" },
-      { german: "die Schritte", english: "footsteps" },
-      { german: "die Szene", english: "scene" }
+      { german: "bekommen", english: "to receive (NOT: to become)" },
+      { german: "das Gift", english: "poison (NOT: present)" },
+      { german: "bald", english: "soon (NOT: bald/hairless)" },
+      { german: "der Chef", english: "boss (NOT: cook)" },
+      { german: "fast", english: "almost (NOT: quick)" },
+      { german: "brav", english: "well-behaved (NOT: brave)" },
+      { german: "aktuell", english: "current (NOT: actual)" },
+      { german: "eventuell", english: "possibly (NOT: eventually)" },
+      { german: "die Fabrik", english: "factory (NOT: fabric)" },
+      { german: "der Traum", english: "dream (often deeper than English ‘dream’)" },
+      { german: "klug", english: "clever, intelligent (steadier than English ‘clever’)" },
+      { german: "das Tier", english: "animal (cf. English ‘deer’, narrowed)" },
+      { german: "schlimm", english: "bad, terrible (NOT: slim)" },
+      { german: "der Fluss", english: "river" },
+      { german: "die Richtung", english: "direction" }
     ],
     tasks: [
-      "Close your eyes and picture the scene using only the German text. Then write one new detail in simple German.",
-      "Write your own morning scene in 4–6 lines in German. No translation — only images in your mind.",
-      "Underline all verbs and say them aloud in the ich-form.",
-      "Bonus: Write an even simpler version of the same scene — staccato, image-only. For example: ‘Morgen. Kaffee. Ich atme. Langsam kommt Leben in die Straßen.’",
+      "Write two correct sentences with bekommen in the present tense (for example: Ich bekomme eine Nachricht. Wir bekommen Besuch.).",
+      "Write one deliberately wrong sentence with a false friend (for example using Gift as ‘present’), then correct it in German and English.",
+      "Choose a drift pair (Traum/dream, brav/brave, klug/clever, Tier/deer) and describe the difference in meaning in 2–3 German sentences.",
+      "Make a personal mini-list of 3–5 false friends you want to remember and write one example sentence for each.",
+      "Optional: Find or write a short paragraph (3–4 sentences) that uses three false friends correctly. The challenge: a non-learner skimming it might misread the meaning. Annotate which words are the traps."
     ],
     tasksGerman: [
-      "Schließe die Augen und stell dir die Szene nur mit dem deutschen Text vor. Schreibe dann ein neues Detail in einfachem Deutsch.",
-      "Schreibe deine eigene Morgen-Szene mit 4–6 Zeilen auf Deutsch. Keine Übersetzung – nur Bilder in deinem Kopf.",
-      "Unterstreiche alle Verben und sprich sie laut in der ich-Form.",
-      "Bonus: Schreibe eine noch einfachere Version derselben Szene, zum Beispiel: „Morgen. Kaffee. Ich atme. Langsam kommt Leben in die Straßen.”"
+      "Schreibe zwei korrekte Sätze mit bekommen im Präsens (zum Beispiel: Ich bekomme eine Nachricht. Wir bekommen Besuch.).",
+      "Schreibe einen absichtlich falschen Satz mit einem falschen Freund (zum Beispiel Gift als ‚Geschenk'), und korrigiere ihn dann auf Deutsch und Englisch.",
+      "Wähle ein Drift-Paar (Traum/dream, brav/brave, klug/clever, Tier/deer) und beschreibe den Bedeutungsunterschied in 2–3 deutschen Sätzen.",
+      "Erstelle eine persönliche Mini-Liste von 3–5 falschen Freunden, die du dir merken möchtest, und schreibe für jeden einen Beispielsatz.",
+      "Optional: Finde oder schreibe einen kurzen Absatz (3–4 Sätze), in dem drei falsche Freunde korrekt verwendet werden. Die Herausforderung: Wer den Text schnell liest, könnte die Bedeutung falsch verstehen. Markiere die Stolperwörter."
     ]
   }
 };

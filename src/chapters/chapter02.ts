@@ -72,8 +72,8 @@ export const chapter02: Chapter = {
     {
       heading: "2.4 The Decoder at Work: From Pattern to Meaning",
       paragraphs: [
-        "Now you use the shifts actively. Instead of memorising German words, you let them remind you of English relatives.",
-        "Look at each pair below. Do not translate first. Instead, say: ‘If I push this German word through the shift patterns, what English word appears?’",
+        "Run a few examples through the shifts and the relatives emerge on their own. The German on the left is what's on the page in front of you; the English on the right is what the shift patterns hand back.",
+        "No memorisation has happened yet — just the same word, caught at two stages.",
       ],
       exampleBlocks: [
         {
@@ -97,8 +97,8 @@ export const chapter02: Chapter = {
     {
       heading: "2.5 Invent a Word You’ve Never Seen",
       paragraphs: [
-        "Now flip the process. Start from English and let your brain guess the German word using pattern memory.",
-        "Say your guesses out loud before you look at the table. Even if you are wrong, you are strengthening the pattern network that makes later learning faster.",
+        "The shifts also run backwards. Start with an English word, push it through the reverse of the pattern, and the German form often appears before you've consulted anything.",
+        "The table below shows the moves Jacob Grimm noticed coming back the other way. Most of these German words are predictable from the English; the few that aren't are where the High German Consonant Shift adds an extra twist.",
       ],
       exampleBlocks: [
         {
@@ -155,7 +155,7 @@ export const chapter02: Chapter = {
         "You are no longer just recognising German. You are beginning to generate and decode it.",
         "Sound shifts are not trivia. They are tools for seeing through the surface of words into their shared ancestry.",
         "From now on, every time you meet a new German word, ask two questions: ‘What English word does this remind me of?’ and ‘What sound changes would connect them?’",
-        "In the next chapter we add another German superpower: compound words that let you read logic directly from structure.",
+        "In the next chapter we add the layer that lets German sentences keep their meaning even when the word order bends: cases. The endings on der/den/dem aren't bureaucracy — they're the diagram of who does what to whom.",
       ],
     },
   ],

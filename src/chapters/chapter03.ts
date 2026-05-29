@@ -120,11 +120,11 @@ export const chapter03: Chapter = {
       ]
     },
     {
-      heading: "3.7 Quick Case Spotting Drill",
+      heading: "3.7 What Role-First Reading Feels Like",
       paragraphs: [
-        "Try to name the roles in each sentence before you name the cases. That keeps the logic primary and the labels secondary.",
-        "You can do this even just listening to German: ask yourself silently, ‘who does what to whom?’",
-        "One thing to flag before the drill: a small group of common verbs — helfen, danken, gefallen, gehören, antworten — always send their main partner into dative, even when English would treat that partner as a direct object. Treat them as a watch-list of ‘dative verbs.’ The full list appears in your dictionary; the rule is just: when in doubt with one of these, reach for dative."
+        "A native reader of German does not consciously label cases. What they do — fast, automatically — is name roles first and let the endings ride along underneath. Who is doing it. What is being done. Who, if anyone, it's being done for.",
+        "Watch the sentences below with that ear instead of the grammar-table ear. The roles are already obvious in English; the German endings just show their work.",
+        "One thing to flag before the examples: a small group of common verbs — helfen, danken, gefallen, gehören, antworten — always send their main partner into dative, even when English would treat that partner as a direct object. Treat them as a watch-list of ‘dative verbs.’ The full list appears in your dictionary; the rule is just: when in doubt with one of these, reach for dative."
       ],
       exampleBlocks: [
         {

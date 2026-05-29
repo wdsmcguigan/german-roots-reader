@@ -1,200 +1,281 @@
 // src/chapters/chapter06.ts
+
 import type { Chapter } from "./types";
 
 export const chapter07: Chapter = {
   id: 7,
-  title: "Root Families",
-  subtitle: "Ein Wort wird viele.",
+  title: "The Engineering Layer — How Prefixes Steer Meaning",
+  subtitle: "Five small syllables that rebuild any verb.",
   summary:
-    "Memorising 1,000 isolated words is slow. Learning 100 roots that generate 3,000 words is efficient. German builds dense families around core verbs and stems. Once you see roots like gehen, schreiben, nehmen, sehen under compounds and prefix verbs, vocabulary stops being a list and becomes a network.",
+    "Prefixes and suffixes are the engineering layer of German. Once you know what they usually do, you stop guessing and start decoding — and you can build new words with confidence. This chapter takes the five core inseparable prefixes apart (ver-, be-, ent-, er-, zer-), shows you the separable family, and lays out the suffix logic that signals what kind of thing a word is.",
   sections: [
     {
-      heading: "7.1 Vocabulary Grows Like a Tree, Not a List",
+      heading: "7.1 Prefix Function Map",
       paragraphs: [
-        "Traditional language courses hand out words like loose leaves. Etymology hands you the trunk.",
-        "In German, one root generates entire forests of meaning. If you truly learn the stem, you unlock every branch built on it.",
-        "You already saw this with gehen hidden inside Zugang, Ausgang, Vorgang, Übergang. Once you recognise the root, you stop treating each word as a stranger. You see them as family.",
-        "This chapter teaches roots in four layers at once — the root itself, its English relatives, the compounds it makes, and the prefix verbs it spawns. Each layer multiplies the others."
+        "Take schlafen (to sleep). Add ver- and you get verschlafen — to oversleep, to miss something by sleeping through it. Add ein- and you get einschlafen — to fall asleep. Same stem, different animal. The prefix did all the work.",
+        "German prefixes do not just ‘decorate’ verbs. They redirect meaning: inward, outward, apart, completed, wrong, achieved.",
+        "You do not need to memorise every prefix combination. You only need a clear sense of each prefix’s typical direction. Then sehen, an•sehen, über•sehen, ein•sehen, versehen stop looking random.",
+        "Each prefix also has an English ancestor or cousin — sometimes hiding inside a single archaic word, sometimes the exact same prefix English still uses. Watch the right column."
       ],
       exampleBlocks: [
         {
-          title: "Root Family Preview — gehen (to go)",
+          title: "Common Verb Prefixes (with English Cousins)",
           rows: [
-            { left: "gehen", right: "to go, to walk" },
-            { left: "Zugang", right: "zu + Gang → access; way in" },
-            { left: "Ausgang", right: "aus + Gang → exit; way out" },
-            { left: "Vorgang", right: "vor + Gang → process; what is going on" },
-            { left: "Übergang", right: "über + Gang → transition; crossing" }
+            {
+              left: "ver-",
+              right: "change, distort, complete · English cousin: for- (forget, forbid, forlorn); mis- when it means error · verlieren, verbessern, verbrennen"
+            },
+            {
+              left: "be-",
+              right: "direct action onto an object · English cousin: be- (befriend, belittle, bemoan) — a clean 1:1 match · bekommen, bearbeiten, begleiten"
+            },
+            {
+              left: "ent-",
+              right: "remove, undo, release · English cousin: un-, de-, dis- (unpack, decouple); ancient kin survives in answer (and-) · entfernen, entkommen, entnehmen"
+            },
+            {
+              left: "er-",
+              right: "achieve, result in, begin · English cousin: a- (awake, arise); often rendered as ‘out’ or ‘up’ for completion · erreichen, erinnern, erleben"
+            },
+            {
+              left: "zer-",
+              right: "break apart, shatter · English lost its native equivalent (Old English to-, as in to-broken); now dis- or ‘to pieces’ · zerreißen, zerbrechen"
+            },
+            {
+              left: "um-",
+              right: "around, re-, change around · English: around, re- · umschreiben, umziehen, umwerfen"
+            },
+            {
+              left: "an-",
+              right: "onset, approach, start · English: on, at · anfangen, ankommen, ansehen"
+            },
+            {
+              left: "auf-",
+              right: "upward, open, begin · English: up, open · aufstehen, aufmachen, aufbauen"
+            },
+            {
+              left: "ab-",
+              right: "away, down, off · English: off (same ancient root) · abfahren, abnehmen, abschneiden"
+            }
           ]
         }
       ]
     },
     {
-      heading: "7.2 Root Family Templates",
+      heading: "7.2 Separable vs Inseparable: Two Behaviors",
       paragraphs: [
-        "You will reuse this template throughout the book. Once you understand how one family works, you can build your own.",
-        "Below are four example families. Do not memorise every word. Focus on seeing the logic."
+        "German prefixes come in two breeds. Some fuse permanently with the verb stem and never move. Others snap on and off like a magnet, jumping to the end of the sentence in the present tense.",
+        "The difference is structural, not optional. Each prefix belongs to one camp from birth.",
+        "Verschlafen and einschlafen show it cleanly. Both attach to schlafen (to sleep). Both describe sleep. But they behave like different species."
       ],
       exampleBlocks: [
         {
-          title: "Root Family 1 — gehen (to go, walk)",
+          title: "Verschlafen vs Einschlafen — Same Stem, Different Animal",
           rows: [
-            { left: "English relatives", right: "gait, gate (opening), gangway" },
-            { left: "Core logic", right: "movement, transition, passage" },
-            { left: "Gang", right: "‘going’ → corridor, passage, gait" },
-            { left: "Zugang", right: "zu + Gang → access, way in" }
-          ],
-          moreTitle: "Extended Family",
-          moreRows: [
-            { left: "Ausgang", right: "aus + Gang → exit, way out" },
-            { left: "Übergang", right: "über + Gang → crossing, transition" },
-            { left: "Vorgang", right: "vor + Gang → process; what is going on" }
+            { left: "verschlafen", right: "inseparable. ver- stays welded on. Present: ich verschlafe. Perfect: ich habe verschlafen. Meaning: to oversleep, miss something by sleeping through it." },
+            { left: "einschlafen", right: "separable. ein- snaps off and lands at the end. Present: ich schlafe ein. Perfect: ich bin eingeschlafen. Meaning: to fall asleep — a change of state, hence sein." }
           ]
         },
         {
-          title: "Root Family 2 — schreiben (to write)",
+          title: "Which Prefixes Belong to Which Camp",
           rows: [
-            { left: "English relatives", right: "scribe, script, inscription" },
-            { left: "Core logic", right: "recording, marking, expressing in text" },
-            { left: "Beschreibung", right: "be + schreiben → description" }
-          ],
-          moreTitle: "Extended Family",
-          moreRows: [
-            { left: "Einschreiben", right: "ein + schreiben → to enrol; registered mail" },
-            { left: "Umschreiben", right: "um + schreiben → to rewrite, paraphrase" },
-            { left: "Verschreibung", right: "ver + schreiben → prescription" }
-          ]
-        },
-        {
-          title: "Root Family 3 — nehmen (to take)",
-          rows: [
-            { left: "English echoes", right: "nimble (quick to take), numb (taken feeling)" },
-            { left: "Core logic", right: "acquiring, grasping, absorbing" },
-            { left: "annehmen", right: "to accept; to take in" },
-            { left: "aufnehmen", right: "to record; to take up" }
-          ],
-          moreTitle: "Extended Family",
-          moreRows: [
-            { left: "entnehmen", right: "to remove; to take out" },
-            { left: "übernehmen", right: "to take over; assume control" },
-            { left: "vernehmen", right: "to examine, interrogate; take information" }
-          ]
-        },
-        {
-          title: "Root Family 4 — sehen (to see)",
-          rows: [
-            { left: "English relatives", right: "sight, oversee, insight" },
-            { left: "Core logic", right: "perception, observation" },
-            { left: "ansehen", right: "to look at; to view" },
-            { left: "übersehen", right: "to overlook; to miss, ignore" }
-          ],
-          moreTitle: "Extended Family",
-          moreRows: [
-            { left: "einsehen", right: "to see into; to realise" },
-            { left: "zusehen", right: "to watch; to observe passively" },
-            { left: "versehen", right: "to do by mistake; mis-see → error" }
-          ]
-        },
-        {
-          title: "Root Family 5 — ziehen (to pull, to move)",
-          rows: [
-            { left: "English relatives", right: "tug, tow, tie (PIE *deuk-); via Latin: duct, duke" },
-            { left: "Core logic", right: "pulling — and, by extension, pulling yourself somewhere new" },
-            { left: "Anzug", right: "‘the pull-on’ → suit (the thing you pull on)" },
-            { left: "Umzug", right: "‘the pull-around’ → a move, a procession" }
-          ],
-          moreTitle: "Extended Family",
-          moreRows: [
-            { left: "anziehen", right: "to put on (clothes); to attract" },
-            { left: "ausziehen", right: "to take off (clothes); to move out" },
-            { left: "einziehen", right: "to move in" },
-            { left: "umziehen", right: "to change clothes; to relocate" },
-            { left: "Erziehung", right: "‘pulling out’ → upbringing, education" },
-            { left: "Zug", right: "a pull; a train; a draft of air" }
+            { left: "Always inseparable", right: "be-, ent-, er-, ver-, zer-, miss-, emp-" },
+            { left: "Always separable", right: "ab-, an-, auf-, aus-, ein-, mit-, nach-, vor-, zu-" },
+            { left: "Either, depending on meaning", right: "durch-, um-, über-, unter-, wieder-" }
           ]
         }
       ]
     },
     {
-      heading: "7.3 A Root That Lives a Double Life",
+      heading: "7.3 Inseparable Prefixes in Depth",
       paragraphs: [
-        "Of the families above, ziehen behaves differently. The others stay close to one core meaning. Ziehen split itself in half — and German grammar kept score.",
-        "Its oldest job was muscle. Pulling carts, dragging rope, towing a load. The PIE root *deuk- — that’s Proto-Indo-European, the reconstructed ancestor of English, German, Latin, Sanskrit and dozens of others; the asterisk marks a word linguists have rebuilt but never directly observed — surfaces in English as tug, tow, tie, and gave Latin its words for leading and channeling: duct, duke.",
-        "Then the wagons happened. Before moving vans existed, relocating meant packing your life into a cart and pulling it to the next valley. Tribes and families literally said the equivalent of ‘we pulled to the next town.’ Over time, the wagons fell out of the sentence. The pulling stayed, but it meant the migration itself.",
-        "Now ziehen does both jobs. With a direct object — a door, a card, a cable — it is still old physical work, and it takes haben. Without one, it means relocating, and it takes sein. (You met this split in §5.6.) Er hat die Tür gezogen versus er ist nach Berlin gezogen: same verb, two events."
+        "The five core inseparable prefixes — ver-, ent-, zer-, be-, er- — are not just direction markers. Each does specific semantic work on the verb it joins. Once you know the job, half the dictionary opens up.",
+        "Each prefix also has an English ancestor or cousin, often hiding inside an old or specialised word."
       ],
       exampleBlocks: [
         {
-          title: "You’ll See This Again — A Pattern Across Germanic",
+          title: "ver- : The Four Jobs",
           rows: [
-            { left: "English pack", right: "bundle → ‘pack up and leave’ — the wrapping becomes the departure" },
-            { left: "English bear / German tragen", right: "carry weight → bear a child → bear a burden — the load becomes the state" },
-            { left: "English move / German bewegen", right: "shift an object → move to a new city — the action becomes the relocation" },
-            { left: "The trick", right: "Germanic minds repeatedly took a physical-load verb and reused it for an abstract change of state or place" },
-            { left: "Note inside English", right: "bear (the animal) and bare (naked) are unrelated to bear (carry). The cognate lives in the verb sense alone." }
+            { left: "1. Mistake", right: "sich verhören (mishear), sich vertippen (typo), sich verlaufen (get lost walking)" },
+            { left: "2. Transformer", right: "verbessern (make better), verstärken (amplify), vergrößern (enlarge)" },
+            { left: "3. Linker / Locker", right: "verbinden (connect), verkabeln (wire up), verschließen (lock, seal)" },
+            { left: "4. Consumer", right: "verbrauchen (use up), verschwinden (disappear), verkaufen (sell — make it go away for money)" },
+            { left: "English cousin", right: "for- (forget, forbid, forlorn, forswear); mis- when ver- means error" }
+          ]
+        },
+        {
+          title: "ent- : The Extractor",
+          rows: [
+            { left: "entfernen", right: "to remove — literally ‘make far’" },
+            { left: "entdecken", right: "to discover — pull the cover off" },
+            { left: "entpacken", right: "to unpack, unzip" },
+            { left: "entkommen", right: "to escape" },
+            { left: "entkoppeln", right: "to decouple, isolate" },
+            { left: "English cousin", right: "un-, de-, dis- (unpack, decouple, discover); ancient kin and- survives in answer (‘swear back’)" }
+          ]
+        },
+        {
+          title: "zer- : The Destroyer",
+          rows: [
+            { left: "zerbrechen", right: "to break to pieces" },
+            { left: "zerreißen", right: "to tear to shreds" },
+            { left: "zerlegen", right: "to take apart, dismantle" },
+            { left: "zerstören", right: "to destroy" },
+            { left: "English cousin", right: "Old English to- (to-broken, to-torn) was lost in the Middle Ages. Modern English fills the gap with dis-, or with ‘to pieces’ / ‘apart’" }
+          ]
+        },
+        {
+          title: "be- : The Targeter",
+          rows: [
+            { left: "antworten → beantworten", right: "answer to → answer (it) — the prefix absorbs the preposition" },
+            { left: "schreiben → beschreiben", right: "write → describe (write upon a subject)" },
+            { left: "greifen → begreifen", right: "grasp → comprehend (grasp the idea)" },
+            { left: "suchen → besuchen", right: "seek → visit" },
+            { left: "English cousin", right: "be- (befriend, belittle, bemoan, bewitch) — a clean 1:1 match with the same job: apply the verb directly to the target" }
+          ]
+        },
+        {
+          title: "er- — The Achiever (Read the Prose Before the Table)",
+          rows: [
+            { left: "What er- does", right: "er- means ‘carry through to the end’ — bringing an action to completion. In German, completion can be benign or final depending on what's being completed." },
+            { left: "Benign side", right: "erfinden finds something all the way into existence (invent); erkennen knows something all the way into recognition; erreichen reaches all the way to the goal." },
+            { left: "Dark side", right: "Then the dictionary tilts: erfrieren is freezing all the way (to death); erschießen is shooting all the way (to death); erwürgen is strangling all the way (to death). Er- doesn't decide whether the ending is good. It only decides that there is an ending." }
+          ]
+        },
+        {
+          title: "er- : The Achiever — full table",
+          rows: [
+            { left: "finden → erfinden", right: "find → invent (find something that wasn’t there)" },
+            { left: "kennen → erkennen", right: "know → recognise (knowing arrives in an instant)" },
+            { left: "reichen → erreichen", right: "reach → achieve" },
+            { left: "lernen → erlernen", right: "learn → master, learn completely" },
+            { left: "Dark side", right: "er- means ‘carry through to the end’ — and the end can be fatal: erfrieren (freeze to death), erschießen (shoot dead), erwürgen (strangle to death)" },
+            { left: "English cousin", right: "a- (awake, arise) shares the root; modern English usually adds ‘out’ or ‘up’ to mean completion (figure out, make up)" }
           ]
         }
       ]
     },
     {
-      heading: "7.4 How to Generate New Vocabulary On Your Own",
+      heading: "7.4 Separable Prefixes as German Phrasal Verbs",
       paragraphs: [
-        "Once you understand root families, you no longer wait for a teacher or app to feed you words. You can generate them.",
-        "For any new root, ask yourself:",
-        "• What English words share letters, sound, or meaning with this stem?",
-        "• How do meaning and structure align?",
-        "• What happens if I add common prefixes?",
-        "• Does German form compound nouns from this root?",
-        "You turn vocabulary into a building kit, not a memorisation list."
+        "Separable prefixes are not abstract. They point in specific spatial directions: on, off, in, out, after, up. Each one has a direct English match — sometimes literally the same word.",
+        "They behave the way English phrasal verbs do: switch on, switch off, turn in, look after, set up. The German prefix arrives at the end of the sentence the way ‘off’ arrives at the end of ‘switch it off.’"
+      ],
+      exampleBlocks: [
+        {
+          title: "Spatial Prefixes and Their English Match",
+          rows: [
+            { left: "ein- (in / en-)", right: "einbauen (build in, install), einatmen (breathe in), eintreten (step in, enter)" },
+            { left: "zu- (to)", right: "zuhören (listen to), zumachen (close — ‘make to’), zuweisen (assign, allocate)" },
+            { left: "ab- (off, of)", right: "abschalten (switch off), abnehmen (take off, lose weight), abfahren (depart), absagen (cancel — ‘say off’)" },
+            { left: "an- (on, at)", right: "anschalten (switch on), ankommen (arrive — ‘come at’), anfangen (begin — ‘grab onto’), anrufen (phone — ‘call at’)" },
+            { left: "nach- (after, re-)", right: "nachdenken (think after, reflect), nachbessern (touch up), nachbauen (recreate, clone)" },
+            { left: "statt- (stead)", right: "stattfinden (take place — literally ‘find stead’; English cousin lives in in-stead, home-stead)" },
+            { left: "teil- (deal)", right: "teilnehmen (take part, participate); English cousin survives in ‘a great deal of’" }
+          ]
+        }
+      ],
+    },
+    {
+      heading: "7.5 Suffix Logic (Meaning from Endings)",
+      paragraphs: [
+        "Suffixes signal what kind of thing a word is: concrete object, abstract state, group, small version, quality.",
+        "Once you see -ung, -heit, -keit, -schaft, -chen, -lein, -bar everywhere, you stop being surprised by new nouns. You know their job before you know their exact dictionary gloss.",
+        "Use this section as a semantic blueprint: the ending tells you roughly what kind of meaning lives inside the word."
+      ],
+      exampleBlocks: [
+        {
+          title: "Common Noun & Adjective Suffixes",
+          rows: [
+            {
+              left: "-heit / -keit",
+              right: "abstract quality · Freiheit, Höflichkeit, Krankheit, Möglichkeit"
+            },
+            {
+              left: "-ung",
+              right: "process, result, thing made by the verb · Bewegung, Lösung, Zeitung"
+            },
+            {
+              left: "-tum",
+              right: "collective, realm, status · Eigentum, Kaisertum"
+            },
+            {
+              left: "-schaft",
+              right: "group or state of being · Wissenschaft, Freundschaft, Mannschaft"
+            },
+            {
+              left: "-chen / -lein",
+              right: "diminutive, often neuter · Mädchen, Häuschen, Fräulein"
+            },
+            {
+              left: "-bar",
+              right: "capable of, possible · machbar, sichtbar, essbar"
+            }
+          ]
+        }
       ]
     },
     {
-      heading: "7.5 Closing Insight for Chapter 7",
+      heading: "7.6 Combining Roots, Prefixes and Suffixes",
       paragraphs: [
-        "Vocabulary is not a flat list. It is a network.",
-        "Roots are engines. Prefixes are fuel. Compounds are architecture.",
-        "Once you master root families, German stops expanding linearly and starts expanding exponentially.",
-        "This is where fluency accelerates: you no longer collect words — you grow systems."
+        "A single root plus one prefix plus one suffix already gives you three layers of meaning: base action, direction, and kind of thing.",
+        "Put the three layers together on one word and you can read the whole thing in a breath. Take Unverbesserlichkeit. The root verb is bessern — to better. Add ver- and it becomes verbessern: to improve, to make actually better. Add -lich and you get an adjective: verbesserlich, capable of being improved. Add un- to negate it: unverbesserlich, incapable of being improved. Add -keit to abstract it: Unverbesserlichkeit — incorrigibility, the quality of being beyond improvement.",
+        "Five syllables you've never seen. One root, two prefixes, two suffixes. Read on sight."
+      ]
+    },
+    {
+      heading: "7.7 Closing Insight for Chapter 7",
+      paragraphs: [
+        "Prefixes and suffixes are not decoration. They are the steering wheels and the badges of German vocabulary — they tell you which direction the verb is going, and what kind of object the noun is.",
+        "From here on, every new long word is two questions, not one panic: Which prefix? Which suffix? The answer arrives faster than the dictionary does.",
+        "Next, we use these prefixes to grow root families: how a single stem like gehen, schreiben, or nehmen explodes into dozens of related words once you let the prefixes loose on it."
       ]
     }
   ],
   module: {
     level: "A1–A2",
-    title: "Ein Wort Wird Viele",
+    title: "Vorsilben Steuern Bedeutung",
     germanLines: [
-      "Ich gehe langsam durch die Stadt.",
-      "Der Zugang zum Park ist offen.",
-      "Ein Ausgang führt zum Fluss.",
-      "Jeder Vorgang hat einen Anfang.",
-      "Ein kleines Wort baut viele große Wörter."
+      "Ich schlafe acht Stunden — ich verschlafe den Wecker.",
+      "Abends schlafe ich schnell ein.",
+      "Ich verstehe den Satz, weil ich die Vorsilben kenne.",
+      "ver-, be-, ent-, er-, zer- — fünf kleine Silben, viele neue Wörter.",
+      "Ein Stamm plus eine Vorsilbe baut eine neue Bedeutung."
     ],
     englishLines: [
-      "I walk slowly through the city.",
-      "The entrance to the park is open.",
-      "An exit leads to the river.",
-      "Every process has a beginning.",
-      "A small word builds many big words."
+      "I sleep eight hours — I oversleep through the alarm.",
+      "In the evening, I fall asleep quickly.",
+      "I understand the sentence because I know the prefixes.",
+      "ver-, be-, ent-, er-, zer- — five small syllables, many new words.",
+      "A stem plus a prefix builds a new meaning."
     ],
     vocabulary: [
-      { german: "gehen", english: "to go, to walk" },
-      { german: "Zugang", english: "access, entrance" },
-      { german: "Ausgang", english: "exit" },
-      { german: "Vorgang", english: "process" },
-      { german: "Anfang", english: "beginning" },
-      { german: "führt", english: "leads (from führen, to lead)" },
-      { german: "die Stadt", english: "city" }
+      { german: "schlafen", english: "to sleep (base stem)" },
+      { german: "verschlafen", english: "to oversleep (ver- = miss / wrong)" },
+      { german: "einschlafen", english: "to fall asleep (ein- = into a state, separable)" },
+      { german: "verstehen", english: "to understand (ver- + stehen → grasp)" },
+      { german: "entdecken", english: "to discover (ent- = take the cover off)" },
+      { german: "erfinden", english: "to invent (er- = achieve, find a new thing)" },
+      { german: "zerbrechen", english: "to break to pieces (zer- = shatter)" },
+      { german: "beantworten", english: "to answer (be- = direct action onto an object)" },
+      { german: "ankommen", english: "to arrive (an- = onset, separable)" },
+      { german: "die Vorsilbe", english: "prefix" },
+      { german: "der Stamm", english: "stem (of a verb)" },
+      { german: "die Bedeutung", english: "meaning" }
     ],
     tasks: [
-      "Underline or highlight all words in the text that belong to the root family of gehen.",
-      "Decode these compounds without checking a dictionary: Mitteilung (mit + teilen), Vorstellung (vor + stellen), Entdeckung (ent + decken), Gegenstand (gegen + Stand). Write your guess, then verify.",
-      "Write two sentences using your new compound in context.",
-      "Invent one playful compound of your own (for example: Mondgang for a slow walk under moonlight) and write a short sentence with it."
+      "Decode these prefix verbs without a dictionary, using the §7.3 table: erkennen, beschreiben, entkommen, zerreißen, verkaufen. Write your guess, then check.",
+      "Take the stem stehen and write three sentences that each use a different inseparable prefix from §7.3 (e.g., verstehen, bestehen, entstehen). Notice how each prefix tilts the meaning.",
+      "Take the stem kommen and write three sentences using separable prefixes from §7.4 (ankommen, mitkommen, zurückkommen). Remember: the prefix lands at the end in the present tense.",
+      "For each of these nouns, name the suffix and what it signals from §7.5: Freiheit, Bewegung, Mädchen, Freundschaft, Möglichkeit, machbar.",
+      "Bonus: invent a new prefix verb (e.g., überkochen for 'to boil over with feeling') and write one sentence explaining what your invented verb means."
     ],
     tasksGerman: [
-      "Unterstreiche oder markiere alle Wörter im Text, die zur Wortwurzel-Familie von gehen gehören.",
-      "Entschlüssele diese Zusammensetzungen ohne Wörterbuch: Mitteilung (mit + teilen), Vorstellung (vor + stellen), Entdeckung (ent + decken), Gegenstand (gegen + Stand). Notiere deine Vermutung, überprüfe sie dann.",
-      "Schreibe zwei Sätze, in denen du deine neue Zusammensetzung verwendest.",
-      "Erfinde eine spielerische Zusammensetzung (zum Beispiel: Mondgang für einen langsamen Spaziergang im Mondlicht) und schreibe einen kurzen Satz damit.",
+      "Entschlüssele diese Präfixverben ohne Wörterbuch, mithilfe der Tabelle in §7.3: erkennen, beschreiben, entkommen, zerreißen, verkaufen. Notiere deine Vermutung, prüfe sie dann.",
+      "Nimm den Stamm stehen und schreibe drei Sätze, die jeweils ein anderes untrennbares Präfix aus §7.3 verwenden (z. B. verstehen, bestehen, entstehen). Achte darauf, wie jedes Präfix die Bedeutung verschiebt.",
+      "Nimm den Stamm kommen und schreibe drei Sätze mit trennbaren Präfixen aus §7.4 (ankommen, mitkommen, zurückkommen). Denk daran: Das Präfix steht im Präsens am Ende.",
+      "Bestimme für jedes Nomen das Suffix und was es nach §7.5 signalisiert: Freiheit, Bewegung, Mädchen, Freundschaft, Möglichkeit, machbar.",
+      "Bonus: Erfinde ein neues Präfixverb (z. B. überkochen für 'vor Gefühl überlaufen') und schreibe einen Satz, der dein neues Verb erklärt."
     ]
   }
 };
