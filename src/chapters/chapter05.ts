@@ -1,196 +1,197 @@
-// chapter05.ts
+// src/chapters/chapter04.ts
+
 import type { Chapter } from "./types";
 
 export const chapter05: Chapter = {
   id: 5,
-  title: "Strong vs Weak Verbs",
-  subtitle: "Vowel tribes, verb DNA, and living history.",
+  title: "Gender Patterns",
+  subtitle: "Der, die, das — shapes, sounds, and memory.",
   summary:
-    "German verbs are not random. Weak verbs follow a safe, regular pattern; strong verbs carry ancient vowel shifts you already know from English: sing–sang–sung, drink–drank–drunk. This chapter shows you how to treat strong verbs as vowel tribes and weak verbs as your default baseline — plus how prefixes and ge- turn a single root into an entire verb family.",
+    "Noun gender in German is not pure chaos. You start to feel patterns in endings and categories, and you train your ear with simple, repeated structures.",
   sections: [
     {
-      heading: "5.1 The Truth About German Verbs",
+      heading: "5.1 Why Gender Exists at All",
       paragraphs: [
-        "German verbs scare learners for two reasons: the endings change, and the vowels seem to mutate like living creatures.",
-        "But neither is random. Those vowel shifts — sprechen → sprach → gesprochen — are the same ancient patterns you still use in English.",
-        "Compare them side by side and the skeleton appears:",
-      ],
-      exampleBlocks: [
-        {
-          title: "English and German Strong Verb Echoes",
-          rows: [
-            { left: "sing / sang / sung", right: "singen / sang / gesungen" },
-            { left: "drink / drank / drunk", right: "trinken / trank / getrunken" },
-            { left: "give / gave / given", right: "geben / gab / gegeben" },
-            { left: "drive / drove / driven", right: "fahren / fuhr / gefahren" }
-          ]
-        }
+        "Grammatical gender is not a comment on masculinity or femininity. It is a classification tool — an ancient one. Many Indo-European languages once carried three genders. English lost most of that structure; German preserved it.",
+        "English had three genders too, all the way through the Anglo-Saxon period — sēo sunne (the sun, feminine) and se mōna (the moon, masculine) and þæt wīf (the woman, neuter, because all diminutives were neuter, even adult women). What killed the system was sound erosion: the unstressed vowels at the ends of English words gradually flattened to a single neutral sound, and once they did, the gender markers were indistinguishable.",
+        "German’s stressed endings stayed crisp. The gender stayed crisp with them. So when you meet der/die/das, you’re not meeting arbitrary German bureaucracy. You’re meeting the part of the Old English noun that survived.",
+        "Instead of treating der/die/das like three boxes you must memorize, treat them like memory markers. The article and noun fuse into a single sound in your brain: dertisch, dieblume, dashaus.",
+        "Gender becomes rhythm — not theory."
       ]
     },
     {
-      heading: "5.2 The Two Verb Tribes",
+      heading: "5.2 Patterns You Can Feel — Not Memorise",
       paragraphs: [
-        "German verbs live in two big tribes: weak and strong.",
-        "Weak verbs are your regular, factory-built pattern. Strong verbs are the heirloom lineage — older, but patterned.",
-        "You do not memorise hundreds of isolated forms. You learn how each tribe behaves."
+        "Endings signal gender. They are not perfect, but they are strong enough to make guessing intelligent rather than random.",
+        "Once you recognise the endings, der/die/das stops being trial-and-error — it becomes prediction."
       ],
       exampleBlocks: [
         {
-          title: "Weak Verbs (Regular) — The Default",
+          title: "Feminine Signals (DIE)",
           rows: [
-            { left: "Pattern", right: "no vowel change, past in -te, participle in ge- + -t" },
-            { left: "machen → machte → gemacht", right: "to do, to make" },
-            { left: "leben → lebte → gelebt", right: "to live" },
-            { left: "kaufen → kaufte → gekauft", right: "to buy" }
+            { left: "-ung", right: "die Zeitung — newspaper" },
+            { left: "-heit / -keit", right: "die Freiheit — freedom; die Höflichkeit — politeness" },
+            { left: "-schaft", right: "die Freundschaft — friendship" },
+            { left: "-ion / -tät", right: "die Nation — nation; die Universität — university" },
+            { left: "(most nouns ending in -e)", right: "die Blume — flower" }
           ]
         },
         {
-          title: "Strong Verbs (Irregular) — Vowel Shifters",
+          title: "Masculine Signals (DER)",
           rows: [
-            { left: "nehmen → nahm → genommen", right: "to take" },
-            { left: "finden → fand → gefunden", right: "to find" },
-            { left: "schreiben → schrieb → geschrieben", right: "to write" },
-            { left: "sprechen → sprach → gesprochen", right: "to speak" }
-          ]
-        }
-      ]
-    },
-    {
-      heading: "5.3 Vowel Tribes: Strong Verb Clans",
-      paragraphs: [
-        "Every strong verb belongs to a vowel family. Once you hear the pattern, you can often predict the past form even if you have not memorised it.",
-        "You are not learning random exceptions. You are listening for vowel DNA."
-      ],
-      exampleBlocks: [
-        {
-          title: "Sample Strong Verb Patterns",
-          rows: [
-            { left: "i → a → u", right: "singen → sang → gesungen; trinken → trank → getrunken" },
-            { left: "e → a → o", right: "sprechen → sprach → gesprochen; brechen → brach → gebrochen" },
-            { left: "e → a → e", right: "geben → gab → gegeben; lesen → las → gelesen" },
-            { left: "ie → o → o", right: "biegen → bog → gebogen; fliegen → flog → geflogen" }
-          ]
-        }
-      ]
-    },
-    {
-      heading: "5.4 Prefix Power: The Verb Multiplier",
-      paragraphs: [
-        "German prefixes do not just decorate verbs. They multiply them.",
-        "One stem can produce an entire family of meanings — all still connected to the same core idea.",
-        "Once you know the prefix pattern, you start decoding new verbs on sight."
-      ],
-      exampleBlocks: [
-        {
-          title: "High-Value Prefixes",
-          rows: [
-            { left: "be-", right: "affect directly → bearbeiten (process), besuchen (visit)" },
-            { left: "ver-", right: "change / undo / wrong → verlieren (lose), verbrennen (burn up)" },
-            { left: "er-", right: "achieve / begin → erreichen (achieve), erkennen (realise)" },
-            { left: "ent-", right: "release / remove → entkommen (escape), entnehmen (extract)" },
-            { left: "zer-", right: "shatter / break apart → zerbrechen (break to pieces)" }
+            { left: "-er", right: "der Lehrer — teacher" },
+            { left: "-ich", right: "der Teppich — carpet" },
+            { left: "-ig", right: "der Honig — honey" },
+            { left: "-ling", right: "der Lehrling — apprentice" },
+            { left: "-or / -us", right: "der Motor; der Globus" }
           ]
         },
         {
-          title: "One Stem, Many Verbs: stehen (to stand)",
+          title: "Neuter Signals (DAS)",
           rows: [
-            { left: "entstehen", right: "to originate (come into being)" },
-            { left: "verstehen", right: "to understand (stand with, grasp)" },
-            { left: "überstehen", right: "to withstand, survive" },
-            { left: "abstehen", right: "to stick out, stand apart" },
-            { left: "bestehen", right: "to exist; to pass (an exam)" }
+            { left: "-chen / -lein", right: "das Mädchen — little girl; das Häuslein — little house" },
+            { left: "-ment", right: "das Dokument — document" },
+            { left: "-um", right: "das Zentrum — center" },
+            { left: "-ma", right: "das Thema — theme" },
+            { left: "(young beings, materials, ge- nouns)", right: "das Kind — child; das Gold — gold; das Gebäude — building" }
           ]
         }
       ]
     },
     {
-      heading: "5.5 The ge- Prefix: Time Marker, Not Decoration",
+      heading: "5.3 Mini-Mantras — Rhythm Over Rules",
       paragraphs: [
-        "Weak verbs form the past with -te. Strong verbs change the vowel and mark completion with ge- + -en.",
-        "The ge- prefix is not random. It flags a completed action — the perfect participle.",
-        "English used to do this too with patterns like write–wrote–written, break–broke–broken. German simply kept the system visible."
+        "Instead of memorising charts, you train pattern recognition through repetition.",
+        "Short loops like ‚Der Tisch bleibt der Tisch‘ lock gender to noun in muscle memory.",
+        "Sound, not theory, does the work."
+      ]
+    },
+    {
+      heading: "5.4 Reading Gender from the Ending",
+      paragraphs: [
+        "Native intuition for gender does not run on charts. It runs on endings. -ung pulls for die before the dictionary opens; -chen pulls for das; -er for der. The pattern is fast enough that even uncertain guesses land on the right side more often than chance, and after a few weeks the guesses stop feeling like guesses.",
+        "Read the column below as a fluent reader would: ending first, gender on its heels."
       ],
       exampleBlocks: [
         {
-          title: "Weak vs Strong in the Past",
+          title: "Guess Before Checking",
           rows: [
-            { left: "kaufen → kaufte → gekauft", right: "weak: predictable -te / -t" },
-            { left: "reisen → reiste → gereist", right: "weak: -te / -t, often movement" },
-            { left: "gehen → ging → gegangen", right: "strong: vowel change + -en + ge-" },
-            { left: "schreiben → schrieb → geschrieben", right: "strong: vowel change + -en + ge-" }
+            { left: "Zeitung", right: "(F) -ung" },
+            { left: "Lehrer", right: "(M) -er" },
+            { left: "Mädchen", right: "(N) -chen" },
+            { left: "Honig", right: "(M) -ig" }
+          ],
+          moreTitle: "More Examples",
+          moreRows: [
+            { left: "Freundschaft", right: "(F) -schaft" },
+            { left: "Thema", right: "(N) -ma" },
+            { left: "Motor", right: "(M) -or" },
+            { left: "Universität", right: "(F) -tät" }
           ]
         }
       ]
     },
     {
-      heading: "5.6 Haben or Sein? Two Helpers, Two Worlds",
+      heading: "5.5 Declension as Movement, Not Memory",
       paragraphs: [
-        "Two helpers, one rule of thumb: most verbs take haben. Use sein only when the subject moves to a new place (gehen, kommen, fahren) or changes state on its own (einschlafen, sterben). Everything else: haben. That rule covers about 95% of cases. The rest of this section is the interesting 5% — verbs that flip meaning depending on which helper you choose.",
-        "The ge- participle tells you when an action happened. The auxiliary tells you what kind of event you just witnessed.",
-        "German splits its perfect tense between two helpers. The rule is short: if the verb describes an action carried out on an object, it takes haben. If it describes a change of location, or a state the subject ends up in on its own, it takes sein.",
-        "Most verbs sit on one side or the other. A handful — the most interesting ones — flip depending on what they mean in a given sentence. Ziehen is the headline case: er hat die Tür gezogen (he pulled the door) and er ist nach Berlin gezogen (he moved to Berlin) share one participle but describe two different events."
+        "Cases don’t create chaos — they show movement.",
+        "Masculine nouns shift early, feminine holds longer, neuter behaves like a blend.",
+        "Watch the symmetry, not the exceptions.",
+        "Notice the asymmetry between the three columns below: masculine changes its article in every case, neuter changes once, feminine barely moves at all. This isn’t bureaucratic noise. Across Indo-European, feminine declensions consistently lost their case distinctions earlier than masculine ones — the same flattening English completed everywhere, German half-completed in only one gender. When you write ‘die Frau’ and don’t change it for accusative, you’re meeting a sound erosion that started a thousand years ago and stopped halfway.",
+        "You’ll see a ‘Gen’ row in the tables below — genitive. Chapter 3 deferred it because spoken German often replaces it with von + dative. But it still lives in writing, fixed phrases, and the -es ending on masculine and neuter nouns. Read the row; don’t memorise it yet."
       ],
       exampleBlocks: [
         {
-          title: "Verbs That Flip Between Haben and Sein",
+          title: "Masculine (DER)",
           rows: [
-            { left: "ziehen", right: "hat gezogen → pulled, drew (something) · ist gezogen → moved, migrated" },
-            { left: "brechen", right: "hat gebrochen → broke (something) · ist gebrochen → shattered on its own" },
-            { left: "schmelzen", right: "hat geschmolzen → melted (something) · ist geschmolzen → melted in the heat" },
-            { left: "reißen", right: "hat gerissen → tore (something) · ist gerissen → snapped, gave way" },
-            { left: "Quick test", right: "If you can swap in ‘relocated’ or ‘the thing changed on its own,’ use sein. Otherwise haben." }
+            { left: "Nom", right: "der Hund" },
+            { left: "Acc", right: "den Hund" },
+            { left: "Dat", right: "dem Hund" },
+            { left: "Gen", right: "des Hundes" }
+          ]
+        },
+        {
+          title: "Feminine (DIE)",
+          rows: [
+            { left: "Nom", right: "die Blume" },
+            { left: "Acc", right: "die Blume" },
+            { left: "Dat", right: "der Blume" },
+            { left: "Gen", right: "der Blume" }
+          ]
+        },
+        {
+          title: "Neuter (DAS)",
+          rows: [
+            { left: "Nom", right: "das Kind" },
+            { left: "Acc", right: "das Kind" },
+            { left: "Dat", right: "dem Kind" },
+            { left: "Gen", right: "des Kindes" }
           ]
         }
+      ]
+    },
+    {
+      heading: "5.6 The Balance Trick",
+      paragraphs: [
+        "Only masculine changes in accusative (der → den). Feminine and neuter do not.",
+        "Meaning: one shift = one signal.",
+        "Wenn du den Mann siehst, ruf die Frau.",
+        "→ den Mann = object. die Frau = reference or subject."
       ]
     },
     {
       heading: "5.7 Closing Insight for Chapter 5",
       paragraphs: [
-        "German verbs are not irregular — they are alive.",
-        "They evolve through patterns: vowel tribes, prefix logic, and ge- as a time marker.",
-        "Once you learn to hear the shifts and read the stems, verb charts stop being walls of forms. They collapse into intuition.",
-        "You stop cramming German verbs and start speaking their history.",
-        "Next we open up the prefix layer in depth — ver-, be-, ent-, er-, zer-, and the separable family — so a single stem like schlafen can fork into verschlafen and einschlafen and you read both on sight."
+        "Gender is not random. Declension is not memorisation.",
+        "You now see endings, categories, patterns. You read gender as code.",
+        "From here forward, every noun is a rhythm pattern — derTisch, dieBlume, dasHaus — and every case shift is a movement you can hear.",
+        "Next we look at the engines that move every German sentence — verbs — and how their strong and weak tribes carry a thousand years of pattern memory."
       ]
     }
   ],
   module: {
-    level: "A1–A2",
-    title: "Verben Haben Kraft",
+    level: "A1",
+    title: "Wörter Haben Formen",
     germanLines: [
-      "Ich singe ein Lied.",
-      "Gestern sang ich laut im Park.",
-      "Heute habe ich schon gesungen.",
-      "Meine Stimme geht hoch und tief.",
-      "Wörter tanzen, wenn Verben sich ändern."
+      "Die Zeitung liegt auf dem Tisch.",
+      "Das Mädchen liest.",
+      "Der Lehrer kommt.",
+      "Die Universität ist groß.",
+      "Das Dokument ist neu.",
+      "Endungen sind kleine Signale: -ung, -heit, -tät zeigen oft die.",
+      "-chen, -ment, -um zeigen oft das. -er, -ig, -or zeigen oft der."
     ],
     englishLines: [
-      "I sing a song.",
-      "Yesterday I sang loudly in the park.",
-      "Today I have already sung.",
-      "My voice goes high and low.",
-      "Words dance when verbs change."
+      "The newspaper lies on the table.",
+      "The girl reads.",
+      "The teacher comes.",
+      "The university is big.",
+      "The document is new.",
+      "Endings are small signals: -ung, -heit, -tät usually point to die.",
+      "-chen, -ment, -um usually point to das. -er, -ig, -or usually point to der."
     ],
     vocabulary: [
-      { german: "singe", english: "I sing (present, strong verb stem: singen)" },
-      { german: "sang", english: "sang (simple past, strong verb)" },
-      { german: "gesungen", english: "sung (past participle: ge- + -en)" },
-      { german: "die Stimme", english: "voice" },
-      { german: "tanzen", english: "to dance (weak verb)" }
+      { german: "der Tisch", english: "table" },
+      { german: "die Blume", english: "flower" },
+      { german: "das Haus", english: "house" },
+      { german: "die Zeitung", english: "newspaper (-ung → die)" },
+      { german: "das Mädchen", english: "girl (-chen → das)" },
+      { german: "der Lehrer", english: "teacher (-er → der)" },
+      { german: "die Universität", english: "university (-tät → die)" },
+      { german: "das Dokument", english: "document (-ment → das)" },
+      { german: "der Honig", english: "honey (-ig → der)" },
+      { german: "die Schönheit", english: "beauty (-heit → die)" },
+      { german: "das Thema", english: "theme (-ma → das)" }
     ],
     tasks: [
-      "Conjugate singen in ich-form: ich singe, ich sang, ich habe gesungen.",
-      "Write three parallel sentences with trinken (ich trinke, ich trank, ich habe getrunken).",
-      "Write one sentence that uses a strong verb and a weak verb together.",
-      "Pick the verb stehen and write three sentences that each use a different prefix verb from §5.4 (e.g., verstehen, bestehen, entstehen). Notice how each prefix tilts the meaning.",
-      "Classify these as weak (W) or strong (S), then write each in past + perfect: lernen, schwimmen, trinken, leben, essen, kaufen. (Hints: schwimmen → schwamm → geschwommen; essen → aß → gegessen.)"
+      "Identify which noun is masculine, which feminine, which neuter.",
+      "Rewrite the sentences using: der Hund / die Sonne / das Buch.",
+      "Predict the gender of these new nouns based on their endings, then check against §5.2: Wohnung, Mädchen, Direktor, Schönheit, Universität."
     ],
     tasksGerman: [
-      "Konjugiere singen in der Ich-Form: ich singe, ich sang, ich habe gesungen.",
-      "Schreibe drei parallele Sätze mit trinken (ich trinke, ich trank, ich habe getrunken).",
-      "Schreibe einen Satz, in dem ein starkes und ein schwaches Verb gemeinsam vorkommen.",
-      "Nimm das Verb stehen und schreibe drei Sätze, die jeweils ein anderes Präfixverb aus §5.4 verwenden (z. B. verstehen, bestehen, entstehen). Achte darauf, wie jedes Präfix die Bedeutung verschiebt.",
-      "Ordne diese Verben als schwach (W) oder stark (S) ein und schreibe jeweils Präteritum und Perfekt: lernen, schwimmen, trinken, leben, essen, kaufen. (Hinweise: schwimmen → schwamm → geschwommen; essen → aß → gegessen.)",
+      "Bestimme, welches Nomen maskulin, welches feminin und welches neutrum ist.",
+      "Schreibe die Sätze mit folgenden Nomen um: der Hund / die Sonne / das Buch.",
+      "Rate das Genus dieser neuen Nomen anhand der Endungen und überprüfe es mit §5.2: Wohnung, Mädchen, Direktor, Schönheit, Universität.",
     ]
   }
 };
