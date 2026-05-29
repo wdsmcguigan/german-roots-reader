@@ -25,6 +25,7 @@ export const chapter11: Chapter = {
       paragraphs: [
         "English depends heavily on fixed order: Subject → Verb → Object. Change the order and you often break the meaning.",
         "German thinks in roles first, word order second. Cases tell you who does what to whom. Word order becomes flexible — especially in main clauses — because endings carry the grammar.",
+        "You saw this in Chapter 3 with the man and the dog and the ball. The case logic was a sentence-level grammar point there. Here it becomes a reading strategy.",
         "Compare:",
         "• Der Hund beißt den Mann.",
         "• Den Mann beißt der Hund.",
@@ -162,7 +163,14 @@ export const chapter11: Chapter = {
       { german: "atmen", english: "to breathe" },
       { german: "wacht auf", english: "wakes up" },
       { german: "die Schritte", english: "footsteps" },
-      { german: "die Szene", english: "scene" }
+      { german: "die Szene", english: "scene" },
+      { german: "öffnen", english: "to open" },
+      { german: "finden", english: "to find" },
+      { german: "riechen", english: "to smell" },
+      { german: "leuchten", english: "to glow, shine" },
+      { german: "der Dampf", english: "steam, vapour" },
+      { german: "das Fenster", english: "window" },
+      { german: "weich", english: "soft" }
     ],
     tasks: [
       "Close your eyes and picture the scene using only the German text. Then write one new detail in simple German.",

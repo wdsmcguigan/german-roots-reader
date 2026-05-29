@@ -152,7 +152,14 @@ export const chapter13: Chapter = {
       { german: "bauen", english: "to build" },
       { german: "der Stein", english: "stone" },
       { german: "das Verständnis", english: "understanding" },
-      { german: "die Sprache", english: "language" }
+      { german: "die Sprache", english: "language" },
+      { german: "gestalten", english: "to shape, design" },
+      { german: "erkennen", english: "to recognise" },
+      { german: "ausdrücken", english: "to express" },
+      { german: "umbauen", english: "to rebuild, restructure" },
+      { german: "der Satz", english: "sentence" },
+      { german: "der Gedanke", english: "thought" },
+      { german: "die Bedeutung", english: "meaning" }
     ],
     tasks: [
       "Choose an earlier practice module and summarise it in 2–3 German sentences.",

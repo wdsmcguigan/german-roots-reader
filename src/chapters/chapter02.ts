@@ -190,13 +190,13 @@ export const chapter02: Chapter = {
       { german: "der Vater", english: "father (V ↔ F; t ↔ th)" },
     ],
     tasks: [
-      "Mark all clear cognates in the German text (Vater, Wasser, Hand, Haus, etc.). Add at least two more that you notice yourself.",
+      "In the German text, find at least three pairs where the German word differs from its English cousin by a single sound shift (for example Vater/father shows t → th). Write each pair and label the shift.",
       "Read the German lines aloud. Circle or note any place you hear a shift like p → f, t → th, k → h between German and English.",
       "Write two simple German sentences that each contain at least one cognate and one sound-shift pair (for example: kalt/cold, Licht/light).",
       "In your notebook, start a ‘Sound Shift List’ with three columns: German, English, and the pattern (for example: Vater / father / t → th). Add to this list as you continue through the book.",
     ],
     tasksGerman: [
-      "Markiere alle klaren Kognaten im deutschen Text (Vater, Wasser, Hand, Haus, usw.). Füge mindestens zwei weitere hinzu, die du selbst entdeckst.",
+      "Finde im deutschen Text mindestens drei Paare, bei denen sich das deutsche Wort von seinem englischen Verwandten nur durch eine Lautverschiebung unterscheidet (zum Beispiel Vater/father zeigt t → th). Schreibe jedes Paar auf und benenne die Verschiebung.",
       "Lies die deutschen Zeilen laut vor. Markiere jede Stelle, wo du eine Verschiebung hörst – wie p → f, t → th oder k → h zwischen Deutsch und Englisch.",
       "Schreibe zwei einfache deutsche Sätze, die jeweils mindestens einen Kognaten und ein Lautverschiebungspaar enthalten (zum Beispiel: kalt/cold, Licht/light).",
       "Leg in deinem Notizheft eine „Lautverschiebungsliste“ mit drei Spalten an: Deutsch, Englisch und Muster (zum Beispiel: Vater / father / t → th). Ergänze die Liste, während du weiterliest.",

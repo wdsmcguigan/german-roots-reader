@@ -89,6 +89,7 @@ export const chapter09: Chapter = {
       heading: "9.5 Verbs and Adjectives as Compounds",
       paragraphs: [
         "It’s not just nouns. Verbs and adjectives also combine into compact meaning units.",
+        "Most compound verbs are actually the separable-prefix verbs you met in Chapter 7, viewed from a different angle: a directional or qualifying word fused onto a stem. festhalten is fest + halten. In a sentence: Ich halte den Ball fest. The fest lands at the end like any separable prefix.",
         "Again, you don’t memorise them as noise — you read them as structure."
       ],
       exampleBlocks: [
@@ -131,7 +132,8 @@ export const chapter09: Chapter = {
       paragraphs: [
         "German compounding doesn’t ask you to memorise more. It invites you to build more.",
         "You now think in structure, not just vocabulary. Long words become transparent: headword at the end, modifiers stacked in front.",
-        "Once compounds feel like LEGO, you stop fearing big words and start enjoying them."
+        "Once compounds feel like LEGO, you stop fearing big words and start enjoying them.",
+        "But not every familiar-looking word is a friend. Next we look at the cognates that wandered off — the false friends German and English created together over a thousand years of drift."
       ]
     }
   ],
@@ -166,13 +168,13 @@ export const chapter09: Chapter = {
     ],
     tasks: [
       "Break three German compounds you know into their parts (for example: Zahnarzt, Bahnhof, Haustür).",
-      "Create two new playful compounds from objects in your room (for example: Kaffeetasse, Bücherregal).",
+      "Look around the room you're in and name three real objects you don't know the German word for. Build a logical compound for each from words you do know (for example: Schreibtischlampe, Fensterbrett, Kabelhalter).",
       "Write a short three-sentence scene using at least two compounds you created.",
       "Invent one playful compound and define it in English (for example: Traumtasche — a pocket for dreams)."
     ],
     tasksGerman: [
       "Zerlege drei deutsche Komposita, die du kennst, in ihre Teile (zum Beispiel: Zahnarzt, Bahnhof, Haustür).",
-      "Erfinde zwei neue spielerische Komposita aus Gegenständen in deinem Zimmer (zum Beispiel: Kaffeetasse, Bücherregal).",
+      "Schau dich in deinem Zimmer um und nenne drei reale Gegenstände, deren deutschen Namen du nicht kennst. Baue für jeden ein logisches Kompositum aus Wörtern, die du kennst (zum Beispiel: Schreibtischlampe, Fensterbrett, Kabelhalter).",
       "Schreibe eine kurze Szene mit drei Sätzen, in der du mindestens zwei deiner erfundenen Komposita verwendest.",
       "Erfinde ein spielerisches Kompositum und erkläre es auf Deutsch (zum Beispiel: Traumtasche — eine Tasche für Träume).",
     ]
