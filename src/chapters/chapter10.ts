@@ -1,4 +1,4 @@
-// src/chapters/chapter09.ts
+// src/chapters/chapter10.ts
 
 import type { Chapter } from "./types";
 
@@ -130,11 +130,8 @@ export const chapter10: Chapter = {
     {
       heading: "10.5 Predicting Direction: Concrete vs Abstract",
       paragraphs: [
-        "A rough but useful rule of thumb:",
-        "• German tends to stay more concrete and structural.",
-        "• English tends to float upward into abstraction and metaphor.",
-        "This is not always true, but it helps you guess how meaning may have shifted.",
-        "Counter-examples exist — Geist means both ghost and intellectual spirit, while English ‘mind’ has narrowed to mostly cognition. Treat the rule of thumb as a starting guess, not a law."
+        "There's a rough tendency worth knowing about, even though it bends in plenty of places. German words tend to keep their feet on the ground — concrete, structural, anchored to physical things — while English words tend to float upward into abstraction, metaphor, and figurative use. Boden stays the dirt under your feet; ground became the basis, the reason, the justification, the entire metaphorical foundation. The pattern is a guess, not a law, but it shows up often enough to be useful when a cognate has wandered.",
+        "Counter-examples exist — Geist means both ghost and intellectual spirit, while English ‘mind’ has narrowed to mostly cognition. Treat the tendency as a starting hunch, not a verdict."
       ],
       exampleBlocks: [
         {
@@ -203,14 +200,12 @@ export const chapter10: Chapter = {
       "Write two correct sentences with bekommen in the present tense (for example: Ich bekomme eine Nachricht. Wir bekommen Besuch.).",
       "Write one deliberately wrong sentence with a false friend (for example using Gift as ‘present’), then correct it in German and English.",
       "Choose a drift pair (Traum/dream, brav/brave, klug/clever, Tier/deer) and describe the difference in meaning in 2–3 German sentences.",
-      "Make a personal mini-list of 3–5 false friends you want to remember and write one example sentence for each.",
       "Optional: Find or write a short paragraph (3–4 sentences) that uses three false friends correctly. The challenge: a non-learner skimming it might misread the meaning. Annotate which words are the traps."
     ],
     tasksGerman: [
       "Schreibe zwei korrekte Sätze mit bekommen im Präsens (zum Beispiel: Ich bekomme eine Nachricht. Wir bekommen Besuch.).",
       "Schreibe einen absichtlich falschen Satz mit einem falschen Freund (zum Beispiel Gift als ‚Geschenk'), und korrigiere ihn dann auf Deutsch und Englisch.",
       "Wähle ein Drift-Paar (Traum/dream, brav/brave, klug/clever, Tier/deer) und beschreibe den Bedeutungsunterschied in 2–3 deutschen Sätzen.",
-      "Erstelle eine persönliche Mini-Liste von 3–5 falschen Freunden, die du dir merken möchtest, und schreibe für jeden einen Beispielsatz.",
       "Optional: Finde oder schreibe einen kurzen Absatz (3–4 Sätze), in dem drei falsche Freunde korrekt verwendet werden. Die Herausforderung: Wer den Text schnell liest, könnte die Bedeutung falsch verstehen. Markiere die Stolperwörter."
     ]
   }

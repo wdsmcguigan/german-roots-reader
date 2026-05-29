@@ -5,17 +5,17 @@ import type { Chapter } from "../types";
 export const appendixF: Chapter = {
   id: 106,
   kind: "appendix",
-  label: "Appendix F",
+  label: "Appendix C",
   title: "30-Day Practice Framework",
   subtitle: "Daily minimal input → structural fluency.",
   summary:
     "This appendix gives you a 30-day training framework. Each day is light but focused: a small input text, structural decoding, a rebuild in your own German, and a short journal response with no English allowed. The framework supplies the structure; you supply (or borrow) the daily input.",
   sections: [
     {
-      heading: "F.1 Daily Structure (15–25 Minutes)",
+      heading: "C.1 Daily Structure (15–25 Minutes)",
       paragraphs: [
         "The point is consistency, not exhaustion. You follow the same four-phase pattern every day. Over 30 days, the compound effect is huge.",
-        "This appendix gives you the template, not the daily content. Use texts from earlier chapters as your daily input — the modules in chapters 1–12 alone give you 12 ready-made input texts, and the example blocks across the book provide many more."
+        "This appendix gives you the template, not the daily content. Use texts from earlier chapters as your daily input — the modules in chapters 1–13 alone give you 13 ready-made input texts, and the example blocks across the book provide many more."
       ],
       exampleBlocks: [
         {
@@ -42,7 +42,7 @@ export const appendixF: Chapter = {
       ]
     },
     {
-      heading: "F.2 Weekly Scaling Tasks",
+      heading: "C.2 Weekly Scaling Tasks",
       paragraphs: [
         "Each week adds one larger challenge. These are not tests; they are demonstrations of growth.",
         "You can spread these tasks across the week or tackle them in one longer session."
@@ -72,7 +72,7 @@ export const appendixF: Chapter = {
       ]
     },
     {
-      heading: "F.3 Turning Practice into Habit",
+      heading: "C.3 Turning Practice into Habit",
       paragraphs: [
         "If you complete 30 days, you will notice a different kind of confidence: not ‘I know more words’, but ‘I can move inside the language’.",
         "The workbook does not end. You can loop it again with harder texts, longer journal entries, and more ambitious speaking tasks.",

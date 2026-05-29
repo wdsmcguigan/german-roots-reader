@@ -1,4 +1,4 @@
-// src/chapters/chapter06.ts
+// src/chapters/chapter08.ts
 import type { Chapter } from "./types";
 
 export const chapter08: Chapter = {
@@ -33,7 +33,8 @@ export const chapter08: Chapter = {
       heading: "8.2 Root Family Templates",
       paragraphs: [
         "You will reuse this template throughout the book. Once you understand how one family works, you can build your own.",
-        "Below are four example families. Do not memorise every word. Focus on seeing the logic."
+        "Below are five example families — gehen, schreiben, nehmen, sehen, and ziehen. Do not memorise every word. Focus on seeing the logic. Each family starts with a core meaning, lists English relatives, and shows two or three of its most common members; an extended set follows for readers who want more.",
+        "If you're listening rather than reading, pause briefly when each new family begins — gehen, schreiben, nehmen, sehen, and ziehen each deserve a moment on their own before the next root arrives."
       ],
       exampleBlocks: [
         {
@@ -162,22 +163,22 @@ export const chapter08: Chapter = {
       "Ich gehe langsam durch die Stadt.",
       "Der Zugang zum Park ist offen.",
       "Ein Ausgang führt zum Fluss.",
-      "Jeder Vorgang hat einen Anfang.",
+      "Jeder Übergang braucht Zeit.",
       "Ein kleines Wort baut viele große Wörter."
     ],
     englishLines: [
       "I walk slowly through the city.",
       "The entrance to the park is open.",
       "An exit leads to the river.",
-      "Every process has a beginning.",
+      "Every transition takes time.",
       "A small word builds many big words."
     ],
     vocabulary: [
       { german: "gehen", english: "to go, to walk" },
       { german: "Zugang", english: "access, entrance" },
       { german: "Ausgang", english: "exit" },
-      { german: "Vorgang", english: "process" },
-      { german: "Anfang", english: "beginning" },
+      { german: "Vorgang", english: "process (lit. ‘what is going on’)" },
+      { german: "der Übergang", english: "transition (lit. ‘going-across’)" },
       { german: "führt", english: "leads (from führen, to lead)" },
       { german: "die Stadt", english: "city" },
       { german: "ziehen", english: "to pull; to move (relocate)" },
@@ -187,15 +188,15 @@ export const chapter08: Chapter = {
       { german: "die Beschreibung", english: "description (be- + schreiben)" }
     ],
     tasks: [
-      "Underline or highlight all words in the text that belong to the root family of gehen.",
-      "Decode these compounds without checking a dictionary: Mitteilung (mit + teilen), Vorstellung (vor + stellen), Entdeckung (ent + decken), Gegenstand (gegen + Stand). Write your guess, then verify.",
-      "Write two sentences using your new compound in context.",
+      "Underline all words in the passage that belong to the root family of gehen (you should find four). For each, mark which prefix or context shapes the meaning — and write one extra family member of your own that the chapter's argument predicts would fit.",
+      "Take the root schreiben and identify five members of its family from your reading or from §8.2 (e.g., der Schreiber, die Schrift, die Beschreibung, das Schreiben, der Schriftsteller). For each, mark which part is the stem and which part shapes the meaning. Then do the same for one other root of your choice (sprechen, fahren, kommen, or stellen).",
+      "Pick two family members from your Task 2 list and write a sentence with each. Try to make the sentence reveal why the prefix or modifier shifts the root's meaning the way it does.",
       "Invent one playful compound of your own (for example: Mondgang for a slow walk under moonlight) and write a short sentence with it."
     ],
     tasksGerman: [
-      "Unterstreiche oder markiere alle Wörter im Text, die zur Wortwurzel-Familie von gehen gehören.",
-      "Entschlüssele diese Zusammensetzungen ohne Wörterbuch: Mitteilung (mit + teilen), Vorstellung (vor + stellen), Entdeckung (ent + decken), Gegenstand (gegen + Stand). Notiere deine Vermutung, überprüfe sie dann.",
-      "Schreibe zwei Sätze, in denen du deine neue Zusammensetzung verwendest.",
+      "Unterstreiche alle Wörter im Text, die zur Wortwurzel-Familie von gehen gehören (du solltest vier finden). Markiere bei jedem das Präfix oder den Kontext, der die Bedeutung formt — und schreibe ein weiteres Familienmitglied deiner Wahl auf, das nach der Argumentation des Kapitels als Nächstes zur Familie passen würde.",
+      "Nimm die Wurzel schreiben und finde fünf Mitglieder ihrer Familie aus deiner Lektüre oder aus §8.2 (z. B. der Schreiber, die Schrift, die Beschreibung, das Schreiben, der Schriftsteller). Markiere bei jedem, welcher Teil der Stamm ist und welcher Teil die Bedeutung formt. Mach dann dasselbe mit einer weiteren Wurzel deiner Wahl (sprechen, fahren, kommen oder stellen).",
+      "Wähle zwei Mitglieder aus deiner Liste in Aufgabe 2 und schreibe jeweils einen Satz damit. Versuche, im Satz sichtbar zu machen, warum das Präfix oder Bestimmungswort die Bedeutung der Wurzel auf diese Weise verschiebt.",
       "Erfinde eine spielerische Zusammensetzung (zum Beispiel: Mondgang für einen langsamen Spaziergang im Mondlicht) und schreibe einen kurzen Satz damit.",
     ]
   }

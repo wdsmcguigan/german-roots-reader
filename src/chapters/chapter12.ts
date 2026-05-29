@@ -1,4 +1,4 @@
-// src/chapters/chapter11.ts
+// src/chapters/chapter12.ts
 
 import type { Chapter } from "./types";
 
@@ -13,6 +13,8 @@ export const chapter12: Chapter = {
       heading: "12.1 From English Sentences to German Thoughts",
       paragraphs: [
         "Chapter 11 worked on the input side: stop translating as you read. This chapter works on the output side: stop translating as you express. Same wall, different face.",
+        "If you're not actively learning German, what follows still matters. This chapter is a tour of how a language quietly trains its speakers to describe their inner lives differently than English does — feeling cold is not a property of the self, hunger is something you possess, boredom happens to you. The procedural pieces are written for the reader who wants to practice the shift, but the meditation underneath is for anyone curious how grammar tilts the room.",
+        "There's something philosophically tidy in mir ist kalt. English flattens the experience into identity: I am cold, as if cold were a property of me. German keeps the experience separate from the self — cold is happening to me; I'm just the one it's happening to. Same with hunger, boredom, and most pains and pleasures. Whether or not native speakers consciously feel this distinction, the grammar quietly maintains it. Languages aren't neutral containers for thought. They tilt the room slightly toward certain ways of describing what's happening, and mir ist kalt is one of German's small tilts.",
         "Direct translation fails because languages do not map 1:1. English phrase structure is not German phrase structure. English metaphors are not German metaphors. English rhythm is not German rhythm.",
         "If you think in English and then output German, you often end up with sentences that are grammatically correct but emotionally or structurally wrong. They sound like copies, not originals.",
         "Native German is not a translation of English. It is a different way of framing reality. In this chapter, you stop asking ‘How do I say this English sentence?’ and instead ask: ‘How would a German speaker naturally express this idea?’"
@@ -21,23 +23,16 @@ export const chapter12: Chapter = {
     {
       heading: "12.2 How German Structures Thought",
       paragraphs: [
-        "English tends to shoot straight: subject → verb → object.",
-        "German often builds context and structure first, then fills in the action. It thinks in frames, roles and conditions.",
-        "Compare the idea ‘I want to go to the store.’",
-        "• English: I want to go to the store.",
-        "• German: Ich will zum Laden gehen.",
-        "Literally: I want to the shop go.",
-        "German often moves towards the important part at the end (gehen), with context and intention setting up the scene. Think of it as building a small piece of architecture instead of firing a single arrow."
+        "English tends to shoot straight: subject, then verb, then object. German often builds context and structure first, then fills in the action. It thinks in frames, roles and conditions.",
+        "Take a simple idea: I want to go to the store. English fires it as a single arrow — subject, verb, infinitive, destination, in that order. German rearranges the same five pieces: ich will zum Laden gehen, which laid out word for word is ‘I want to the shop go.’ The conjugated verb sits down in second position. The infinitive — the actual action of going — waits at the very back of the sentence, the way the Satzklammer from Chapter 4 told it to.",
+        "Think of it as building a small piece of architecture instead of firing a single arrow."
       ]
     },
     {
       heading: "12.3 Word-for-Word Translation vs German Thought",
       paragraphs: [
-        "A classic trap is translating each English word one by one. Watch what happens:",
-        "Idea: ‘I don’t have time today.’",
-        "Naive translation attempt: ❌ Ich habe nicht Zeit heute.",
-        "Natural German thought: ✓ Ich habe heute keine Zeit.",
-        "German negation typically attaches to the noun (keine Zeit) instead of just tacked onto the verb. The structure shifts because the language is highlighting the absence of ‘time’ as the key fact.",
+        "Take the idea ‘I don’t have time today.’ Run each word through its dictionary equivalent and you get Ich habe nicht Zeit heute — grammatically wrong, ear-of-a-native-speaker wrong, but not obviously wrong if you've only ever thought about it word by word.",
+        "The German that actually expresses the idea is Ich habe heute keine Zeit. The difference is structural. German didn't negate the having. It negated the time itself. The absence of time, not the absence of having, is what the sentence is reporting.",
         "Working rule: if you would negate the noun that follows in English (no time, no friends, no idea), German prefers kein/keine before the noun. If you would negate the verb or the whole action (don’t run, didn’t come), German uses nicht. So ‘I have no time’ = Ich habe keine Zeit, while ‘I’m not running today’ = Ich laufe heute nicht.",
         "Thought first, grammar second. Translation is never the goal; appropriate German structure is."
       ],
@@ -61,8 +56,7 @@ export const chapter12: Chapter = {
       heading: "12.4 Replace Translation with Re-Framing",
       paragraphs: [
         "Instead of translating English sentences into German, you re-frame the idea in German logic. Many everyday phrases show clear structural differences.",
-        "There’s something philosophically tidy in mir ist kalt. English flattens the experience into identity: I am cold, as if cold were a property of me. German keeps the experience separate from the self — cold is happening to me; I’m just the one it’s happening to. Same with hunger, boredom, and most pains and pleasures. Whether or not native speakers consciously feel this distinction, the grammar quietly maintains it. Languages aren’t neutral containers for thought. They tilt the room slightly toward certain ways of describing what’s happening, and mir ist kalt is one of German’s small tilts.",
-        "Notice how German often uses ‘have’ or ‘to me is’ instead of ‘I am’:"
+        "The mir ist kalt pattern from §12.1 is one example of a wider habit. Notice how German often uses ‘have’ or ‘to me is’ instead of ‘I am’:"
       ],
       exampleBlocks: [
         {
@@ -95,7 +89,7 @@ export const chapter12: Chapter = {
         "At this stage, you are no longer just putting German clothes on English thoughts.",
         "You are allowing German to shape your thoughts directly — your feelings, your complaints, your wishes, your small observations.",
         "Where most learners get stuck in word-for-word mode, you are starting to choose patterns like mir ist kalt, das gefällt mir, es gibt … as first instincts.",
-        "This is what real fluency looks like from the inside: not a bigger dictionary, but a new way to structure experience."
+        "What's left is the loop itself. The next chapter joins the input side and the output side into a single cycle — decode, rebuild, extend — and asks what this whole journey has actually changed in the way you meet a German sentence."
       ]
     }
   ],
@@ -130,16 +124,16 @@ export const chapter12: Chapter = {
       { german: "du fehlst mir", english: "I miss you (lit. you are missing to me)" }
     ],
     tasks: [
-      "Write your own inner monologue in German with 4–6 lines. No English words, no translation.",
-      "Rewrite the same monologue in the third person (er/sie/man), for example: Heute denkt sie direkt in Deutsch.",
+      "Write 4–6 lines of inner monologue using at least three dative-experience patterns from this chapter (mir ist …, mir gefällt …, ich habe Hunger / Durst / Angst, es gibt …, du fehlst mir). Avoid sentences that translate word-for-word from English.",
+      "Rewrite your monologue in the third person (er/sie/man), and pay attention to how the dative patterns shift: ich habe Hunger → er hat Hunger; mir ist kalt → ihm ist kalt; das gefällt mir → das gefällt ihm. Notice that the experiencer marker (mir → ihm) is the only thing that actually changes — the pattern shape stays the same.",
       "Choose a feeling (for example: müde, neugierig, nervös) and describe it with an image rather than just the word. For example: 'Mein Kopf ist schwer, und meine Augen wollen zugehen.'",
-      "Bonus: Write 3–4 sentences using patterns like: mir ist … / ich habe … / es gibt … / das gefällt mir … and read them aloud.",
+      "Bonus: For each English idea, choose the natural German pattern (ich bin …, ich habe …, mir ist …, das gefällt mir, es gibt …): ‘I'm hungry’ / ‘I'm bored’ / ‘I like jazz’ / ‘There's a problem’ / ‘I'm tired.’ Only one pattern sounds native per idea — write the full German sentence.",
     ],
     tasksGerman: [
-      "Schreibe deinen eigenen inneren Monolog auf Deutsch mit 4–6 Zeilen. Keine englischen Wörter, keine Übersetzung.",
-      "Schreibe denselben Monolog noch einmal in der dritten Person (er/sie/man), zum Beispiel: Heute denkt sie direkt in Deutsch.",
+      "Schreibe 4–6 Zeilen inneren Monolog und verwende mindestens drei Dativ-Erlebnis-Muster aus diesem Kapitel (mir ist …, mir gefällt …, ich habe Hunger / Durst / Angst, es gibt …, du fehlst mir). Vermeide Sätze, die wörtlich aus dem Englischen übersetzt sind.",
+      "Schreibe deinen Monolog in der dritten Person (er/sie/man) und achte darauf, wie sich die Dativ-Muster verschieben: ich habe Hunger → er hat Hunger; mir ist kalt → ihm ist kalt; das gefällt mir → das gefällt ihm. Beobachte: Nur der Erlebende (mir → ihm) ändert sich — die Musterform bleibt gleich.",
       "Wähle ein Gefühl (zum Beispiel: müde, neugierig, nervös) und beschreibe es mit einem Bild statt nur mit dem Wort. Zum Beispiel: „Mein Kopf ist schwer, und meine Augen wollen zugehen.”",
-      "Bonus: Schreibe 3–4 Sätze mit Mustern wie: mir ist … / ich habe … / es gibt … / das gefällt mir … und lies sie laut vor."
+      "Bonus: Wähle für jede englische Idee das natürliche deutsche Muster (ich bin …, ich habe …, mir ist …, das gefällt mir, es gibt …): „I'm hungry“ / „I'm bored“ / „I like jazz“ / „There's a problem“ / „I'm tired.“ Nur ein Muster klingt jeweils muttersprachlich — schreib den vollständigen deutschen Satz."
     ]
   }
 };

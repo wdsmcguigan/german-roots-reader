@@ -154,7 +154,7 @@ export const chapter02: Chapter = {
       paragraphs: [
         "You are no longer just recognising German. You are beginning to generate and decode it.",
         "Sound shifts are not trivia. They are tools for seeing through the surface of words into their shared ancestry.",
-        "From now on, every time you meet a new German word, ask two questions: ‘What English word does this remind me of?’ and ‘What sound changes would connect them?’",
+        "Once the shifts are in your ear, no new German word arrives without two quiet questions following it: What English word does this remind me of? And what sound change would connect them? You don't have to ask the questions consciously; the trained ear runs them on its own, and the answer often arrives before the dictionary does.",
         "In the next chapter we add the layer that lets German sentences keep their meaning even when the word order bends: cases. The endings on der/den/dem aren't bureaucracy — they're the diagram of who does what to whom.",
       ],
     },
@@ -188,18 +188,20 @@ export const chapter02: Chapter = {
       { german: "kalt", english: "cold (k ↔ c; t ↔ d)" },
       { german: "das Licht", english: "light (ch ↔ gh)" },
       { german: "der Vater", english: "father (V ↔ F; t ↔ th)" },
+      { german: "der Apfel", english: "apple (pf ↔ pp)" },
+      { german: "das Buch", english: "book (ch ↔ k)" },
     ],
     tasks: [
       "In the German text, find at least three pairs where the German word differs from its English cousin by a single sound shift (for example Vater/father shows t → th). Write each pair and label the shift.",
-      "Read the German lines aloud. Circle or note any place you hear a shift like p → f, t → th, k → h between German and English.",
+      "Using the shift table in §2.2, predict the German form of each English word — write your guess, then check: foot, ten, thank, pepper, daughter. Note which shift (p → f, t → th, k → h, etc.) you applied for each.",
       "Write two simple German sentences that each contain at least one cognate and one sound-shift pair (for example: kalt/cold, Licht/light).",
-      "In your notebook, start a ‘Sound Shift List’ with three columns: German, English, and the pattern (for example: Vater / father / t → th). Add to this list as you continue through the book.",
+      "Underline every word in these three German headlines where you can spot a sound shift from its English cousin (aim for at least three shifts across them): ‘Bahn streikt — Pendler warten kalt am Gleis’ / ‘Apfel-Ernte fällt klein aus’ / ‘Vater und Tochter finden alten Brief.’ Stretch: find one headline of your own and repeat the exercise.",
     ],
     tasksGerman: [
       "Finde im deutschen Text mindestens drei Paare, bei denen sich das deutsche Wort von seinem englischen Verwandten nur durch eine Lautverschiebung unterscheidet (zum Beispiel Vater/father zeigt t → th). Schreibe jedes Paar auf und benenne die Verschiebung.",
-      "Lies die deutschen Zeilen laut vor. Markiere jede Stelle, wo du eine Verschiebung hörst – wie p → f, t → th oder k → h zwischen Deutsch und Englisch.",
+      "Nutze die Verschiebungstabelle in §2.2 und sag den deutschen Form jedes englischen Wortes voraus — notiere deine Vermutung, prüfe dann: foot, ten, thank, pepper, daughter. Halte für jedes fest, welche Verschiebung (p → f, t → th, k → h usw.) du angewendet hast.",
       "Schreibe zwei einfache deutsche Sätze, die jeweils mindestens einen Kognaten und ein Lautverschiebungspaar enthalten (zum Beispiel: kalt/cold, Licht/light).",
-      "Leg in deinem Notizheft eine „Lautverschiebungsliste“ mit drei Spalten an: Deutsch, Englisch und Muster (zum Beispiel: Vater / father / t → th). Ergänze die Liste, während du weiterliest.",
+      "Unterstreiche in diesen drei deutschen Schlagzeilen jedes Wort, bei dem du eine Lautverschiebung zum englischen Verwandten erkennst (Ziel: insgesamt mindestens drei): „Bahn streikt — Pendler warten kalt am Gleis“ / „Apfel-Ernte fällt klein aus“ / „Vater und Tochter finden alten Brief.“ Bonus: Such dir selbst eine Schlagzeile und wiederhole die Übung.",
     ],
   },
 };

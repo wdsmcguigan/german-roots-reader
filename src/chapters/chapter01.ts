@@ -21,10 +21,10 @@ export const chapter01: Chapter = {
     },
 
     {
-      heading: "1.2 When the Road Split — A 1,000-Year Story in 10 Sentences",
+      heading: "1.2 When the Road Split — A 1,000-Year Story in a Few Sentences",
       paragraphs: [
         "Once upon a time, English and German were nearly one language. People could travel village to village and still understand each other.",
-        "Then 1066 happened — Norman French washed across England. English softened. German stayed structured and rugged.",
+        "Then 1066 happened — the Norman Conquest — and Norman French washed across England. English softened. German stayed structured and rugged.",
         "English became fluid and diverse. German remained architecturally precise.",
         "Yet beneath modern sound changes, the roots still glow through the surface.",
         "These oldest shared words are linguistic fossils — fingerprints of a common ancestor."
@@ -102,17 +102,7 @@ export const chapter01: Chapter = {
     },
 
     {
-      heading: "1.5 Closing Insight for Chapter 1",
-      paragraphs: [
-        "You did not learn new words today — you recognised old ones.",
-        "Cognates are proof: German is not separate from you. It is family memory resurfacing.",
-        "From here forward, we go deeper — not just with words that match, but with sound patterns that unlock words you’ve never seen.",
-        "Chapter 2 is where the code emerges — and reading German becomes decoding, not memorising."
-      ]
-    },
-
-    {
-      heading: "1.6 Hearing the Shift Inside Each Cognate",
+      heading: "1.5 Hearing the Shift Inside Each Cognate",
       paragraphs: [
         "Read these pairs aloud, slowly, and listen for what changed. The German word and the English word descend from the same source — but somewhere between Old English and Modern English, a vowel softened or a consonant slid. The patterns underneath these little differences are exactly what Chapter 2 will name and turn into a decoder."
       ],
@@ -131,10 +121,9 @@ export const chapter01: Chapter = {
       ]
     },
     {
-      heading: "1.7 Cognate Sentences — Not Just Words",
+      heading: "1.6 Cognate Sentences — Not Just Words",
       paragraphs: [
-        "Now expand from isolated words to whole thoughts. These sentences contain high cognate density — you can almost understand them without study.",
-        "Read each aloud first in German, then in English. Feel the shape of familiarity."
+        "Strung together, the cognates compound. Each one alone is a single shared word; four of them in a sentence becomes a thing you can almost read on the first try. Die Sonne ist warm. Das Haus ist groß. Das Wasser ist kalt. The grammar isn't doing extra work — it's just German being itself — but the vocabulary is so close to English that the sentence arrives before you've translated it. This is what high cognate density feels like from the inside, and it's the gear most beginners never realise they already have."
       ],
       exampleBlocks: [
         {
@@ -149,21 +138,19 @@ export const chapter01: Chapter = {
       ]
     },
     {
-      heading: "1.8 Friendly False Friends (Early Warning)",
+      heading: "1.7 Friendly False Friends (Early Warning)",
       paragraphs: [
-        "Not everything that looks familiar means what you expect — but many 'danger words' still teach patterns.",
-        "Treat these like bright yellow road signs, not traps. They keep you awake while you learn."
-      ],
-      exampleBlocks: [
-        {
-          title: "Looks the Same — Means Something Else",
-          rows: [
-            { left: "Gift", right: "NOT present — it means poison" },
-            { left: "bald", right: "soon (not hairless)" },
-            { left: "Chef", right: "boss (not cook)" },
-            { left: "Rat", right: "advice OR council (not rodent)" }
-          ]
-        }
+        "Not everything that looks familiar means what you expect. Gift doesn't mean present; it means poison. Bald doesn't mean hairless; it means soon. Chef is your boss, not the cook in the kitchen. Treat these like bright yellow road signs, not traps — and trust that Chapter 10 will unpack why these cognates went sideways, and what that says about how languages drift apart over a thousand years."
+      ]
+    },
+
+    {
+      heading: "1.8 Closing Insight for Chapter 1",
+      paragraphs: [
+        "You did not learn new words today — you recognised old ones.",
+        "Cognates are proof: German is not separate from you. It is family memory resurfacing.",
+        "From here forward, we go deeper — not just with words that match, but with sound patterns that unlock words you’ve never seen.",
+        "Chapter 2 is where the code emerges — and reading German becomes decoding, not memorising."
       ]
     }
   ],
@@ -200,18 +187,20 @@ export const chapter01: Chapter = {
       { german: "das Haus", english: "house" },
       { german: "der Name", english: "name" },
       { german: "der Apfel", english: "apple" },
+      { german: "der Freund", english: "friend (cf. English ‘friend’)" },
+      { german: "kommen", english: "to come (cf. English ‘come’)" },
     ],
     tasks: [
       "Mark all clear cognates in the German text (Wasser, Hand, Haus, Name, etc.). Add at least two more that you notice yourself.",
       "Write a short two-line mini-text in German that uses at least three cognates (for example: Haus, Name, Familie, Musik, Hotel). Keep the grammar simple.",
-      "Choose one sentence from the German text and rewrite it with different words but the same idea — first in German, then, if you need, check yourself with the English version.",
-      "In your notebook, make a two-column list ‘Deutsch / Englisch’ and add 5–10 cognate pairs you discover in your own reading or listening.",
+      "Pick two sentences from the German text. For each, list every word you recognise instantly (cognate or near-cognate) and every word you had to think about. Notice the ratio — most early German texts are mostly recognisable once you know what to look for.",
+      "Pick five cognate pairs from the passage (Wasser, Hand, Haus, Name, Apfel) and rank them from most-obvious to least-obvious. Explain why the least-obvious one took longer to recognise.",
     ],
     tasksGerman: [
       "Markiere alle klaren Kognaten im deutschen Text (Wasser, Hand, Haus, Name, usw.). Füge mindestens zwei weitere hinzu, die du selbst entdeckst.",
       "Schreibe einen kurzen Minitext auf Deutsch mit mindestens drei Kognaten (zum Beispiel: Haus, Name, Familie, Musik, Hotel). Lass die Grammatik einfach.",
-      "Wähle einen Satz aus dem deutschen Text und schreibe ihn mit anderen Wörtern um, aber mit derselben Bedeutung – zuerst auf Deutsch, dann vergleiche mit der englischen Version.",
-      "Mach in deinem Notizheft eine zweispaltige Liste „Deutsch / Englisch“ und füge 5–10 Kognaten-Paare hinzu, die du beim Lesen oder Hören selbst entdeckst.",
+      "Wähle zwei Sätze aus dem deutschen Text. Liste für jeden alle Wörter auf, die du sofort erkennst (Kognaten oder Beinahe-Kognaten), und alle, über die du nachdenken musstest. Achte auf das Verhältnis — frühe deutsche Texte sind meistens gut erkennbar, sobald du weißt, worauf du achten musst.",
+      "Wähle fünf Kognaten-Paare aus dem Text (Wasser, Hand, Haus, Name, Apfel) und sortiere sie vom offensichtlichsten zum am wenigsten offensichtlichen. Erkläre, warum das am wenigsten offensichtliche länger gebraucht hat, um erkannt zu werden.",
     ],
   }
 

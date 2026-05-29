@@ -1,18 +1,5 @@
-// chapters.ts
-import type { Chapter } from "./types";
-import { chapter01 } from "./chapter01";
-import { appendixE } from "./appendices/appendixE";
-import { appendixF } from "./appendices/appendixF";
-// later:
-// import { chapter02 } from "./chapter02";
-// import { chapter03 } from "./chapter03";
-// …
+// DEPRECATED — superseded by index.ts.
+// This legacy stub is not used by the app and is safe to delete.
+// See src/chapters/index.ts for the active chapter manifest.
 
-export const chapters: Chapter[] = [
-  chapter01,
-  appendixE,
-  appendixF,
-  // chapter02,
-  // chapter03,
-  // …
-];
+export {};

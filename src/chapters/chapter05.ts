@@ -1,4 +1,4 @@
-// src/chapters/chapter04.ts
+// src/chapters/chapter05.ts
 
 import type { Chapter } from "./types";
 
@@ -13,7 +13,7 @@ export const chapter05: Chapter = {
       heading: "5.1 Why Gender Exists at All",
       paragraphs: [
         "Grammatical gender is not a comment on masculinity or femininity. It is a classification tool — an ancient one. Many Indo-European languages once carried three genders. English lost most of that structure; German preserved it.",
-        "English had three genders too, all the way through the Anglo-Saxon period — sēo sunne (the sun, feminine) and se mōna (the moon, masculine) and þæt wīf (the woman, neuter, because all diminutives were neuter, even adult women). What killed the system was sound erosion: the unstressed vowels at the ends of English words gradually flattened to a single neutral sound, and once they did, the gender markers were indistinguishable.",
+        "English had three genders too, all the way through the Anglo-Saxon period — sēo sunne (the sun, feminine) and se mōna (the moon, masculine) and þæt wīf — the þ is the Old English letter ‘thorn,’ the same ‘th’ sound it survives as in modern English — (the woman, neuter, because all diminutives were neuter, even adult women). What killed the system was sound erosion: the unstressed vowels at the ends of English words gradually flattened to a single neutral sound, and once they did, the gender markers were indistinguishable.",
         "German’s stressed endings stayed crisp. The gender stayed crisp with them. So when you meet der/die/das, you’re not meeting arbitrary German bureaucracy. You’re meeting the part of the Old English noun that survived.",
         "Instead of treating der/die/das like three boxes you must memorize, treat them like memory markers. The article and noun fuse into a single sound in your brain: dertisch, dieblume, dashaus.",
         "Gender becomes rhythm — not theory."
@@ -60,10 +60,10 @@ export const chapter05: Chapter = {
       ]
     },
     {
-      heading: "5.3 Mini-Mantras — Rhythm Over Rules",
+      heading: "5.3 Article and Noun as One Sound",
       paragraphs: [
-        "Instead of memorising charts, you train pattern recognition through repetition.",
-        "Short loops like ‚Der Tisch bleibt der Tisch‘ lock gender to noun in muscle memory.",
+        "Native German speakers do not feel the article as a separate word from the noun it precedes. Dertisch, dieblume, dashaus arrive in their heads as single phonological units, the way an English speaker hears anapple rather than ‘an’ plus ‘apple.’ This is why German children rarely confuse genders — they're not retrieving an article and matching it to a noun, they're recalling a single fused sound shape.",
+        "Anyone learning German can shortcut into the same intuition the way the children did: by saying the article and noun together, often, until the seam disappears. Short loops like „Der Tisch bleibt der Tisch, die Blume bleibt die Blume, das Haus bleibt das Haus“ lock article to noun in muscle memory.",
         "Sound, not theory, does the work."
       ]
     },
@@ -71,23 +71,23 @@ export const chapter05: Chapter = {
       heading: "5.4 Reading Gender from the Ending",
       paragraphs: [
         "Native intuition for gender does not run on charts. It runs on endings. -ung pulls for die before the dictionary opens; -chen pulls for das; -er for der. The pattern is fast enough that even uncertain guesses land on the right side more often than chance, and after a few weeks the guesses stop feeling like guesses.",
-        "Read the column below as a fluent reader would: ending first, gender on its heels."
+        "What follows is how a fluent reader's mind processes an unfamiliar noun: ending first, gender arriving on its heels before the dictionary opens. Cover the right column and try it."
       ],
       exampleBlocks: [
         {
           title: "Guess Before Checking",
           rows: [
-            { left: "Zeitung", right: "(F) -ung" },
-            { left: "Lehrer", right: "(M) -er" },
-            { left: "Mädchen", right: "(N) -chen" },
-            { left: "Honig", right: "(M) -ig" }
+            { left: "Zeitung", right: "die" },
+            { left: "Lehrer", right: "der" },
+            { left: "Mädchen", right: "das" },
+            { left: "Honig", right: "der" }
           ],
           moreTitle: "More Examples",
           moreRows: [
-            { left: "Freundschaft", right: "(F) -schaft" },
-            { left: "Thema", right: "(N) -ma" },
-            { left: "Motor", right: "(M) -or" },
-            { left: "Universität", right: "(F) -tät" }
+            { left: "Freundschaft", right: "die" },
+            { left: "Thema", right: "das" },
+            { left: "Motor", right: "der" },
+            { left: "Universität", right: "die" }
           ]
         }
       ]
@@ -99,34 +99,35 @@ export const chapter05: Chapter = {
         "Masculine nouns shift early, feminine holds longer, neuter behaves like a blend.",
         "Watch the symmetry, not the exceptions.",
         "Notice the asymmetry between the three columns below: masculine changes its article in every case, neuter changes once, feminine barely moves at all. This isn’t bureaucratic noise. Across Indo-European, feminine declensions consistently lost their case distinctions earlier than masculine ones — the same flattening English completed everywhere, German half-completed in only one gender. When you write ‘die Frau’ and don’t change it for accusative, you’re meeting a sound erosion that started a thousand years ago and stopped halfway.",
-        "You’ll see a ‘Gen’ row in the tables below — genitive. Chapter 3 set it aside because spoken German often replaces it with von + dative. We're including it in the tables for completeness so the pattern is visible, but you don't need to produce it. Recognise the -es on masculine and neuter nouns and move on."
+        "You’ll see a ‘Gen’ row in the tables below — genitive. Chapter 3 set it aside because spoken German often replaces it with von + dative. We're including it in the tables for completeness so the pattern is visible, but you don't need to produce it. Recognise the -es on masculine and neuter nouns and move on.",
+        "As you read across the three tables below, listen for the asymmetry: masculine flips its article three times (der, den, dem), neuter flips once (das stays put for nominative and accusative, then shifts to dem), and feminine barely flips at all (die for both subject and object, der only in dative and genitive)."
       ],
       exampleBlocks: [
         {
           title: "Masculine (DER)",
           rows: [
-            { left: "Nom", right: "der Hund" },
-            { left: "Acc", right: "den Hund" },
-            { left: "Dat", right: "dem Hund" },
-            { left: "Gen", right: "des Hundes" }
+            { left: "Nom", right: "der Hund — the dog (doer)" },
+            { left: "Acc", right: "den Hund — the dog (affected)" },
+            { left: "Dat", right: "dem Hund — to/for the dog" },
+            { left: "Gen", right: "des Hundes — of the dog" }
           ]
         },
         {
           title: "Feminine (DIE)",
           rows: [
-            { left: "Nom", right: "die Blume" },
-            { left: "Acc", right: "die Blume" },
-            { left: "Dat", right: "der Blume" },
-            { left: "Gen", right: "der Blume" }
+            { left: "Nom", right: "die Blume — the flower (doer)" },
+            { left: "Acc", right: "die Blume — the flower (affected)" },
+            { left: "Dat", right: "der Blume — to/for the flower" },
+            { left: "Gen", right: "der Blume — of the flower" }
           ]
         },
         {
           title: "Neuter (DAS)",
           rows: [
-            { left: "Nom", right: "das Kind" },
-            { left: "Acc", right: "das Kind" },
-            { left: "Dat", right: "dem Kind" },
-            { left: "Gen", right: "des Kindes" }
+            { left: "Nom", right: "das Kind — the child (doer)" },
+            { left: "Acc", right: "das Kind — the child (affected)" },
+            { left: "Dat", right: "dem Kind — to/for the child" },
+            { left: "Gen", right: "des Kindes — of the child" }
           ]
         }
       ]
@@ -134,10 +135,9 @@ export const chapter05: Chapter = {
     {
       heading: "5.6 The Balance Trick",
       paragraphs: [
-        "Only masculine changes in accusative (der → den). Feminine and neuter do not.",
-        "Meaning: one shift = one signal.",
-        "Wenn du den Mann siehst, ruf die Frau.",
-        "→ den Mann = object. die Frau = reference or subject."
+        "Notice what this asymmetry buys you as a reader. Because only masculine flips between der and den, every other article is doing double duty — the same die serves as both subject and object for the woman, the same das for the child. The whole signaling load lives on one syllable.",
+        "If you see den Mann in a sentence, the den alone tells you he's the one being seen, called, helped, hit, missed. The article became a tiny role-tag. German concentrated its grammatical information in one place where English used to spread it across the whole noun ending and then gave up on it entirely.",
+        "So when a sentence like „Wenn du den Mann siehst, ruf die Frau“ arrives, the den Mann instantly marks the man as the object of seeing, while die Frau could still be either the subject of calling or the person being called — and only context, not the article, resolves it. Masculine carries the signal alone."
       ]
     },
     {
@@ -151,7 +151,7 @@ export const chapter05: Chapter = {
     }
   ],
   module: {
-    level: "A1",
+    level: "A1–A2",
     title: "Wörter Haben Formen",
     germanLines: [
       "Die Zeitung liegt auf dem Tisch.",
@@ -159,7 +159,7 @@ export const chapter05: Chapter = {
       "Der Lehrer kommt.",
       "Die Universität ist groß.",
       "Das Dokument ist neu.",
-      "Der Honig steht neben der Schönheit im Regal.",
+      "Der Honig schmeckt süß, und die Freiheit fühlt sich leicht an.",
       "Ein kleines Mädchen liest ein neues Dokument."
     ],
     englishLines: [
@@ -168,7 +168,7 @@ export const chapter05: Chapter = {
       "The teacher comes.",
       "The university is big.",
       "The document is new.",
-      "The honey stands next to the beauty (product) on the shelf.",
+      "The honey tastes sweet, and freedom feels light.",
       "A little girl reads a new document."
     ],
     vocabulary: [
@@ -182,21 +182,20 @@ export const chapter05: Chapter = {
       { german: "das Dokument", english: "document (-ment → das)" },
       { german: "der Honig", english: "honey (-ig → der)" },
       { german: "die Schönheit", english: "beauty (-heit → die)" },
+      { german: "die Freiheit", english: "freedom (-heit → die)" },
       { german: "das Thema", english: "theme (-ma → das)" }
     ],
     tasks: [
-      "Identify which noun is masculine, which feminine, which neuter.",
-      "Rewrite the sentences using: der Hund / die Sonne / das Buch.",
+      "For each noun in the passage, name its article AND name the suffix or shape that predicts that article (e.g., Zeitung → die, because -ung → feminine). If a noun has no predictive ending, mark it as a ‘memorise’ item.",
+      "Take the first three lines of the German passage (‘Die Zeitung liegt auf dem Tisch.’ / ‘Das Mädchen liest.’ / ‘Der Lehrer kommt.’) and rewrite each one substituting the subject noun: use der Hund for the first, die Sonne for the second, das Buch for the third. Notice how the article shifts the rhythm even when the rest of the sentence stays put.",
       "Predict the gender of these new nouns based on their endings, then check against §5.2: Wohnung, Mädchen, Direktor, Schönheit, Universität.",
-      "Write three short sentences. Each sentence must use a noun from a different gender (one der-noun, one die-noun, one das-noun). Say each sentence aloud so the article fuses to the noun in rhythm.",
-      "Start a 'Gender by Ending' list in your notebook: three columns (Suffix / Article / Examples). Whenever you meet a new noun, add it under its ending. Aim for 5 new entries this week."
+      "Write three short sentences. Each sentence must use a noun from a different gender (one der-noun, one die-noun, one das-noun). Say each sentence aloud so the article fuses to the noun in rhythm."
     ],
     tasksGerman: [
-      "Bestimme, welches Nomen maskulin, welches feminin und welches neutrum ist.",
-      "Schreibe die Sätze mit folgenden Nomen um: der Hund / die Sonne / das Buch.",
+      "Bestimme für jedes Nomen im Text seinen Artikel UND nenne das Suffix oder die Form, die diesen Artikel vorhersagt (z. B. Zeitung → die, weil -ung → feminin). Wenn ein Nomen kein vorhersagendes Suffix hat, markiere es als „auswendig lernen“.",
+      "Nimm die ersten drei Zeilen des deutschen Textes („Die Zeitung liegt auf dem Tisch.“ / „Das Mädchen liest.“ / „Der Lehrer kommt.“) und schreibe jede neu, indem du das Subjektnomen ersetzt: der Hund für die erste, die Sonne für die zweite, das Buch für die dritte. Achte darauf, wie der Artikel den Rhythmus verändert, auch wenn der Rest des Satzes gleich bleibt.",
       "Rate das Genus dieser neuen Nomen anhand der Endungen und überprüfe es mit §5.2: Wohnung, Mädchen, Direktor, Schönheit, Universität.",
       "Schreibe drei kurze Sätze. Jeder Satz muss ein Nomen einer anderen Genusgruppe enthalten (ein der-Nomen, ein die-Nomen, ein das-Nomen). Sprich jeden Satz laut, damit Artikel und Nomen rhythmisch zusammenwachsen.",
-      "Leg in deinem Notizheft eine Liste „Genus nach Endung“ an: drei Spalten (Suffix / Artikel / Beispiele). Trag jedes neue Nomen unter seiner Endung ein. Ziel: 5 neue Einträge diese Woche.",
     ]
   }
 };

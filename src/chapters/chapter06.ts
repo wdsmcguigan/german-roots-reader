@@ -1,4 +1,4 @@
-// chapter05.ts
+// src/chapters/chapter06.ts
 import type { Chapter } from "./types";
 
 export const chapter06: Chapter = {
@@ -38,7 +38,6 @@ export const chapter06: Chapter = {
         {
           title: "Weak Verbs (Regular) — The Default",
           rows: [
-            { left: "Pattern", right: "no vowel change, past in -te, participle in ge- + -t" },
             { left: "machen → machte → gemacht", right: "to do, to make" },
             { left: "leben → lebte → gelebt", right: "to live" },
             { left: "kaufen → kaufte → gekauft", right: "to buy" }
@@ -59,6 +58,7 @@ export const chapter06: Chapter = {
       heading: "6.3 Vowel Tribes: Strong Verb Clans",
       paragraphs: [
         "Every strong verb belongs to a vowel family. Once you hear the pattern, you can often predict the past form even if you have not memorised it.",
+        "Sing-sang-sung is the tribe in English. So is drink-drank-drunk. The German equivalent runs the same three vowels — i, then a, then u — and once your ear has caught that triplet, singen-sang-gesungen and trinken-trank-getrunken arrive together.",
         "You are not learning random exceptions. You are listening for vowel DNA."
       ],
       exampleBlocks: [
@@ -116,7 +116,6 @@ export const chapter06: Chapter = {
       paragraphs: [
         "Two helpers, one rule of thumb: most verbs take haben. Use sein only when the subject moves to a new place (gehen, kommen, fahren) or changes state on its own (einschlafen, sterben). Everything else: haben. That rule covers about 95% of cases. The rest of this section is the interesting 5% — verbs that flip meaning depending on which helper you choose.",
         "The ge- participle tells you when an action happened. The auxiliary tells you what kind of event you just witnessed.",
-        "German splits its perfect tense between two helpers. The rule is short: if the verb describes an action carried out on an object, it takes haben. If it describes a change of location, or a state the subject ends up in on its own, it takes sein.",
         "Most verbs sit on one side or the other. A handful — the most interesting ones — flip depending on what they mean in a given sentence. Ziehen is the headline case: er hat die Tür gezogen (he pulled the door) and er ist nach Berlin gezogen (he moved to Berlin) share one participle but describe two different events."
       ],
       exampleBlocks: [
@@ -126,8 +125,7 @@ export const chapter06: Chapter = {
             { left: "ziehen", right: "hat gezogen → pulled, drew (something) · ist gezogen → moved, migrated" },
             { left: "brechen", right: "hat gebrochen → broke (something) · ist gebrochen → shattered on its own" },
             { left: "schmelzen", right: "hat geschmolzen → melted (something) · ist geschmolzen → melted in the heat" },
-            { left: "reißen", right: "hat gerissen → tore (something) · ist gerissen → snapped, gave way" },
-            { left: "Quick test", right: "If you can swap in ‘relocated’ or ‘the thing changed on its own,’ use sein. Otherwise haben." }
+            { left: "reißen", right: "hat gerissen → tore (something) · ist gerissen → snapped, gave way" }
           ]
         }
       ]
@@ -175,17 +173,15 @@ export const chapter06: Chapter = {
       { german: "stark / schwach", english: "strong / weak (verb class)" }
     ],
     tasks: [
-      "Conjugate singen in ich-form: ich singe, ich sang, ich habe gesungen.",
-      "Write three parallel sentences with trinken (ich trinke, ich trank, ich habe getrunken).",
+      "Conjugate singen and trinken side by side in three tenses: present, simple past, perfect. (ich singe / ich sang / ich habe gesungen; ich trinke / ich trank / ich habe getrunken.) Notice the shared i → a → u vowel pattern.",
+      "In the German passage, find every verb form and label it: present (P), simple past (Pr), or perfect participle (Pt). Then mark each as strong (S) or weak (W). You should see at least one of each.",
       "Write one sentence that uses a strong verb and a weak verb together.",
-      "Pick the verb stehen and write three sentences that each use a different prefix verb from §6.4 (e.g., verstehen, bestehen, entstehen). Notice how each prefix tilts the meaning.",
       "Classify these as weak (W) or strong (S), then write each in past + perfect: lernen, schwimmen, trinken, leben, essen, kaufen. (Hints: schwimmen → schwamm → geschwommen; essen → aß → gegessen.)"
     ],
     tasksGerman: [
-      "Konjugiere singen in der Ich-Form: ich singe, ich sang, ich habe gesungen.",
-      "Schreibe drei parallele Sätze mit trinken (ich trinke, ich trank, ich habe getrunken).",
+      "Konjugiere singen und trinken nebeneinander in drei Zeiten: Präsens, Präteritum, Perfekt. (ich singe / ich sang / ich habe gesungen; ich trinke / ich trank / ich habe getrunken.) Achte auf das gemeinsame i → a → u Vokal-Muster.",
+      "Finde im deutschen Text jede Verbform und benenne sie: Präsens (P), Präteritum (Pr) oder Partizip Perfekt (Pt). Markiere dann jede als stark (S) oder schwach (W). Du solltest mindestens eine von jeder Art finden.",
       "Schreibe einen Satz, in dem ein starkes und ein schwaches Verb gemeinsam vorkommen.",
-      "Nimm das Verb stehen und schreibe drei Sätze, die jeweils ein anderes Präfixverb aus §6.4 verwenden (z. B. verstehen, bestehen, entstehen). Achte darauf, wie jedes Präfix die Bedeutung verschiebt.",
       "Ordne diese Verben als schwach (W) oder stark (S) ein und schreibe jeweils Präteritum und Perfekt: lernen, schwimmen, trinken, leben, essen, kaufen. (Hinweise: schwimmen → schwamm → geschwommen; essen → aß → gegessen.)",
     ]
   }

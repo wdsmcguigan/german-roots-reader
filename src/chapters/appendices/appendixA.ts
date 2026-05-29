@@ -6,10 +6,10 @@ export const appendixA: Chapter = {
   id: 101,
   kind: "appendix",
   label: "Appendix A",
-  title: "Master Root Index",
-  subtitle: "A living catalogue of German stems with English ancestry markers.",
+  title: "Starter Root Index",
+  subtitle: "A working toolbox of high-value German stems with English ancestry markers.",
   summary:
-    "You don’t memorise this appendix like a vocabulary list. You treat it as a toolbox. Each root gives you a core meaning, English relatives, and typical compounds so you can grow whole word families from a single stem.",
+    "You don’t memorise this appendix like a vocabulary list. You treat it as a starter toolbox. Each root gives you a core meaning, English relatives, and typical compounds so you can grow whole word families from a single stem. The set is deliberately small — your job is to extend it as you read.",
   sections: [
     {
       heading: "A.1 How to Use This Index",
@@ -23,7 +23,7 @@ export const appendixA: Chapter = {
     {
       heading: "A.2 Core Roots — Starter Set",
       paragraphs: [
-        "Here is a starter set of high-value roots — a foundation you’ll extend toward fifty (and beyond) as you read in the wild.",
+        "Here is a starter set of high-value roots — a foundation you’ll extend as you read in the wild. The list is intentionally short: each entry is a hook you can hang new compounds and prefix verbs on as you meet them.",
         "These appear everywhere in everyday German. Learn to recognise them and you suddenly understand dozens of compounds at a glance.",
         "Expand this table yourself in your notebook or digital system. Add new compounds whenever you meet them."
       ],
