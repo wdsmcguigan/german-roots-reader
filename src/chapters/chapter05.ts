@@ -22,6 +22,7 @@ export const chapter05: Chapter = {
     {
       heading: "5.2 Patterns You Can Feel — Not Memorise",
       paragraphs: [
+        "Notice the logic underneath the lists. Abstract qualities cluster as feminine (-heit, -keit, -ung, -schaft). Diminutives and young beings cluster as neuter (-chen, -lein, das Kind). Agents and concrete actors cluster as masculine (-er, -ling). This isn't German bureaucracy — it's a classification scheme older than English, the Germanic mind's instinct for sorting the world into things-that-act, things-that-are-acted-on, and things-that-have-just-arrived. Romance languages did almost the same sort with different markers.",
         "Endings signal gender. They are not perfect, but they are strong enough to make guessing intelligent rather than random.",
         "Once you recognise the endings, der/die/das stops being trial-and-error — it becomes prediction."
       ],
@@ -98,7 +99,7 @@ export const chapter05: Chapter = {
         "Masculine nouns shift early, feminine holds longer, neuter behaves like a blend.",
         "Watch the symmetry, not the exceptions.",
         "Notice the asymmetry between the three columns below: masculine changes its article in every case, neuter changes once, feminine barely moves at all. This isn’t bureaucratic noise. Across Indo-European, feminine declensions consistently lost their case distinctions earlier than masculine ones — the same flattening English completed everywhere, German half-completed in only one gender. When you write ‘die Frau’ and don’t change it for accusative, you’re meeting a sound erosion that started a thousand years ago and stopped halfway.",
-        "You’ll see a ‘Gen’ row in the tables below — genitive. Chapter 3 deferred it because spoken German often replaces it with von + dative. But it still lives in writing, fixed phrases, and the -es ending on masculine and neuter nouns. Read the row; don’t memorise it yet."
+        "You’ll see a ‘Gen’ row in the tables below — genitive. Chapter 3 set it aside because spoken German often replaces it with von + dative. We're including it in the tables for completeness so the pattern is visible, but you don't need to produce it. Recognise the -es on masculine and neuter nouns and move on."
       ],
       exampleBlocks: [
         {
@@ -158,8 +159,8 @@ export const chapter05: Chapter = {
       "Der Lehrer kommt.",
       "Die Universität ist groß.",
       "Das Dokument ist neu.",
-      "Endungen sind kleine Signale: -ung, -heit, -tät zeigen oft die.",
-      "-chen, -ment, -um zeigen oft das. -er, -ig, -or zeigen oft der."
+      "Der Honig steht neben der Schönheit im Regal.",
+      "Ein kleines Mädchen liest ein neues Dokument."
     ],
     englishLines: [
       "The newspaper lies on the table.",
@@ -167,8 +168,8 @@ export const chapter05: Chapter = {
       "The teacher comes.",
       "The university is big.",
       "The document is new.",
-      "Endings are small signals: -ung, -heit, -tät usually point to die.",
-      "-chen, -ment, -um usually point to das. -er, -ig, -or usually point to der."
+      "The honey stands next to the beauty (product) on the shelf.",
+      "A little girl reads a new document."
     ],
     vocabulary: [
       { german: "der Tisch", english: "table" },
@@ -186,12 +187,16 @@ export const chapter05: Chapter = {
     tasks: [
       "Identify which noun is masculine, which feminine, which neuter.",
       "Rewrite the sentences using: der Hund / die Sonne / das Buch.",
-      "Predict the gender of these new nouns based on their endings, then check against §5.2: Wohnung, Mädchen, Direktor, Schönheit, Universität."
+      "Predict the gender of these new nouns based on their endings, then check against §5.2: Wohnung, Mädchen, Direktor, Schönheit, Universität.",
+      "Write three short sentences. Each sentence must use a noun from a different gender (one der-noun, one die-noun, one das-noun). Say each sentence aloud so the article fuses to the noun in rhythm.",
+      "Start a 'Gender by Ending' list in your notebook: three columns (Suffix / Article / Examples). Whenever you meet a new noun, add it under its ending. Aim for 5 new entries this week."
     ],
     tasksGerman: [
       "Bestimme, welches Nomen maskulin, welches feminin und welches neutrum ist.",
       "Schreibe die Sätze mit folgenden Nomen um: der Hund / die Sonne / das Buch.",
       "Rate das Genus dieser neuen Nomen anhand der Endungen und überprüfe es mit §5.2: Wohnung, Mädchen, Direktor, Schönheit, Universität.",
+      "Schreibe drei kurze Sätze. Jeder Satz muss ein Nomen einer anderen Genusgruppe enthalten (ein der-Nomen, ein die-Nomen, ein das-Nomen). Sprich jeden Satz laut, damit Artikel und Nomen rhythmisch zusammenwachsen.",
+      "Leg in deinem Notizheft eine Liste „Genus nach Endung“ an: drei Spalten (Suffix / Artikel / Beispiele). Trag jedes neue Nomen unter seiner Endung ein. Ziel: 5 neue Einträge diese Woche.",
     ]
   }
 };

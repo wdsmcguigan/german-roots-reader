@@ -150,7 +150,8 @@ export const chapter08: Chapter = {
         "Vocabulary is not a flat list. It is a network.",
         "Roots are engines. Prefixes are fuel. Compounds are architecture.",
         "Once you master root families, German stops expanding linearly and starts expanding exponentially.",
-        "This is where fluency accelerates: you no longer collect words — you grow systems."
+        "This is where fluency accelerates: you no longer collect words — you grow systems.",
+        "Next, we look at what happens when German stops growing words from roots and starts stacking them sideways — compounds, where Hand and Schuh fuse into Handschuh and a whole language's appetite for engineering becomes visible."
       ]
     }
   ],
@@ -178,7 +179,12 @@ export const chapter08: Chapter = {
       { german: "Vorgang", english: "process" },
       { german: "Anfang", english: "beginning" },
       { german: "führt", english: "leads (from führen, to lead)" },
-      { german: "die Stadt", english: "city" }
+      { german: "die Stadt", english: "city" },
+      { german: "ziehen", english: "to pull; to move (relocate)" },
+      { german: "der Anzug", english: "suit (lit. 'pull-on')" },
+      { german: "der Umzug", english: "a move; procession (lit. 'pull-around')" },
+      { german: "schreiben", english: "to write" },
+      { german: "die Beschreibung", english: "description (be- + schreiben)" }
     ],
     tasks: [
       "Underline or highlight all words in the text that belong to the root family of gehen.",

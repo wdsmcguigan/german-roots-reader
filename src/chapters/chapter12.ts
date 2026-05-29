@@ -106,15 +106,15 @@ export const chapter12: Chapter = {
       "Ich denke heute direkt in Deutsch.",
       "Keine Übersetzung, kein Umweg.",
       "Ich beschreibe nur, was ich sehe und fühle.",
-      "Der Himmel ist hell, und mein Kopf ist ruhig.",
-      "Worte kommen langsam, aber sie kommen von innen."
+      "Mir ist warm, und das gefällt mir.",
+      "Es gibt keine englischen Wörter in meinem Kopf — nur Bilder."
     ],
     englishLines: [
       "Today I think directly in German.",
       "No translation, no detour.",
       "I simply describe what I see and feel.",
-      "The sky is bright, and my mind is calm.",
-      "Words come slowly, but they come from inside."
+      "I feel warm, and I like that.",
+      "There are no English words in my head — only images."
     ],
     vocabulary: [
       { german: "der Umweg", english: "detour" },

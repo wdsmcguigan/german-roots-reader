@@ -160,7 +160,8 @@ export const chapter10: Chapter = {
       paragraphs: [
         "False friends are not bugs in the system. They are history lessons wearing a disguise.",
         "Once you see why meanings diverge — narrowing, broadening, emotional shift, borrowing — vocabulary stops being a wall of arbitrary facts. You are no longer just memorising that ‘fast’ or ‘Gift’ mean something different. You are tracing the path that took them there.",
-        "You stop trusting the English look-alike and start asking: how did this word travel here? That is the shift from learner to linguistic observer — from surviving German to understanding how it thinks."
+        "You stop trusting the English look-alike and start asking: how did this word travel here? That is the shift from learner to linguistic observer — from surviving German to understanding how it thinks.",
+        "In the next chapter we take that observer mode one step further: we stop translating altogether and start reading German as direct experience."
       ]
     }
   ],

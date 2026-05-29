@@ -74,23 +74,12 @@ export const chapter06: Chapter = {
       ]
     },
     {
-      heading: "6.4 Prefix Power: The Verb Multiplier",
+      heading: "6.4 Prefix Power: The Verb Multiplier (Teaser)",
       paragraphs: [
-        "German prefixes do not just decorate verbs. They multiply them.",
-        "One stem can produce an entire family of meanings — all still connected to the same core idea.",
-        "Once you know the prefix pattern, you start decoding new verbs on sight."
+        "German prefixes do not just decorate verbs. They multiply them. One stem can produce an entire family of meanings — all still connected to the same core idea.",
+        "Chapter 7 takes the prefix system apart in detail — what each prefix does, how separable and inseparable prefixes behave, and their English cousins. For now, just notice the multiplication in action with a single verb."
       ],
       exampleBlocks: [
-        {
-          title: "High-Value Prefixes",
-          rows: [
-            { left: "be-", right: "affect directly → bearbeiten (process), besuchen (visit)" },
-            { left: "ver-", right: "change / undo / wrong → verlieren (lose), verbrennen (burn up)" },
-            { left: "er-", right: "achieve / begin → erreichen (achieve), erkennen (realise)" },
-            { left: "ent-", right: "release / remove → entkommen (escape), entnehmen (extract)" },
-            { left: "zer-", right: "shatter / break apart → zerbrechen (break to pieces)" }
-          ]
-        },
         {
           title: "One Stem, Many Verbs: stehen (to stand)",
           rows: [
@@ -176,7 +165,14 @@ export const chapter06: Chapter = {
       { german: "sang", english: "sang (simple past, strong verb)" },
       { german: "gesungen", english: "sung (past participle: ge- + -en)" },
       { german: "die Stimme", english: "voice" },
-      { german: "tanzen", english: "to dance (weak verb)" }
+      { german: "tanzen", english: "to dance (weak verb)" },
+      { german: "trinken / trank / getrunken", english: "to drink (strong: i → a → u)" },
+      { german: "kaufen / kaufte / gekauft", english: "to buy (weak: regular -te / -t)" },
+      { german: "verstehen", english: "to understand (prefix ver- + stehen)" },
+      { german: "ich habe gezogen", english: "I pulled (with haben — physical action)" },
+      { german: "ich bin gezogen", english: "I moved / relocated (with sein — change of place)" },
+      { german: "das Verb", english: "verb" },
+      { german: "stark / schwach", english: "strong / weak (verb class)" }
     ],
     tasks: [
       "Conjugate singen in ich-form: ich singe, ich sang, ich habe gesungen.",

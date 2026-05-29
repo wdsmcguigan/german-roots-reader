@@ -112,23 +112,20 @@ export const chapter01: Chapter = {
     },
 
     {
-      heading: "1.6 Bonus Cognates (Fast Recognition Training)",
+      heading: "1.6 Hearing the Shift Inside Each Cognate",
       paragraphs: [
-        "Below are rapid-fire cognates — words you can recognise instantly without translation. Try reading them aloud. The rhythm itself teaches.",
-        "Notice the pattern: short, ancient nouns and elemental vocabulary change the least across time."
+        "Read these pairs aloud, slowly, and listen for what changed. The German word and the English word descend from the same source — but somewhere between Old English and Modern English, a vowel softened or a consonant slid. The patterns underneath these little differences are exactly what Chapter 2 will name and turn into a decoder."
       ],
       exampleBlocks: [
         {
-          title: "Lightning Round — Read Like Echoes",
+          title: "Same Word, Different Sound — Listen for the Shift",
           rows: [
-            { left: "Mund", right: "mouth" },
-            { left: "Blut", right: "blood" },
-            { left: "Fisch", right: "fish" },
-            { left: "Brot", right: "bread" },
-            { left: "Erde", right: "earth" },
-            { left: "Feuer", right: "fire" },
-            { left: "Salz", right: "salt" },
-            { left: "Garten", right: "garden" }
+            { left: "Mund — mouth", right: "u → ou (vowel rounding)" },
+            { left: "Blut — blood", right: "u → oo (same vowel zone, different spelling)" },
+            { left: "Erde — earth", right: "e → ea (vowel split that English wrote two ways)" },
+            { left: "Brot — bread", right: "o → ea (long vowel softening)" },
+            { left: "Fisch — fish", right: "sch → sh (consonant cluster simplification)" },
+            { left: "Garten — garden", right: "t → d (medieval consonant softening)" }
           ]
         }
       ]
@@ -177,7 +174,7 @@ export const chapter01: Chapter = {
     germanLines: [
       "Deutsch und Englisch sind alte Freunde.",
       "Sie kommen aus derselben Sprachfamilie.",
-      "Viele Wörter sehen ähnlich aus: Wasser, Hand, Haus, Name.",
+      "Viele Wörter sehen ähnlich aus: Wasser, Hand, Haus, Name, Apfel.",
       "Manchmal sind sie genau gleich, manchmal ein bisschen anders.",
       "Wenn wir langsam lesen, erkennen wir die Verwandtschaft.",
       "Unser Gehirn kennt die Muster schon. Wir schalten nur das Licht an.",
@@ -185,7 +182,7 @@ export const chapter01: Chapter = {
     englishLines: [
       "German and English are old friends.",
       "They come from the same language family.",
-      "Many words look similar: water, hand, house, name.",
+      "Many words look similar: water, hand, house, name, apple.",
       "Sometimes they are exactly the same, sometimes a little different.",
       "When we read slowly, we recognise the relationship.",
       "Our brain already knows the patterns. We are just switching the light on.",

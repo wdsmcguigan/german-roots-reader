@@ -185,7 +185,10 @@ export const chapter03: Chapter = {
       { german: "bekommen", english: "to receive, get" },
       { german: "helfen", english: "to help (takes dative)" },
       { german: "geben", english: "to give" },
-      { german: "der / den / dem Mann", english: "the man (nominative / accusative / dative)" }
+      { german: "der / den / dem Mann", english: "the man (nominative / accusative / dative)" },
+      { german: "der / den Hund", english: "the dog (nominative / accusative)" },
+      { german: "der / den Ball", english: "the ball (nominative / accusative)" },
+      { german: "werfen", english: "to throw (takes accusative)" }
     ],
     tasks: [
       "Take three simple English sentences (for example: 'The child sees the dog', 'I give the woman the book', 'We help the man'). Write a German version and label who is subject, who is direct object, who is receiver.",
